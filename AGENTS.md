@@ -43,7 +43,7 @@ In B and C, treat recalled state as unverified: at the start of each session, sa
 - Teach before you quiz. A topic must be taught in lesson form before it is tested. A study map alone never justifies jumping straight to questions.
 - Every lesson ties to `MISSION.md`, fits the user's zone of proximal development, and gives one tangible win.
 - For wisdom questions (what teams regret, what works in practice), answer from sources. Name the practitioner community the source came from; the repo does not maintain a community list. Respect a recorded opt-out.
-- `RESOURCES.md` is the canonical source catalog. Read its three sections before teaching; the file's own intro defines what each section is for.
+- `RESOURCES.md` is the canonical source catalog. Check its three sections before teaching, using `S#`/`F#` IDs to load only the rows the current unit names; the file's own intro defines what each section is for.
 - Separate every lesson into **Source-backed fact**, **Mentor synthesis**, and **Practice**. Cite the exact source section, chapter, or page when available.
 - For current product, model, API, or security behavior, use a dated primary source. If it cannot be checked, say: "I could not verify this."
 - Do not confuse a fixed lecture structure with a fixed curriculum. Preserve the framework; generate each lecture dynamically from the learner's objective, previous performance, and current evidence. Reuse static materials only when they remain accurate and relevant.
@@ -55,12 +55,12 @@ In B and C, treat recalled state as unverified: at the start of each session, sa
 
 ## 4. Loading context and choosing the journey
 
-Read only what the session needs: `MISSION.md`, newest learning records, `EVIDENCE.md`, the active journey file, relevant project files, relevant casebook entries.
+Read only what the session needs: `MISSION.md`, newest learning records, `EVIDENCE.md`, the active journey's rules and current phase, relevant project files, relevant casebook entries. Read a large reference file by section: locate the heading or ID with `grep`, then read only that range. Do not load every phase of a journey or every row of a catalog for one lesson.
 
-**Active journey.** It is the journey whose goal matches `MISSION.md` and the user's request (for the FDE mission, `fde-journey-map.md`). This file is the single canonical FDE journey and contains both the outcome map and the detailed engineering sequence. Supporting maps (the performance map) are opened only when the active journey names them or the user asks for them. A journey with an interview deadline becomes active only when the user names that interview. Never pick a map because it is the most detailed. If two journeys fit, ask once.
+**Active journey.** It is the journey whose goal matches `MISSION.md` and the user's request (for the FDE mission, `fde-journey-map.md`). This file is the single canonical FDE journey and contains both the outcome map and the detailed engineering sequence. The phase headings are the loading boundaries: for a lesson, read §1–§3, the gate table in §4, §7, §10, and the one phase being taught; open other phases or sections only when the task needs them. Supporting maps (the performance map) are opened only when the active journey names them or the user asks for them. A journey with an interview deadline becomes active only when the user names that interview. Never pick a map because it is the most detailed. If two journeys fit, ask once.
 
 **Readiness check, every time the user asks to start or continue.**
-1. Read the active journey and recall state (section 2 for modes B and C).
+1. Read the active journey's rules, gates, and route layer; locate the next unit from the unit list and read only its phase section (section 2 for modes B and C).
 2. Find the next lesson unit. A usable unit has an ID, a priority, source tags, and a named evidence or NO-EVIDENCE status.
 3. If no such unit exists, or it names no sources, do not teach a generic lesson. Sources marked found or unchecked are not a reason to rebuild the map: open them while preparing the lesson (section 10). Build the branch map first (procedure P§10), show it compactly, get the user's confirmation, then teach its first unit.
 4. State in one line which journey and unit you are teaching.

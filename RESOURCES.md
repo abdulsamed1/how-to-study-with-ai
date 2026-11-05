@@ -14,7 +14,10 @@ belongs in one of three sections:
 3. **Coverage gaps** — a needed topic for which no adequate reference has been
    verified yet.
 
-The AI must read this file before teaching. It must not silently ignore a
+The AI must check all three sections before teaching: confirm the section and
+status for each source ID (`S#` or `F#`) the current unit names, and read the
+reading-status rows for those IDs. Use the ID column as the lookup key; do not
+load the full verified table for one lesson. It must not silently ignore a
 reference in the second section or treat it as verified.
 
 This file is not a dump of names, newsletters, communities, or broad roadmap

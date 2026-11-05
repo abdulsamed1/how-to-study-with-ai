@@ -6,6 +6,8 @@
 
 Phases 0-1 were merged into Phase 2; the old-to-new mapping is in §8.
 
+**Loading:** follow `AGENTS.md` §4. Read this map by section; the phase headings are the boundaries.
+
 ---
 
 ## 1. Rules for this journey
@@ -559,7 +561,7 @@ The following IDs are defined in `RESOURCES.md`; consult that file for publisher
 - **S35–S36:** Cloudflare's November 2025 outage account (configuration change, propagation, diagnosis, recovery) and its stated resilience plan. S36 is a plan with a Q1 2026 target, not verified implementation or measured results.
 - **S37:** Stripe's vendor benchmark of agent-built integrations. Supports only the failure modes it documents — notably an agent treating a 400 on invalid test data as success, and browser-use dead ends. Not evidence about duplicate delivery, retry storms, or general production reliability.
 - **S64–S68:** Stripe idempotency documentation, Airbnb double-payment prevention (2019), AWS timeouts/retries/backoff with jitter (2019), GitHub webhook best practices and signature validation, and Stripe's webhook guide. Provider engineering guidance plus one first-party incident write-up: they support mechanism claims, not measurements of this capstone.
-- **S15:** evaluation methodology and agent-eval practice (2026-01-09 refresh). **S22:** deprecated (see S4/S21–S23 note).
+- **S15:** evaluation methodology and agent-eval practice (2026-01-09 refresh).
 - **S16–S17:** OWASP LLM Top 10 2026 and Agentic Top 10 2026 — always cite the edition. **S24:** NIST AI RMF 1.0 plus GenAI Profile NIST AI 600-1 — cite the profile.
 - **S18–S19, S25–S29:** distributed systems, data systems, architecture, scalability, and SRE foundations.
 - **S33–S42:** S33 AWS Well-Architected REL03-BP01 (workload segmentation; vendor guidance), S34 Node.js test-CI security incident, S35 and S36 Cloudflare's 2025 outage account and resilience plan, S37 Stripe's AI-agent integration benchmark, S38 *Software Architecture: The Hard Parts* (chapters `[TOC]` only), S39 NIST SP 800-228-upd1 (the original SP 800-228 was withdrawn and superseded in its entirety — cite only the current edition), S40 GitHub's guide to human oversight in AI-assisted code review, S41 Faler's essay on AI-assisted engineering antipatterns, S42 C4 model for architecture diagramming (site structure verified). Read the caveats in `RESOURCES.md` first: S33, S36, S37, S40, and S41 are vendor or practitioner material, not independent measurement.

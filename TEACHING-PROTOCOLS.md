@@ -219,16 +219,18 @@ and which modes need it:
 | `MISSION.md` | why the user is learning this | every session | the user; the mentor drafts it only with the user's confirmation | A, B, C |
 | `AGENTS.md` | how to teach | every session | the user | A, B, C |
 | `TEACHING-PROTOCOLS.md` | procedures and formats | when a session needs one | the user | A, B, C |
-| `fde-journey-map.md` | the canonical FDE journey | every session | the user | A, B, C |
+| `fde-journey-map.md` | the canonical FDE journey | every session: rules, gates, route layer, and current phase | the user | A, B, C |
 | `production-performance-incident-study-map.md` | the performance branch | when the journey opens it | the user | A, B, C |
-| `RESOURCES.md` | canonical source catalog | before teaching, and on every source claim | the user | A, B, C |
+| `RESOURCES.md` | canonical source catalog | before teaching: relevant rows and status, and on every source claim | the user | A, B, C |
 | `EVIDENCE.md` | the evidence ledger | every session | the user | A, B, C |
 | `GLOSSARY.md` | earned terms | when a term is earned | the user | A, B, C |
 | `casebook/` | real failures per concept | when a case is researched | the user | A, B, C |
 | `learning-records/` | evidence of understanding | when a record is earned | the user | A, B, C |
 
-The first seven are the minimum set for a lesson. `GLOSSARY.md`, `casebook/`
-and `learning-records/` are created as the first file for them exists (P§1).
+The first seven are the minimum set for a lesson. For the journey and catalog,
+"minimum set" means their rules and the current unit's section, not every phase
+or row (`AGENTS.md` §4). `GLOSSARY.md`, `casebook/` and `learning-records/` are
+created as the first file for them exists (P§1).
 
 In a chat tool, use these files as project sources and keep instructions
 short: follow `AGENTS.md`, use `TEACHING-PROTOCOLS.md` when referenced, and
