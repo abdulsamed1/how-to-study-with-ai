@@ -177,7 +177,7 @@ Product capabilities and account availability change. The links above describe t
 
 ### Portable repository instruction
 
-Add the following to the assistant's project instructions, custom instructions, Gem, or equivalent instruction field. If the app has no persistent instruction field, paste it at the start of each new chat.
+Add the following to the assistant's project instructions, custom instructions, Chatgpt instructions, or equivalent instruction field. If the app has no persistent instruction field, paste it at the start of each new chat.
 
 ~~~text
  
