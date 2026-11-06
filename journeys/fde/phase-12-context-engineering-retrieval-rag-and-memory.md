@@ -12,6 +12,8 @@ depends_on:
 
 **Goal:** Provide the model with relevant, permissioned information and measure whether retrieval actually helps.
 
+**Lesson sequence (S48):** Start with context as a limited budget; add just-in-time retrieval and document lifecycle controls; compare lexical, vector, hybrid, and reranked retrieval; finish with grounded citations, abstention, and state/memory boundaries. Do not start with a vector database or an agent framework.
+
 **Handbook reading path (S69 [TOC]):** Ch. 33 §§33.1–33.8, 33.12–33.14 (embeddings, keyword/semantic/hybrid search, vector storage choices, ingestion, RAG, advanced retrieval, evaluation, data model, feature-level cost/latency, UX); Ch. 13 §13.17 and Ch. 17 §17.8 (PostgreSQL full-text/trigram search and when full-text search may suffice). Ch. 34 is optional only if the chosen workflow has Arabic/multilingual requirements; Ch. 18 §18.23 is considered only after cache value and invalidation risks are evaluated.
 
 - **P12.1 — Context engineering and information budgets** — **Priority:** important. Depends on: P11.1–P11.2. Select useful context, keep it current, and avoid flooding the model with irrelevant material. Assembly decisions include provider-documented prompt structure (S49): section or XML tags that separate instructions from data and examples, examples chosen as few steering shots rather than exhaustive rules, and quote-grounding inside long document input. **Proof:** compare two context assembly strategies using fixed examples. Sources: S5, F12, S49.
