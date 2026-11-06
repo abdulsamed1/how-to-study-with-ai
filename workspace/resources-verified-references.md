@@ -1,58 +1,12 @@
-# FDE Study Resources
+---
+purpose: Contains one source catalogue section.
+read_when: When the named source catalogue section is needed.
+depends_on:
+  - ../governance/source-policy.md
+---
 
-Updated: 2026-11-06
+# Verified references
 
-## How to use this file
-
-This is the canonical source catalog for the FDE study path. Every reference
-belongs in one of three sections:
-
-1. **Verified references** — opened and checked; may support a lesson or factual
-   claim.
-2. **References to verify** — provided as a research lead; useful for finding
-   material, but not evidence until its specific artifact is opened and checked.
-3. **Coverage gaps** — a needed topic for which no adequate reference has been
-   verified yet.
-
-The AI must check all three sections before teaching: confirm the section and
-status for each source ID (`S#` or `F#`) the current unit names, and read the
-reading-status rows for those IDs. Use the ID column as the lookup key; do not
-load the full verified table for one lesson. It must not silently ignore a
-reference in the second section or treat it as verified.
-
-This file is not a dump of names, newsletters, communities, or broad roadmap
-ideas. Only concrete artifacts may enter a source section: a book, paper,
-course page, blog post, job listing, official documentation, or another
-specific publication with a canonical URL. User-supplied roadmaps and lists of
-people or organizations are discovery leads only until they are tied to a
-specific artifact and date-verified.
-
-Books may be listed as citations even when access is paywalled; do not
-reproduce copyrighted text. API, product, model, and security claims require
-current official documentation or a dated primary source. Cite the exact
-chapter, section, page, or heading used when available. A chapter tagged
-`[TOC]` in a journey file was identified from a book's table of contents only
-and has not been read by the mentor; keep the tag until the passage is checked.
-
-Availability, bibliography, and reading are three separate states: an uploaded
-book is available; its title page, author, and edition may still be unverified;
-and `[TOC]` chapters have not been read. An uploaded book whose title page or
-edition has not been checked is listed under **References to verify**, not
-under Verified references.
-
-Books marked **Uploaded in both study tools** are fully supplied by the user in
-both NotebookLM and the ChatGPT Project. They may be used as study references
-in either tool. Cite the book title, edition, author, and chapter or page; do
-not reproduce the book or treat a generated summary as the source. The six
-books carrying that marker are also on disk in `books/`, so a chapter read in
-the workspace is recorded with that path as the tool.
-
-A durable entry must identify a specific artifact with a canonical
-URL, explain its relevance, and record its verification status. Roadmaps and
-career feeds such as [roadmap.sh/ai-engineer](https://roadmap.sh/ai-engineer)
-and [The Batch — AI Careers](https://www.deeplearning.ai/the-batch/tag/ai-careers)
-are valid discovery inputs only when they are opened and tied to a specific
-artifact used by the lesson.
 
 ## Verified references
 
@@ -98,7 +52,7 @@ artifact used by the lesson.
 | S40 | [The executive's guide: How engineering teams are balancing AI and human oversight in modern code reviews](https://github.com/resources/insights/human-oversight-modern-code-review) | GitHub (Jared Bauer; 2025-07-29) | Vendor insight article | Current | the sections on what is new (AI reviews first, needle-in-haystack detection, guarding against confirmation bias) and on what remains bedrock (small changes, tests necessary but not sufficient, human oversight). Supports P2.2, P4.7a, P7.2, P7.4, P17.2. Caveats: qualitative engineer quotes, no measurement; the page says the observations are not yet universal; GitHub sells an AI review tool | Public | 2026-10-15 |
 | S41 | [Antipatterns of Software Engineering with AI](https://www.principalengineer.com/p/antipatterns-of-software-engineering) | The Principal Engineer (Wille Faler; 2026-07-17) | Practitioner essay | Current | spec-driven development as a big bang, architectural over-engineering, AI grading its own homework, comprehension debt, conclusion. Supports P2.2, P7.2, P7.3, P7.5a, P7.5b, P17.2. Caveats: one practitioner's experience; claims about model behavior are opinion, not measurement; the author notes the limits of trust shift monthly | Public | 2026-10-15 |
 | S42 | [C4 model for visualising software architecture](https://c4model.com/) | Simon Brown | Architecture diagramming model | Current | Site structure verified 2026-10-16: four hierarchical abstractions (software system, container, component, code), seven diagram types (system context, container, component, code, system landscape, dynamic, deployment), notation guidance, and a [review checklist](https://c4model.com/diagrams/checklist). CC BY 4.0 licensed. Supports P7.5b (architecture diagrams) and P10.4b (system-design communication). Caveats: a diagramming convention, not an architecture methodology; does not replace architecture-characteristic identification or trade-off analysis | Public | 2026-10-16 |
-| S43 | [How the Claude Code team does code review](https://claude.dev/blog/solving-code-review-at-anthropic/) | Anthropic (Addy Osmani, Morgan Westlee Lunt, Qing Wang; published 2026-10-15) | Vendor engineering article | Current | "Rethinking the purpose of code review", "The scarce resource: human time and attention", "Layer by layer" (six review layers, risk tiers set by the change not the author, merge queue and staged releases), "How we make the reviewer better" (incidents as the reviewer's eval; three-round cap), "Where humans stay in the loop", "Sharing context across the team", "You land it, you own it", "How you can adopt this process". Reported: Claude writes about 90% of Claude Code's code; merged PRs more than doubled June–September while the reverted share fell by more than 40%; most code reading moved to automated review; the person directing an agent counts as one of the required reviewers; an agent's approval never counts as a person's; humans keep direction, risky code, architecture, reading the evidence, and owning the outcome; code understanding is served by asking the assistant for an explainer of a slice. Supports: the hand-writing-versus-review rule in `fde-journey-map.md` §1 (accountability, reading the evidence, comprehension explainers) and the agent review record in §3. Caveats: Anthropic describing its own team; self-reported figures; experienced engineers on a mature repository; the stated goal is minimizing human review time, not a learning design; the page says circuit breakers that tighten approval do not exist yet; it says nothing about learning outcomes | Public | 2026-10-19 |
+| S43 | [How the Claude Code team does code review](https://claude.dev/blog/solving-code-review-at-anthropic/) | Anthropic (Addy Osmani, Morgan Westlee Lunt, Qing Wang; published 2026-10-15) | Vendor engineering article | Current | "Rethinking the purpose of code review", "The scarce resource: human time and attention", "Layer by layer" (six review layers, risk tiers set by the change not the author, merge queue and staged releases), "How we make the reviewer better" (incidents as the reviewer's eval; three-round cap), "Where humans stay in the loop", "Sharing context across the team", "You land it, you own it", "How you can adopt this process". Reported: Claude writes about 90% of Claude Code's code; merged PRs more than doubled June–September while the reverted share fell by more than 40%; most code reading moved to automated review; the person directing an agent counts as one of the required reviewers; an agent's approval never counts as a person's; humans keep direction, risky code, architecture, reading the evidence, and owning the outcome; code understanding is served by asking the assistant for an explainer of a slice. Supports: the hand-writing-versus-review rule in `../journeys/fde/journey-overview.md` §1 (accountability, reading the evidence, comprehension explainers) and the agent review record in §3. Caveats: Anthropic describing its own team; self-reported figures; experienced engineers on a mature repository; the stated goal is minimizing human review time, not a learning design; the page says circuit breakers that tighten approval do not exist yet; it says nothing about learning outcomes | Public | 2026-10-19 |
 | S44 | [How AI assistance impacts the formation of coding skills](https://www.anthropic.com/research/AI-assistance-coding-skills) and [How AI Impacts Skill Formation (arXiv:2601.20245v2, cs.CY)](https://arxiv.org/abs/2601.20245) | Anthropic Research (Judy Hanwen Shen, Alex Tamkin; research page 2026-01-29, arXiv v1 2026-01-28, v2 2026-02-01) | Research report + preprint | Current | the research page in full, plus the arXiv abstract and the paper's Results and Qualitative Analysis sections. Randomized between-subjects trial, 52 developers (26 per arm) using Python weekly and never having used Trio; two 10–20 minute Trio tasks, then a 14-question, 27-point quiz (debugging, code reading, conceptual; code writing excluded). Quiz means: 50% with AI vs 67% hand-coding — the paper's own wording is "a 17% score difference or 2 grade points" on the 27-point quiz (a 4.15-point mean difference); Cohen's d=0.738, p=0.010. Completion time difference not statistically significant. Largest gap on debugging questions. Six interaction patterns; three (generation-then-comprehension, hybrid code-explanation, conceptual inquiry) preserve learning, and the strong-mastery participants used AI to build comprehension, not only to emit code. Supports: the hand-writing-first and comprehension clauses of the hand-writing-versus-review rule, and the "write the case or test yourself first" practice in P2.2, P7.2, and P14.1. Caveats: Anthropic-run, 52 mostly junior engineers, one library, one short task, quiz minutes after the task; the paper does not resolve whether quiz performance predicts longer-term skill; the interaction-pattern analysis is associative, not causal; the paper's own footnote expects the effect to be larger for agentic coding tools than for the chat assistant studied | Public | 2026-10-19 |
 | S45 | [NestJS documentation — Modules](https://docs.nestjs.com/modules) and [Dependency Injection](https://docs.nestjs.com/fundamentals/dependency-injection) | NestJS | Official documentation | Current | Modules (root module and application graph; `@Module` metadata; feature, shared, re-exporting, global, and dynamic modules; dependency injection); Dependency Injection (DI fundamentals, standard providers, custom providers, `useValue`, `useClass`, `useFactory`, `useExisting`, and exporting custom providers). Supports P7.8. Caveat: `docs.nestjs.com` returned no content from this environment; the same official content was read from the project's documentation repository (`nestjs/docs.nestjs.com`, `content/modules.md` and `content/fundamentals/dependency-injection.md`). The standalone Providers page was unavailable (404 in the repository, empty from the site), so provider material came from these two pages. | Public; re-check per lesson | 2026-10-21 |
 | S46 | [Twenty documentation — Apps: Concepts](https://docs.twenty.com/developers/extend/apps/getting-started/concepts) and [Quick Start](https://docs.twenty.com/developers/extend/apps/getting-started/quick-start) | Twenty | Official documentation | Current | Concepts (how apps work; entity model for application, roles, objects, fields, logic functions, front components, skills; build-time AST manifest; sandboxing; install lifecycle); Quick Start (scaffold, local server, sync phases). Also read the [Twenty repository README](https://github.com/twentyhq/twenty) Stack section, which lists NestJS, BullMQ, PostgreSQL, Redis, React, and TypeScript. Supports P7.8. Caveats: product docs describe the current platform, while Eagles runs Twenty v2.38.0 — verify version-specific behavior against the deployed server; sandboxing is vendor-described and not independently tested; the NestJS host description comes from the README stack line and the Eagles deployment, not a Twenty internals document. | Public; re-check per lesson | 2026-10-21 |
@@ -127,162 +81,3 @@ artifact used by the lesson.
 | S69 | *The Backend Developer Interview Handbook* (October 2026; user-supplied PDF) | Compiled by Ahmed with AI assistance | Handbook / secondary synthesis | Partial; topic coverage checked, not authoritative for current behavior | Broad backend coverage: networking, HTTP, API design, authentication/authorization, PostgreSQL, transactions, integrations, queues, testing, delivery, observability, architecture, system design, LLM integration, RAG, and Python/FastAPI. Use as a coverage and practice guide; individual chapter references remain `[TOC]` until read. Its opening note marks model names, prices, and versions as illustrative. Recheck current API, model, cloud, and security claims against primary official sources. Framework-specific examples are optional and excluded from the default implementation track | User-supplied local PDF; 974 pages; no publisher listed | 2026-10-24 |
 | S70 | [Problem-Based Learning (PBL)](https://www.gla.ac.uk/myglasgow/learningandteaching/activelearning/guides/pbl/) | University of Glasgow, Learning & Teaching / Active Learning Resources Hub | University teaching guide | Read; method guide, not an effectiveness guarantee | Describes learner-centred case work: students identify issues and learning goals, undertake self-directed enquiry, bring findings back, and reflect. Its GLASGOW steps cover grasping the case, listing issues, activating prior knowledge and gaps, setting learning goals, planning resources, offering findings, and reflecting. It also reports mixed findings in comparative reviews; do not claim PBL is universally superior. Supports PBL method design only, not technical facts or proof that this individual-AI adaptation is superior | Public | 2026-11-06 |
 | S71 | [A taxonomy of problem-based learning methods](https://doi.org/10.1111/j.1365-2923.1986.tb01386.x) | H. S. Barrows, *Medical Education*, 20(6), 481–486 (November 1986) | Peer-reviewed educational-methods article | Abstract read; full article not read | The abstract states that PBL is not one specific method and that design choices and facilitator skill create substantial variation. Use as a caution against presenting one fixed AI-tutor sequence as the only valid PBL model. Abstract-only support; do not attribute detailed teaching steps to this paper. Supports teaching-method design only | Public abstract | 2026-11-06 |
-
-## Designated topic-scope source (owner decision 2026-10-21)
-
-The owner designated [AI Roadmap 2026](https://github.com/h9-tec/ai-roadmap-2026) (S48) as the single external source of truth for **which AI-engineering topics belong in the AI phases and their order**. Limits the owner set on the same date: it does not govern FDE-specific content (problem framing, delivery, handover, capstone — S1 stays the role standard), the backend phases (Phases 2–9), security governance beyond what it covers, or any factual claim. Conflict order when sources disagree: (1) primary vendor or standard documentation opened at teach time, (2) the roadmap's topic scope and order for the AI phases, (3) the existing plan for everything else. Roadmap market statistics (job-growth figures, "fastest-growing job" claims) and its duration claims (~25-week and 12-week plans) are never imported as facts or as the plan's pace. Do not copy roadmap text into the repo (CC BY 4.0: link, attribute, paraphrase). Owner scope filter applied with this designation: no ML training or fine-tuning content, no quantization or model-serving internals, no attention/embedding math (vocabulary level only); fine-tuning appears in exactly one removable Depth-1 decision line (P11.6), flagged in the alignment report.
-
-## Designated cross-phase backend coverage reference (owner decision 2026-10-24)
-
-The owner designated S69 as the default supplementary handbook for topic coverage and practice examples across Phases 2–17. Use the phase-by-phase reading paths in `fde-journey-map.md`; this designation governs coverage and study selection, not factual authority. The PDF says it was compiled with AI assistance and that model names, prices, and version numbers are illustrative. For current API, SDK, cloud, and security behavior, re-open current primary documentation; for existing-system behavior, inspect code and tests. Node.js, TypeScript, NestJS, and Next.js material is conditional on the journey's named existing-system task or an explicit target-role requirement, not a default implementation path. Any S69 chapter marked `[TOC]` remains a reading lead until the exact passage is opened and recorded below. Reading the handbook is not evidence of a demonstrated skill.
-
-## F-series — foundational sources used by the roadmap
-
-These are concrete artifacts used by the active journey. Re-open the exact
-page used before teaching and record the subsection or version in the lesson
-record. F13 and F14 are cross-check and discovery sources, not a replacement
-for primary technical evidence.
-
-| ID | Source | Publisher | Type | Status | Coverage | Access | Last verified |
-|---|---|---|---|---|---|---|---|
-| F1 | [Pro Git, 2nd Edition — online book](https://git-scm.com/book/en/v2) | Git | Online book | Current | Git, collaboration, history, branching, and reproducible work | Public | 2026-10-09 |
-| F2 | [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) | MDN | Official guide | Current | JavaScript language and core concepts | Public; re-check per lesson | 2026-10-09 |
-| F3 | [Node.js Learn](https://nodejs.org/learn) | Node.js | Official learning documentation | Current | Runtime, async work, testing, HTTP, diagnostics, and security. Exact page read 2026-10-21: [The Node.js Event Loop](https://nodejs.org/en/learn/asynchronous-work/event-loop-timers-and-nexttick) — What is the Event Loop, Event Loop Explained, Phases Overview and Phases in Detail (timers, pending callbacks, poll, check, close callbacks), setImmediate vs setTimeout, process.nextTick. Other F3 pages remain unrecorded | Public; re-check per lesson | 2026-10-21 |
-| F4 | [MDN HTTP Overview](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview) | MDN | Official guide | Current | HTTP messages, methods, status codes, and API mental models | Public; re-check per lesson | 2026-10-09 |
-| F5 | [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro) | TypeScript | Official handbook | Current | Types, narrowing, functions, modules, and compiler behavior | Public; re-check per lesson | 2026-10-09 |
-| F6 | [PostgreSQL Documentation](https://www.postgresql.org/docs/current/) | PostgreSQL | Official documentation | Current | SQL, constraints, indexes, transactions, isolation, and concurrency | Public; re-check per lesson | 2026-10-09 |
-| F7 | [Docker Get Started](https://docs.docker.com/get-started/) | Docker | Official guide | Current | Containers and local environment fundamentals | Public; re-check per lesson | 2026-10-09 |
-| F8 | [Playwright Test documentation](https://playwright.dev/docs/intro) | Playwright | Official documentation | Current | Practical automated testing and CI tests | Public; re-check per lesson | 2026-10-09 |
-| F9 | [OpenTelemetry documentation](https://opentelemetry.io/docs/) | OpenTelemetry | Official documentation | Current | Traces, metrics, logs, instrumentation, and context propagation | Public; re-check per lesson | 2026-10-09 |
-| F10 | [Google Cloud Well-Architected Framework — Reliability](https://docs.cloud.google.com/architecture/framework/reliability) | Google Cloud | Architecture guidance | Current | Reliability goals, observation, response, recovery, and postmortems | Public; re-check per lesson | 2026-10-09 |
-| F11 | [OWASP API Security Project](https://owasp.org/projects/api-security-project) | OWASP | Security guidance | Current | API attack surfaces and authorization/security risks | Public; use current edition | 2026-10-09 |
-| F12 | [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) and [Contextual Retrieval](https://www.anthropic.com/engineering/contextual-retrieval) | Anthropic Engineering | Engineering articles | Current | Context budgets, retrieval design, and retrieval improvement techniques; these do not replace independent evaluation | Public; re-check per lesson | 2026-10-09 |
-| F13 | [AI Engineer roadmap](https://roadmap.sh/ai-engineer) | roadmap.sh | Roadmap cross-check | Cross-check only | AI-engineering coverage across implementation, LLM applications, RAG, agents, deployment, and MLOps | Public; re-check for current scope | 2026-10-09 |
-| F14 | [The Batch — AI Careers](https://www.deeplearning.ai/the-batch/tag/ai-careers) | DeepLearning.AI | Career discovery feed | Discovery only | Current AI-career articles and evolving industry skills; not a prerequisite order or sole evidence | Public; re-check per lesson | 2026-10-09 |
-| F15 | [Python 3 documentation](https://docs.python.org/3/) (language reference, tutorial, library reference) | Python Software Foundation | Official documentation | Current | Language syntax, standard library, and core semantics for the Phases 2–17 implementation route | Public; re-check per lesson | 2026-10-22 |
-| F16 | [Python typing documentation](https://docs.python.org/3/library/typing.html) and [mypy documentation](https://mypy.readthedocs.io/en/stable/) / [pyright](https://github.com/microsoft/pyright) | Python Software Foundation / mypy / Microsoft | Official documentation + tool docs | Current | Static type checking, narrowing, generics, and protocol types for the Python service | Public; re-check per lesson | 2026-10-22 |
-| F17 | [Pydantic documentation](https://docs.pydantic.dev/latest/) | Pydantic | Official documentation | Current | Runtime validation at trust boundaries: models, parsing, serialization, and strict mode | Public; re-check per lesson | 2026-10-22 |
-| F18 | [pytest documentation](https://docs.pytest.org/en/stable/) and [asyncio documentation](https://docs.python.org/3/library/asyncio.html) | pytest / Python Software Foundation | Official documentation | Current | Test discovery, fixtures, parametrization, and asyncio scheduling, cancellation, and timeouts | Public; re-check per lesson | 2026-10-22 |
-
-## Reading status
-
-The single record of what was read, keyed by source ID. The rows above carry
-identity and verification status only. A chapter tagged `[TOC]` in a journey
-file was identified from a book's table of contents only and has not been read;
-keep the tag until the exact passage is read and recorded here. Clearing a tag
-follows journey rule 7. Tool is where the passage was read: `web` for a
-page, `books/ epub` for a local book file. For each book, the chapters listed
-below are the ones read; every other cited chapter of that book is still
-`[TOC]`.
-
-| Source | Chapter or section | Status | Date | Tool |
-|---|---|---|---|---|
-| S1 | eligibility and program-structure sections | read (sections) | 2026-10-14 | web |
-| S18 | public linearizability FAQ | read (sections) | 2026-10-19 | web |
-| S39 | sections 1–4.5 of the PDF | read (sections) | 2026-10-15 | web |
-| S39 | Appendix F change log, §5, Appendices A–E | not read | — | — |
-| S19 | ch. 1–2 | read | 2026-10-16 | books/ epub (OpenCode) |
-| S19 | ch. 6 (replication lag and stale reads) | read (sections) | 2026-10-19 | books/ epub (OpenCode) |
-| S19 | ch. 7 (sharding; when to avoid it) | read (sections) | 2026-10-19 | books/ epub (OpenCode) |
-| S19 | ch. 8 (distributed transactions: commit on some nodes, fail on others) | read (sections) | 2026-10-19 | books/ epub (OpenCode) |
-| S19 | ch. 10 (consistency and consensus) | read (sections) | 2026-10-19 | books/ epub (OpenCode) |
-| S19 | ch. 12 (consumer offsets, per-partition order, replay) | read (sections) | 2026-10-19 | books/ epub (OpenCode) |
-| S20 | ch. 4–6, 11, 19, 21–23 | read | 2026-10-16 | books/ epub (OpenCode) |
-| S20 | ch. 4 (concurrency models; the Node.js event loop and blocking CPU work) | read (sections) | 2026-10-19 | books/ epub (OpenCode) |
-| S20 | ch. 8 (component-based thinking; logical vs physical architecture) | read (sections) | 2026-10-19 | books/ epub (OpenCode) |
-| S26 | ch. 2–3, 16 | read | 2026-10-16 | books/ epub (OpenCode) |
-| S26 | ch. 4 (communication styles; inter-process failure modes) | read (sections) | 2026-10-19 | books/ epub (OpenCode) |
-| S27 | ch. 28 (upstream resiliency: load shedding, load leveling, rate limiting) | read | 2026-10-19 | books/ epub (OpenCode) |
-| S28 | ch. 1 (introduction to scalable systems), ch. 6 (distributed caching) | read | 2026-10-19 | books/ epub (OpenCode) |
-| S28 | ch. 4 (an overview of concurrent systems) | read (sections) | 2026-10-19 | books/ epub (OpenCode) |
-| S29 | ch. 2 (important distributed system concepts), ch. 16 (common failure patterns) | read | 2026-10-19 | books/ epub (OpenCode) |
-| S29 | ch. 14 (monitoring and observability patterns) | read (sections) | 2026-10-19 | books/ epub (OpenCode) |
-| S38 | all cited chapters | [TOC] | — | — |
-| S9 | full article | read | 2026-10-22 | web |
-| S10 | full article | read | 2026-10-22 | web |
-| S14 | full article | read | 2026-10-21 | web |
-| S33 | full article | read | 2026-10-14 | web |
-| S34 | full article | read | 2026-10-14 | web |
-| S35 | full article | read | 2026-10-14 | web |
-| S36 | full article | read | 2026-10-14 | web |
-| S37 | full article | read | 2026-10-14 | web |
-| S40 | full article | read | 2026-10-15 | web |
-| S41 | full article | read | 2026-10-15 | web |
-| S43 | full article | read | 2026-10-19 | web |
-| S44 | page | read | 2026-10-19 | web |
-| S45 | page | read | 2026-10-21 | web |
-| S46 | page | read | 2026-10-21 | web |
-| S47 | page | read | 2026-10-21 | web |
-| S48 | full repo at pinned commit 061a9087dc710f9d4b7644c88d329a2a341ffcad | read | 2026-10-21 | web |
-| S49 | majority of page; opening sections + output/tool-use/thinking/agentic sections | read | 2026-10-21 | web |
-| S50 | mechanics, pricing, structure, invalidation, tracking sections | read | 2026-10-21 | web |
-| S51 | full article | read | 2026-10-21 | web |
-| S52 | short overview | read | 2026-10-21 | web |
-| S53 | Welcome page incl. "GraphRAG vs Baseline RAG" and process sections | read | 2026-10-21 | web |
-| S54 | metric index page | read | 2026-10-21 | web |
-| S55 | homepage: what-is, key features, MCP relationship, governance | read | 2026-10-21 | web |
-| S56 | page | read | 2026-10-21 | web |
-| S57 | full article | read | 2026-10-21 | web |
-| S58 | README | read | 2026-10-21 | web |
-| S59 | majority; key-considerations, use-cases, prompting-techniques sections | read | 2026-10-21 | web |
-| S60 | page | read | 2026-10-21 | web |
-| S61 | full article | read | 2026-10-21 | web |
-| S64 | full page | read | 2026-10-24 | web |
-| S65 | full article | read | 2026-10-24 | web |
-| S66 | full article | read | 2026-10-24 | web |
-| S67 | both pages | read | 2026-10-24 | web |
-| S68 | full page | read | 2026-10-24 | web |
-| S69 | cover, contents, and sampled chapter-opening passages; crosswalk sections mapped from contents, not read in full | partial; all mapped chapter sections remain `[TOC]` until opened at teach time | 2026-10-24 | local PDF |
-| S70 | full page: definition, process, GLASGOW steps, and limitations | read | 2026-11-06 | web |
-| S71 | abstract only | partial; full article not read | 2026-11-06 | web |
-
-## References to verify
-
-These are research leads, not evidence. Keep them here until the exact artifact
-is opened and checked. Do not cite a person or organization by name alone.
-
-- [AI Engineering from Scratch](https://github.com/rohitg00/ai-engineering-from-scratch): reference implementation repository. Evaluated 2026-10-22; filter strictly to avoid pre-training, deep learning foundations, and math from scratch (out of FDE scope). Serves as an example bank for pure Python LLM components, structured outputs, and basic agentic loops.
-- A first-party customer deployment case study with measured adoption and business outcomes at honest provenance (leads: Coinbase support-chatbot write-up, Thomson Reuters CoCounsel/Cowork write-ups — vendor-reported numbers only until independently confirmed).
-- The titles *A Common-Sense Guide to AI Engineering* and *An Illustrated
-  Guide to AI Agents* must each be tied to a canonical publication page or
-  publisher listing before use.
-
-- **S38 — *Software Architecture: The Hard Parts: Modern Trade-Off Analyses for Distributed Architectures*, Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani, First Edition** — O'Reilly Media, October 2021. ISBN-13: 978-1-492-08688-8. [Publisher page](https://www.oreilly.com/library/view/software-architecture-the/9781492086888/). Bibliographic details verified from canonical publisher listing (2026-10-17). Uploaded in both study tools (available as a study source per learner crosswalk of 2026-10-14), though not present as a local EPUB file in `/books/` on disk for this agent. Stays in References to verify because no chapter text has been read or examined by the mentor; all chapter citations in the journey remain `[TOC]` only.
-- Performance case candidates named from memory, not opened: Facebook's September 2010 outage; Slack's 2021-01-04 outage; AWS us-east-1 on 2025-10-20. Confirm each exists, read the postmortem, and discard any that do not fit a level. Candidate levels for the first two are L4 and L8.
-- A primary statistics-for-LLM-evaluation tutorial covering variance, sample size, and meaningful comparison (applied level per journey rule 9 — no ML-theory texts).
-- Integration hardening still to open (leads, unopened on 2026-09-30; migrated from estaie-study-map 2026-10-09 — open and record exact section before teaching): Google SRE ch. 22 cascading failures (https://sre.google/sre-book/addressing-cascading-failures/); Kleppmann distributed locking (https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html) + antirez Redlock reply (https://www.antirez.com/news/101); transactional outbox (https://microservices.io/patterns/data/transactional-outbox.html); Supabase range columns (https://supabase.com/blog/range-columns); Django ExclusionConstraint (https://docs.djangoproject.com/en/dev/ref/contrib/postgres/constraints); RateGain ARI push (https://developer.rategain.com/our-products/channel-manager/rg-bridge-supply-push/interface-specifications-availability-and-rates-notification-service); oneuptime Stripe-webhook atomic-enqueue 2026-09-13 (https://oneuptime.com/blog/post/2026-09-13-stripe-webhook-event-id-atomic-enqueue/view — Tier 2, confirm against provider docs). The Stripe idempotency, AWS retry, GitHub webhook, Stripe webhook, and Airbnb double-payments leads were opened and are registered as S64–S68.
-- Further agent-incident primaries beyond EchoLeak (e.g., names in the OWASP Agentic 2026 announcement) — open the primary before any casebook use.
-- OpenAI Datasets / evaluation-getting-started guide (successor to the deprecated S22 flow). S12 (Anthropic enterprise guide) and S14 (code execution with MCP) are verified; what remains a lead here is the procedural detail inside each (workflow sequences, the MCP code-API pattern).
-- RFC 9457, *Problem Details for HTTP APIs* (https://www.rfc-editor.org/rfc/rfc9457; IETF Proposed Standard, July 2023; obsoletes RFC 7807). Found, not read. Candidate unit: P4.3.
-- RFC 9700 / BCP 240, *Best Current Practice for OAuth 2.0 Security* (https://www.rfc-editor.org/rfc/rfc9700; January 2025). Found, not read. Candidate unit: P4.8b; also cross-check S6's OAuth statements.
-- Postman, *API Security Best Practices* (https://blog.postman.com/api-security-best-practices/; dated 2026-02-19 in the learner's list). Not opened; at most a secondary checklist, never a substitute for S39, OWASP, or primary platform documentation.
-- Cloudflare API Shield, BOLA vulnerability detection (https://developers.cloudflare.com/api-shield/security/bola-vulnerability-detection/; updated 2026-09-29 in the learner's list). Not opened; product-specific, so separate Cloudflare's detection description from general authorization-testing requirements.
-- Stripe's AI-benchmark repository (https://github.com/stripe/ai/tree/main/benchmarks), described in S37. Not opened.
-- OpenAPI Specification 3.1 (https://spec.openapis.org/oas/v3.1.0; JSON Schema 2020-12 dialect): lead for P4.3's contract-source-of-truth artifact (one machine-readable contract document) and the P4.8a contract-sheet claims; not opened.
-- roadmap.sh pages for API security best practices, backend, software architect, and forward deployed engineer: all four were opened 2026-10-14. They render their skill nodes client-side and the fetched text contained none (only page descriptions and, on the Backend page, introductory prose), so no skill cluster could be extracted and none is registered as a source.
-- Roadmap-linked primaries (S48's five layers) not opened in the 2026-10-21 alignment pass because no unit edit hung on them; open at teach time when a lesson needs one: MCP build-server tutorial (https://modelcontextprotocol.io/docs/develop/build-server; spec S6 already registered), Qdrant reranking/hybrid-search tutorial (https://qdrant.tech/documentation/tutorials-basics/reranking-hybrid-search/), OpenAI structured-outputs guide (https://developers.openai.com/api/docs/guides/structured-outputs), Anthropic define-success-criteria/develop-tests page (https://platform.claude.com/docs/en/test-and-evaluate/develop-tests — unreachable from this environment; recheck), Arize Phoenix docs (https://arize.com/docs/phoenix), LangGraph Academy intro course (https://academy.langchain.com/courses/intro-to-langgraph — framework track; likely excluded by the journey's framework-agnostic stance), Python official tutorial venv chapters and httpx async guide (https://docs.python.org/3/tutorial/, https://www.python-httpx.org/async/ — for the P11.2 lab environment, cited only if taught). OWASP LLM Top 10 canonical URL (S16's registration) should be rechecked: genai.owasp.org/llm-top-10/ did not respond 2026-10-21; promptfoo's docs link the project page at owasp.org/www-project-top-10-for-large-language-model-applications/ instead.
-- Additional high-signal leads may be added only as links to specific articles,
-  talks, papers, repos, or course pages; generic names and broad lists are not
-  accepted entries.
-
-## Coverage gaps
-
-- No verified primary source yet provides a practical statistical treatment for comparing noisy LLM evaluation results (P14.3 uses the labeled interim protocol). S69 ch. 32 §32.14 and ch. 33 §33.8 are mapped as practical coverage leads, not verified statistical methodology, and do not close this gap.
-- Webhook signature verification and raw-request-body handling are covered for two providers by S67 (GitHub) and S68 (Stripe). The residual gap is provider-specific behavior beyond those two (other signature schemes, retry windows, ordering guarantees) and first-party implementation evidence for P8.4.
-- F3 (Node.js Learn) is registered at landing level; the P3.5 event-loop page is now recorded in the F3 row (2026-10-21). Exact pages for P3.6 and P7.2 (diagnostics, testing, security) are still not recorded.
-- OAuth and credential-lifecycle depth for P4.8b is only partly covered by S6 (MCP-specific); RFC 9700 and provider documentation remain to be read.
-- No source measures the effect of human-review practices on the quality of AI-generated code; S37 is a small vendor benchmark and S40 and S41 are qualitative vendor and practitioner material.
-- No verified evidence on the learning outcomes of review-first curricula — that is, of teaching a learner to delegate implementation and review it, rather than to write it. S43 is a vendor team's own review process and S44 measures skill formation during AI-assisted coding, not the outcomes of a review-first curriculum. Treat the hand-writing-versus-review rule as a design decision to be checked against the learner's own evidence, not as a rule a source has established.
-- No verified ingestion/access-control lifecycle how-to yet for P12.2/P15.4 (permission inheritance, retention, deletion).
-- Residual RAG depth gap: chunking, embedding, and reranking tuning beyond the Barnett FP taxonomy.
-- Enterprise outcome numbers with independent provenance (narratives exist as vendor-reported leads).
-
-Lessons must name these as gaps rather than cite them as evidence. Scope guard: nothing in these gaps authorizes ML training, model-building, or researcher topics — fill them only with GenAI-application engineering sources (journey rule 9).
-
-## Update procedure
-
-Entry maintenance follows the Source-triage steps in `TEACHING-PROTOCOLS.md`
-P§9: open the primary source, confirm title, publisher, relevance, and
-currency, record the date and the exact sections read, and move failed or
-stale entries out of the verified section. Never silently re-classify an
-entry.
