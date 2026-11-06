@@ -12,6 +12,8 @@ depends_on:
 
 **Goal:** Treat a model as a probabilistic component behind an explicit software contract.
 
+**Lesson sequence (S48):** Teach the model contract first; then request shape and structured output; then prompt/context versioning and prompt caching; finish by deciding where an LLM belongs and what contains its failures. Use one small provider-backed example, and require a typed result plus a visible failure before moving on.
+
 **Handbook reading path (S69 [TOC]):** Ch. 32 §§32.1–32.2, 32.4–32.5, 32.7–32.10, 32.13–32.14, 32.18 (model guarantees at backend depth, request shape, streaming, structured output, prompt design, reliability, cost/latency, tracing, evaluation, quota control). Skip §32.3's NestJS implementation example; implement the adapter in Python and recheck every live provider detail against its current official docs.
 
 - **P11.1 — What a language model does and does not guarantee** — **Priority:** important. Depends on: P10.2, P4.6. Generation, nondeterminism, context limits, stale knowledge, and confident errors at an engineering level; no unnecessary ML math. **Proof:** list use-case-specific failure modes and what cannot be guaranteed. Sources: S3, S11.

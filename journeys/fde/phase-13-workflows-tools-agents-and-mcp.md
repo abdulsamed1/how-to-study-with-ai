@@ -14,6 +14,8 @@ depends_on:
 
 **Goal:** Increase autonomy only when the workflow needs it and controls are adequate.
 
+**Lesson sequence (S48):** Begin with fixed workflows and compare them with an agent; define tool schemas and permissions; add a bounded loop with step, time, and cost limits; then add checkpoints, human approval, and MCP integration. Treat multi-agent, voice, and browser surfaces as optional comparisons that require evaluation evidence.
+
 **Handbook reading path (S69 [TOC]):** Ch. 32 §§32.6, 32.8, 32.11, 32.13, 32.17 (tool calls, reliability, prompt-injection/data protection overview, LLM observability, agents/MCP); Ch. 19 §§19.3–19.10, 19.20–19.21 (worker bounds, delivery, retries, idempotent consumers, backpressure, monitoring); Ch. 36 §36.29 (safe use of coding assistants). Keep the workflow/single-agent baseline first; framework- or provider-specific implementation is chosen only after the contract and evaluation are clear.
 
 - **P13.1 — Workflow patterns before agents** — **Priority:** important. Depends on: P7.1, P10.2, P11.6. Role split: where P10.2 decided whether AI is justified and P11.6 where the model call sits, this unit supplies the pattern mechanics — chaining, routing, parallelization, orchestrator/worker, and evaluator/optimizer. **Proof:** map a task to a workflow pattern and explain why. Sources: S3, S12, S23 (current official SDK documentation covering the same workflow patterns; verify its examples at teach time).
