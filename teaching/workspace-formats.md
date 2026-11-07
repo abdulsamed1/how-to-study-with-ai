@@ -54,6 +54,7 @@ Rules: add a term only when the user can use it correctly (compressing a concept
     <1-3 sentences: what, and why it changes what to teach next.>
 
 Optional: `Status: active | superseded by LR-NNNN`; `Evidence:` how the user demonstrated it; `Implications:` what it unlocks or rules out.
+Required for a taught unit: `Scope: <formal Journey Unit ID or stable temporary Scope ID>`.
 When a future review is warranted, add one stable `Retrieval target` block:
 
     Retrieval target: <concept, skill, capability, or existing unit ID>

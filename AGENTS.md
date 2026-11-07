@@ -32,8 +32,10 @@ depends_on:
 | Any learning response | [mentor contract](teaching/mentor-contract.md), [language and style](governance/language-and-style.md) |
 | Source selection or citation | [source policy](governance/source-policy.md), [resources](workspace/resources.md) |
 | Session start or close | [modes](teaching/modes.md), [session protocol](teaching/session-protocol.md), [mission](workspace/mission.md), [evidence](workspace/evidence.md); persist a retrieval target through [retrieval protocol](teaching/retrieval-protocol.md) when future review is warranted |
+| Lesson preparation | [study pack](teaching/study-pack-protocol.md), [source policy](governance/source-policy.md), then the active journey or temporary scope |
 | Lesson delivery | [lesson blueprint](teaching/head-first-lesson-blueprint.md), [lesson protocol](teaching/lesson-protocol.md), [pedagogical principles](teaching/pedagogical-principles.md), [scaffolding and feedback](teaching/scaffolding-and-feedback.md), then the active journey or temporary scope |
-| Lesson design or review | [lesson blueprint](teaching/head-first-lesson-blueprint.md), [visual explanations](teaching/visual-explanations.md), [pedagogical quality gate](teaching/pedagogical-quality-gate.md) |
+| Visual instruction | [visual explanations](teaching/visual-explanations.md) when a visual can reduce conceptual complexity |
+| Lesson review | [pedagogical quality gate](teaching/pedagogical-quality-gate.md), with the [lesson blueprint](teaching/head-first-lesson-blueprint.md) and [visual explanations](teaching/visual-explanations.md) when relevant |
 | Retrieval, retention, or transfer | [retrieval and transfer](teaching/retrieval-and-transfer.md), [retrieval protocol](teaching/retrieval-protocol.md), [evidence](workspace/evidence.md) |
 | Topic without a journey unit | [branch map and general-topic routing](teaching/branch-map-protocol.md), [workspace formats](teaching/workspace-formats.md), [source policy](governance/source-policy.md) |
 | Behavioral acceptance | [behavioral acceptance fixture](teaching/behavioral-acceptance-fixture.md), [pedagogical quality gate](teaching/pedagogical-quality-gate.md) |

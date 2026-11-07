@@ -47,14 +47,11 @@ choice” means the source informs the design but does not establish that this
 repository's implementation is superior. “Original system design decision” means no
 qualifying pedagogical source is currently registered for the specific rule.
 
-| Principle(s) | Supporting source IDs | Evidence type | Limitation |
-|---|---|---|---|
-| P01–P04, P10 | S70, S71 | Research-informed design choice: learner-centred case work, prior-knowledge activation, facilitator variation | S70 is a university method guide with mixed comparative findings; S71 is abstract-only and does not validate this AI-tutor sequence. |
-| P05, P07–P09 | — | Original system design decision | No registered source currently supports this exact progressive-disclosure and visual-selection procedure; do not present it as an established effect. |
-| P11 | — | Original system design decision | No registered source currently establishes this escalation ladder for this repository. |
-| P12 | — | Original system design decision | Retrieval and review fields are operationally specified, but no registered retrieval/spacing study is currently in the catalogue. |
-| P13 | — | Original system design decision | Transfer is a journey assessment requirement; no registered source currently validates this exact fixture. |
-| P06, P14 | — | Original system design decision | Realistic scenarios and restrained engagement are design constraints, not claims about universal learning effects. |
+| Principle(s) | Supporting source IDs | Evidence type | Scope of support | Limitation |
+|---|---|---|---|---|
+| P01–P02 | S70 | Research-informed design choice | Case framing, issue identification, prior-knowledge activation, and learner-set goals in PBL method design | S70 is a university method guide with mixed comparative findings; it does not validate this AI-tutor sequence or prove superior outcomes. |
+| P04 | S70, S71 | Research-informed design choice | Facilitator variation and the fact that PBL is a family of methods rather than one fixed procedure | S71 is abstract-only; neither source supports a specific adaptive algorithm or interaction policy. |
+| P03, P05–P14 | — | Original system design decision | Repository-specific choices for prediction, disclosure, representations, feedback, retrieval, transfer, scenarios, and tone | No qualifying source for these exact rules is currently registered; do not present them as empirically established effects. |
 
 ## Operating constraints
 

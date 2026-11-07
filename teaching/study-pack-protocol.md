@@ -24,15 +24,25 @@ For each source needed by a lesson:
 
 ### Lesson preparation
 
-Select one usable unit from the active journey, or one established temporary Scope ID
-from [general-topic routing](branch-map-protocol.md) when no journey unit fits. Open
-only its Verified source IDs and the specific sections needed for that scope; do not
-load the entire library into every lesson. Prepare one realistic problem, one
-learner-framing prompt, the causal problem chain, a compact concept-link map from
-journey or scope metadata, the relevant edge cases, and retrieval questions for
-Parts 2–3. Prepare exactly one final practice task only when the lesson type requires
-independent practice. Label lesson text as Source-backed fact, Mentor synthesis, or
-Practice.
+Select one usable [Journey Unit](../journeys/fde/journey-overview.md) or one
+established [Temporary Learning Scope](branch-map-protocol.md#general-topic-routing).
+Both are valid scope sources; an unrelated temporary topic does not require loading
+or creating an FDE journey unit. Open only the selected scope's Verified source IDs
+and the specific sections needed for that scope; do not load the entire library into
+every lesson. Prepare one realistic problem, one learner-framing prompt, the causal
+problem chain, a compact concept-link map from scope metadata, the relevant edge
+cases, and retrieval questions for Parts 2–3. Prepare exactly one final practice
+task only when the lesson type requires independent practice. Label lesson text as
+Source-backed fact, Mentor synthesis, or Practice.
+
+The scope handoff is explicit and stable:
+
+| Stage | Required handoff |
+|---|---|
+| Topic request and scope creation | Stable Journey Unit ID or `TMP:<topic-slug>:<version>` Scope ID, one owner, one objective, prerequisites, source tags, and proof boundary |
+| Source preparation and study pack | The same Scope ID, verified source sections, concept links, edge cases, and retrieval questions |
+| Lesson blueprint and delivery | The same Scope ID, one outcome, and the scope's prerequisite and evidence boundary |
+| Learning record and retrieval | The same Scope ID in the record, demonstrated evidence, and one stable retrieval target when review is warranted |
 
 Decide the unit's working mode before preparing the practice task, and record
 it with the lesson: (1) the learner writes and debugs the code; (2) the
@@ -51,7 +61,7 @@ and which modes need it:
 | `../workspace/mission.md` | why the user is learning this | every session | the user; the mentor drafts it only with the user's confirmation | A, B, C |
 | `../AGENTS.md` | how to teach | every session | the user | A, B, C |
 | `session-protocol.md` | procedures and formats | when a session needs one | the user | A, B, C |
-| `../journeys/fde/journey-overview.md` | the canonical FDE journey | every session: rules, gates, route layer, and current phase | the user | A, B, C |
+| `active scope` | the selected Journey Unit or established Temporary Learning Scope | every lesson: scope metadata, prerequisites, source tags, and proof boundary | the user; the mentor records temporary scopes through [branch-map and general-topic routing](branch-map-protocol.md) | A, B, C |
 | `../journeys/performance/study-overview.md` | the performance branch | when the journey opens it | the user | A, B, C |
 | `../workspace/resources.md` | canonical source catalog | before teaching: relevant rows and status, and on every source claim | the user | A, B, C |
 | `../workspace/evidence.md` | the evidence ledger | every session | the user | A, B, C |
@@ -59,9 +69,10 @@ and which modes need it:
 | `casebook/` | real failures per concept | when a case is researched | the user | A, B, C |
 | `learning-records/` | evidence of understanding | when a record is earned | the user | A, B, C |
 
-The first seven are the minimum set for a lesson. For the journey or temporary scope
-and catalog, "minimum set" means their rules and current scope metadata, not every
-phase or row ([context loading](context-loading.md)). `GLOSSARY.md`, `casebook/` and `learning-records/` are
+The repository files listed above plus the selected active scope and relevant catalogue
+rows are the minimum set for a lesson. For a journey or temporary scope and catalog,
+"minimum set" means their rules and current scope metadata, not every phase or row of
+a catalog ([context loading](context-loading.md)). `GLOSSARY.md`, `casebook/` and `learning-records/` are
 created as the first file for them exists (P§1).
 
 In a chat tool, use these files as project sources and keep instructions
