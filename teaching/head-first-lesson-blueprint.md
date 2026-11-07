@@ -17,6 +17,7 @@ Not every field needs a distinct teaching move.
 |---|---|
 | Outcome | What observable capability will the learner demonstrate? |
 | Existing knowledge | What evidence, records, and diagnostic response show what is already known? |
+| Scope and owner | Which formal journey unit or temporary Scope ID owns this lesson, and what is its boundary? |
 | Prerequisites | Which hard prerequisite must be verified, and which adjacent concept can remain a bridge? |
 | Gaps | What is the smallest missing relationship needed for this outcome? |
 | Misconceptions | Which tempting model or incorrect approach should be tested? |
@@ -36,7 +37,7 @@ Not every field needs a distinct teaching move.
 
 ## Design sequence
 
-1. Select the journey unit, source boundary, and one outcome.
+1. Select the formal journey unit or temporary Scope ID, source boundary, and one outcome.
 2. Fill only the fields needed to choose the next instructional move.
 3. Begin with the problem and ask one focused framing or prediction question.
 4. Update gaps, misconceptions, and support level from the response.

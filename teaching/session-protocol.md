@@ -11,8 +11,8 @@ depends_on:
 
 ## P§6. Setting up each tool
 
-Per-tool setup lives here. `../AGENTS.md` section 2 defines the modes; this file
-only says how to configure each tool.
+Per-tool setup lives here. [modes.md](modes.md) defines the modes; this file only
+says how to configure each tool.
 
 **Python toolchain (required before P2.1; verify installed, do not assume).**
 
@@ -41,7 +41,7 @@ only says how to configure each tool.
 
 *ChatGPT Project*
 - Upload the files in the P§9 manifest. File limits depend on the plan; check the current limit in OpenAI's help article "Projects in ChatGPT".
-- In Project settings, set Memory to Project-only, and enable the account memory settings the article lists. Memory changes can take a few hours to apply. Project memory shows no list, so the mentor confirms recalled state at the start of each session (`../AGENTS.md` section 2).
+- In Project settings, set Memory to Project-only, and enable the account memory settings the article lists. Memory changes can take a few hours to apply. Project memory shows no list, so the mentor confirms recalled state at the start of each session ([modes.md](modes.md)).
 - Project instructions (short, because the full rules are in the uploaded file):
 
       Follow ../AGENTS.md in the project files exactly. Use session-protocol.md only when ../AGENTS.md points to it. The active journey file is the one the user names, otherwise ask.
@@ -72,7 +72,7 @@ for syncing chat-mode progress into the repository.
     Glossary terms earned: <term — one-line definition>                (P§1 format)
     EVIDENCE changes: <Supported by evidence | Needs learning | Must not be claimed — claim, then the file, commit, record, or demo that proves it>
     RESOURCES changes: <S-ID — status change, or a new lead with its URL and what it would support>
-    Next unit: <unit ID and part>
+    Next unit or scope: <formal unit ID or temporary Scope ID and part>
 
 The repository is the source of truth. The workspace agent merges an export in
 this order: `learning-records/` file first, then `GLOSSARY.md`, then the three
@@ -83,3 +83,4 @@ repository without asking the user which is current.
 The retrieval line is optional when no future review is warranted. When present, it
 updates the matching stable target rather than creating a duplicate. Older exports
 without the line remain valid and are interpreted as having no retrieval metadata.
+State the applicable mode at session start using [teaching/modes.md](modes.md).

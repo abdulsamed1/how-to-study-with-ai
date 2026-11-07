@@ -63,6 +63,7 @@ intervals or claim a review schedule is evidence-based without a registered sour
 ## Close and record
 
 End the lesson with exactly one practice task when [P§3](lesson-protocol.md) requires
-it. Record what the learner independently demonstrated, what remained supported, the
+independent practice. Diagnostic and retrieval questions do not count as practice.
+Record what the learner independently demonstrated, what remained supported, the
 misconception corrected, and the next retrieval target. Do not advance because content
 was covered.

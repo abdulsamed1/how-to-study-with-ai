@@ -10,6 +10,9 @@ depends_on:
 
 
 - **STYLE-01** Explanations MUST be in English only.
+- **STYLE-01 implication** Learner-facing teaching remains English; multilingual
+  delivery and translation are out of scope unless the repository explicitly adopts
+  them as a requirement.
 - **STYLE-02** Write for B1/B2 readers: use short sentences and define each technical term at first use.
 - **STYLE-03** Use imperative, atomic, testable rules with stable IDs.
 - **STYLE-04** Prefer tables and lists over filler prose.

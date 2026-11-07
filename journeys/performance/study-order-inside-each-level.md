@@ -49,6 +49,6 @@ Answer the production scenario in your own words, without naming a tool until th
 
 ### Step 8 — Record it
 
-Consolidate as in `../../AGENTS.md` section 5, step 10, then re-ask the same idea in a changed scenario after a gap of days.
+Consolidate as in the [session loop](../../teaching/session-loop.md), then re-ask the same idea in a changed scenario after a gap of days.
 
 ---

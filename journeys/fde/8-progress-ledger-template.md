@@ -38,7 +38,7 @@ No live unit ID changes in this structural pass. The table records retired units
 
 | Old ID | New ID | Status |
 |---|---|---|
-| P0.1 | P2.1 + P10.2 | merged; the demo / working-system / deployed-outcome distinction stays definitional in `../../AGENTS.md` §6 and is applied in P10.2; P2.1 no longer draws a delivery-loop diagram |
+| P0.1 | P2.1 + P10.2 | merged; the demo / working-system / deployed-outcome distinction stays definitional in the [delivery loop](../../teaching/delivery-loop.md) and is applied in P10.2; P2.1 no longer draws a delivery-loop diagram |
 | P0.2 | P2.1 | merged; toolchain check and a short evidence-based baseline in `../../workspace/evidence.md` |
 | P0.3 | P2.1 + P10.1 | split by stage; P2.1 keeps only the five-line Problem Card (`docs/problem-card.md`), and P10.1 produces the evidence-informed workflow map and problem statement |
 | P1.1 | P2.1 | merged; virtual environment, paths, processes, and environment variables bootstrapped in P2.1 |

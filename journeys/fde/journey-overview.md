@@ -16,7 +16,7 @@ depends_on:
 
 Phases 0-1 were merged into Phase 2; the old-to-new mapping is in §8.
 
-**Loading:** follow `../../AGENTS.md` §4. Read this map by section; the phase headings are the boundaries.
+**Loading:** follow [context loading](../../teaching/context-loading.md). Read this map by section; the phase headings are the boundaries.
 
 ---
 
@@ -24,14 +24,20 @@ Phases 0-1 were merged into Phase 2; the old-to-new mapping is in §8.
 
 1. **Follow dependencies, not enthusiasm.** Each lesson lists its prerequisite lesson IDs. A lesson is ready only when its prerequisite's exit evidence exists.
 2. **Teach one lesson unit at a time.** Progression is competency-based and self-paced: a unit is complete when its proof artifact meets the exit criteria, not when a clock expires. Standard units cover one focused capability; implementation units span larger multi-part builds.
-3. **Teaching mechanics live in `../../AGENTS.md`.** The lesson loop (teach → model → practice → review → retrieve later), evidence/synthesis separation, spacing, records, and honest phrasing of experience follow `../../AGENTS.md` §3, §5, §8, §11, and §13 — this map does not restate them.
+3. **Teaching mechanics live in the routed teaching procedures.** The lesson loop,
+   evidence and synthesis separation, retrieval, records, and honest capability
+   claims follow [lesson protocol](../../teaching/lesson-protocol.md),
+   [retrieval and transfer](../../teaching/retrieval-and-transfer.md),
+   [workspace formats](../../teaching/workspace-formats.md), and
+   [evidence policy](../../governance/evidence-policy.md).
 4. **No progress by attendance.** Mark a lesson complete only when its proof artifact or practical performance meets the exit criteria.
 5. **Respect established experience.** The user already has C++, OOP, and DSA experience. Do not teach beginner programming, object-oriented programming, or generic algorithm lessons. Use diagnostics to identify only the language, runtime, API, data, or AI-engineering gaps needed for the capstone.
 6. **One evolving capstone.** Build a small, deterministic business workflow first; add persistence and integrations; introduce AI only when the use case justifies it; then evaluate, secure, deploy, pilot, and document it. Keep scope narrow.
 7. **Source discipline.** `../../workspace/resources.md` remains the canonical project source register. Existing `S#` tags refer to it. The `F#` references below are official starting points checked on 2026-10-09; re-open the relevant page and record the exact section/version before teaching. Current API/model/security behavior must be verified at lesson time. A chapter tagged `[TOC]` was identified from a book's table of contents only and has not been read; keep the tag until the exact passage is read in an available tool and recorded in the `../../workspace/resources.md` reading-status table. A read that covered only the supporting sections is tagged `(read: <sections>)`; a chapter read in full is tagged `(read)`.
 8. **This is a dependency graph represented as a mostly linear path.** Some concepts can be revisited later. Do not force advanced internals when the mission does not need them.
 9. **Stay on the FDE/AI-engineer track.** Out of scope: training or building foundation models, ML research, and math beyond the applied evaluation protocol in P14.3 (see `../../workspace/mission.md`). Teach models and providers as engineering constraints — guarantees, cost, latency, failure modes — never as model internals.
-10. **Human-in-the-loop engineering.** The learner directs coding agents and stays accountable for the result; an agent's output is an input to review, never proof by itself. Before delegating, write the problem, requirements, constraints, acceptance criteria, and architecture decisions. After the agent changes the code, review the diff, its dependencies and side effects, and the tests it wrote; design at least one verification independently of the agent's own tests; observe the real behavior across API, application logic, database, and user-facing workflow; diagnose failures from logs, traces, measurements, and failure injection; then record accept, reject, or redirect with evidence (the agent review record in section 3). Passing tests are necessary, not sufficient (S40, S41). A lab proves a lab skill: label simulated data and pilots honestly, and phrase missing experience with the honesty rules in `../../AGENTS.md` §11. Projects in languages the capstone does not need (for example Rust) remain code-review contexts, not additional language tracks.
+10. **Human-in-the-loop engineering.** The learner directs coding agents and stays accountable for the result; an agent's output is an input to review, never proof by itself. Before delegating, write the problem, requirements, constraints, acceptance criteria, and architecture decisions. After the agent changes the code, review the diff, its dependencies and side effects, and the tests it wrote; design at least one verification independently of the agent's own tests; observe the real behavior across API, application logic, database, and user-facing workflow; diagnose failures from logs, traces, measurements, and failure injection; then record accept, reject, or redirect with evidence (the agent review record in section 3). Passing tests are necessary, not sufficient (S40, S41). A lab proves a lab skill: label simulated data and pilots honestly, and phrase
+missing experience using [evidence policy](../../governance/evidence-policy.md). Projects in languages the capstone does not need (for example Rust) remain code-review contexts, not additional language tracks.
 
 11. **Hand-writing versus review.** Hand-write first when the skill is the learning target: a new concept the learner has not yet demonstrated unaided, correctness-critical work (transactions, concurrency, authorization, idempotency), and debugging. Delegate repeated mechanics and work in skills the learner has already demonstrated unaided; the delegation brief, diff review, independent verification, and accept/reject/redirect decision stay exactly as in rule 10. When an agent is used to learn, use it to build comprehension as well as output — ask it for explanations and conceptual questions, not only for code (S44). Delegating never transfers accountability: the learner still explains, modifies, or fixes the result without the agent, and owns it in the evidence pack (P17.3–P17.4) (S43).
 
@@ -117,7 +123,7 @@ Every lesson follows this record shape:
 
 ### Priority
 
-Each unit carries one of three priorities, keeping the priority vocabulary of the pre-rewrite journey map so the readiness check in `../../AGENTS.md` §4 has the metadata it names:
+Each unit carries one of three priorities, keeping the priority vocabulary of the pre-rewrite journey map so the readiness check in [context loading](../../teaching/context-loading.md) has the metadata it names:
 
 - **must-have** — the unit sits on the capstone's critical path: it is a dependency hub (seven or more units depend on it), it closes a gap listed in `../../workspace/evidence.md`, it produces the G1 Problem Card/short baseline, the provider contract sheet, the regression gate, or the threat model, or it is a Phase 17 capstone unit (selection, build, evidence pack, or defense).
 - **important** — expected on the standard path: later units build on it or it grounds a phase gate.

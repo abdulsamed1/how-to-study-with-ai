@@ -71,7 +71,7 @@ These materials are treated as **scenario input**, not as a substitute for sourc
 
 ## 5. Casebook seeds
 
-Case candidates and their verification state live in `../../workspace/resources.md` and `casebook/INDEX.md`. The procedure is `../../teaching/session-protocol.md` P§2, and the case-count threshold and gap recording follow `../../AGENTS.md` §9.
+Case candidates and their verification state live in `../../workspace/resources.md` and `casebook/INDEX.md`. The procedure is `../../teaching/research-protocol.md`, and the case-count threshold and gap recording follow the [research protocol](../../teaching/research-protocol.md).
 
 The cases below are the ones this branch teaches from, with the level each one serves. Their source status is in `../../workspace/resources.md`.
 

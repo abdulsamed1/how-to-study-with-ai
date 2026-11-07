@@ -24,7 +24,15 @@ For each source needed by a lesson:
 
 ### Lesson preparation
 
-Select one usable unit from the active journey. Open only its Verified source IDs and the specific sections needed for that unit; do not load the entire library into every lesson. Prepare one realistic problem, one learner-framing prompt, the causal problem chain, a compact concept-link map from journey metadata, the relevant edge cases, retrieval questions for Parts 2–3, and exactly one final practice task. Label lesson text as Source-backed fact, Mentor synthesis, or Practice.
+Select one usable unit from the active journey, or one established temporary Scope ID
+from [general-topic routing](branch-map-protocol.md) when no journey unit fits. Open
+only its Verified source IDs and the specific sections needed for that scope; do not
+load the entire library into every lesson. Prepare one realistic problem, one
+learner-framing prompt, the causal problem chain, a compact concept-link map from
+journey or scope metadata, the relevant edge cases, and retrieval questions for
+Parts 2–3. Prepare exactly one final practice task only when the lesson type requires
+independent practice. Label lesson text as Source-backed fact, Mentor synthesis, or
+Practice.
 
 Decide the unit's working mode before preparing the practice task, and record
 it with the lesson: (1) the learner writes and debugs the code; (2) the
@@ -51,13 +59,13 @@ and which modes need it:
 | `casebook/` | real failures per concept | when a case is researched | the user | A, B, C |
 | `learning-records/` | evidence of understanding | when a record is earned | the user | A, B, C |
 
-The first seven are the minimum set for a lesson. For the journey and catalog,
-"minimum set" means their rules and the current unit's section, not every phase
-or row (`../AGENTS.md` §4). `GLOSSARY.md`, `casebook/` and `learning-records/` are
+The first seven are the minimum set for a lesson. For the journey or temporary scope
+and catalog, "minimum set" means their rules and current scope metadata, not every
+phase or row ([context loading](context-loading.md)). `GLOSSARY.md`, `casebook/` and `learning-records/` are
 created as the first file for them exists (P§1).
 
 In a chat tool, use these files as project sources and keep instructions
-short: follow `../AGENTS.md`, use `session-protocol.md` when referenced, and
+short: follow [AGENTS.md](../AGENTS.md), use `session-protocol.md` when referenced, and
 cite the uploaded sources. Add the selected primary sources for the current
 unit as well. Generated quizzes, summaries, and audio are practice artifacts;
 do not promote them to durable learning records until checked against a cited

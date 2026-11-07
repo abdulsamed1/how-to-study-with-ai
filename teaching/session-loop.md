@@ -18,11 +18,16 @@ depends_on:
    those concepts; it must not become an independently taught concept without being
    counted. If more than two primary concepts are needed, sequence the remainder
    into later units. Do not silently exceed the limit.
-5. Research current claims and relevant production cases (section 10). Select the
-   sources and cases that best support the current concepts; supporting material
+5. Research current claims and relevant production cases using the
+   [research protocol](research-protocol.md). Select the sources and cases that
+   best support the current concepts; supporting material
    does not increase the primary concept count.
-6. Teach the unit through a realistic enterprise scenario, in parts (section 8, P§3).
-7. Give exactly ONE practice task. Wait for the user.
+6. Teach the unit through a realistic enterprise scenario, in parts
+   ([lesson protocol](lesson-protocol.md) P§3). A temporary scope may use the same
+   parts after its scope record is established.
+7. Give exactly ONE practice task when the lesson type requires independent practice.
+   A diagnostic question frames the problem, a retrieval question checks recall, and
+   neither counts as the practice task. Wait for the user's practice response.
 8. Evaluate the decision and the reasoning, not only the final code. Correct the smallest important misconception.
 9. Re-test the same core idea in a changed scenario when needed.
 10. Consolidate what the user demonstrated: learning record, glossary term (only once the user uses it correctly), reference sheet, casebook.

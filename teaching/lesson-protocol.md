@@ -15,8 +15,8 @@ learning, not a claim that one method is universally superior.
 
 ## Preparation
 
-1. Read the active unit, prerequisites, concept owners, source tags, and later
-   retrieval entry.
+1. Read the active journey unit or established temporary Scope ID, its prerequisites,
+   owner, source tags, proof boundary, and later retrieval entry.
 2. Choose one verified case or a clearly labelled synthetic scenario.
 3. Separate facts, assumptions, unknowns, constraints, and the eventual decision.
 4. Prepare a causal chain: symptom → mechanism → consequence → required property →
@@ -31,7 +31,7 @@ learning, not a claim that one method is universally superior.
 | 1 — Curiosity and framing | Open with a concise problem, establish relevance, invite one prediction or framing response, and wait when interaction is needed. Diagnose assumptions without shaming. | One focused prompt |
 | 2 — Discovery and formation | Select the smallest gaps from the response. Teach at most two new concepts, intuitively first, then concretely and technically. Use a purposeful visual or analogy when helpful. | One short retrieval question |
 | 3 — Exploration and boundaries | Reinforce with a new representation, inspect the normal path and relevant misconceptions, failures, limitations, and trade-offs. Name prerequisite, coupled, owning, and later-transfer links only when useful. | One short retrieval question |
-| 4 — Return and transfer | Resolve the original problem, explain why the solution works, state limitations and production evidence, then give exactly one meaningful changed-scenario practice task. | Exactly one practice task |
+| 4 — Return and transfer | Resolve the original problem, explain why the solution works, state limitations and production evidence, then give exactly one meaningful changed-scenario practice task when independent practice is required. | One practice task when required |
 
 The parts form one conversation, not four unrelated essays. Wait after Part 1 when
 the learner's response determines the scaffolding or concept selection. Keep one
@@ -48,6 +48,9 @@ preserve synthetic labels.
   monologue after a meaningful question that requires learner input.
 - A direct-answer request is an explicit exception to discovery pauses. Answer first,
   then offer one retrieval or application check when useful.
+- A diagnostic question frames or diagnoses the problem. A retrieval question checks
+  recall. A practice task requires independent application in a changed scenario.
+  Do not count the first two as practice tasks.
 - Use this compact source label without inventing fields:
   `Source-backed fact — [S-ID], <registered title>, <exact chapter/section>,`
   `<canonical URL>, accessed <YYYY-MM-DD>.`

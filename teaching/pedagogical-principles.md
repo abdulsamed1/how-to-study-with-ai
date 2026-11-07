@@ -39,6 +39,23 @@ Register and verify research sources through the existing resource procedure bef
 using an empirical claim. A pedagogical preference may guide a lesson without being
 described as proven. Content quality and pedagogical quality remain separate gates.
 
+## Research-to-principle traceability
+
+The table below uses only sources currently registered in
+[workspace/resources.md](../workspace/resources.md). “Research-informed design
+choice” means the source informs the design but does not establish that this
+repository's implementation is superior. “Original system design decision” means no
+qualifying pedagogical source is currently registered for the specific rule.
+
+| Principle(s) | Supporting source IDs | Evidence type | Limitation |
+|---|---|---|---|
+| P01–P04, P10 | S70, S71 | Research-informed design choice: learner-centred case work, prior-knowledge activation, facilitator variation | S70 is a university method guide with mixed comparative findings; S71 is abstract-only and does not validate this AI-tutor sequence. |
+| P05, P07–P09 | — | Original system design decision | No registered source currently supports this exact progressive-disclosure and visual-selection procedure; do not present it as an established effect. |
+| P11 | — | Original system design decision | No registered source currently establishes this escalation ladder for this repository. |
+| P12 | — | Original system design decision | Retrieval and review fields are operationally specified, but no registered retrieval/spacing study is currently in the catalogue. |
+| P13 | — | Original system design decision | Transfer is a journey assessment requirement; no registered source currently validates this exact fixture. |
+| P06, P14 | — | Original system design decision | Realistic scenarios and restrained engagement are design constraints, not claims about universal learning effects. |
+
 ## Operating constraints
 
 - Preserve one objective, at most two new concepts, the existing journey owner, and

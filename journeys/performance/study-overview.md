@@ -73,7 +73,7 @@ I can also explain why a tempting intervention is **wrong for the diagnosed mech
 - Prefer profiling, measurements, traces, query plans, load tests, and incident evidence over intuition.
 - Treat scalability and performance as related but distinct problems.
 - Treat a high CPU/memory/error metric as a **signal to investigate**, not automatically as the root cause.
-- Do not claim production experience with a tool merely because it was studied (`../../AGENTS.md` §11).
+- Do not claim production experience with a tool merely because it was studied ([evidence policy](../../governance/evidence-policy.md)).
 
 ### Out of scope
 

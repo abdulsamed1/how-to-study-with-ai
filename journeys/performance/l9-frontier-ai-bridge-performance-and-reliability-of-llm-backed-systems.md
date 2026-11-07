@@ -42,14 +42,14 @@ L0-L8 are model-agnostic. A deployed agent adds a dependency with unusual proper
 
 ### 5. Trade-offs that need evaluation, not intuition
 
-- Cheaper or faster model, shorter context, fewer tool calls, a cache, or a non-AI fallback each change quality as well as latency and cost. No such change ships without re-running the evaluation set from the FDE delivery loop (`../../AGENTS.md` section 6).
+- Cheaper or faster model, shorter context, fewer tool calls, a cache, or a non-AI fallback each change quality as well as latency and cost. No such change ships without re-running the evaluation set from the [FDE delivery loop](../../teaching/delivery-loop.md).
 - Graceful degradation order: smaller model, then deterministic path, then human review, chosen by business criticality.
 
 ### 6. Observability for LLM calls
 
 Record per call: workflow step, model identifier, input and output size, latency, retry count, outcome, estimated cost, and a trace id that ties it to the request. Without these fields the L1 diagnostic path cannot run.
 
-Provider limits, error codes, parameters, and pricing change; verify them as `../../AGENTS.md` section 10 requires before teaching any specific value.
+Provider limits, error codes, parameters, and pricing change; verify them using the [source policy](../../governance/source-policy.md) before teaching any specific value.
 
 ## Practice
 

@@ -22,7 +22,7 @@ depends_on:
     reference/*.html                cheat sheets, sequence diagrams, checklists
     assets/                         shared stylesheet and reusable components
 
-Create directories lazily, when the first file for them exists. In modes B and C these files exist only as uploads or as the user's notes; state lives as described in `../AGENTS.md` section 2 and P§6.
+Create directories lazily, when the first file for them exists. In modes B and C these files exist only as uploads or as the user's notes; state lives as described in [modes](modes.md) and [session protocol](session-protocol.md).
 
 **../workspace/mission.md**
 

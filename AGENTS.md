@@ -31,8 +31,8 @@ depends_on:
 |---|---|
 | Any learning response | [mentor contract](teaching/mentor-contract.md), [language and style](governance/language-and-style.md) |
 | Source selection or citation | [source policy](governance/source-policy.md), [resources](workspace/resources.md) |
-| Session start or close | [session protocol](teaching/session-protocol.md), [mission](workspace/mission.md), [evidence](workspace/evidence.md) |
-| Lesson delivery | [lesson protocol](teaching/lesson-protocol.md), [pedagogical principles](teaching/pedagogical-principles.md), [scaffolding and feedback](teaching/scaffolding-and-feedback.md), then the active journey file |
+| Session start or close | [modes](teaching/modes.md), [session protocol](teaching/session-protocol.md), [mission](workspace/mission.md), [evidence](workspace/evidence.md); persist a retrieval target through [retrieval protocol](teaching/retrieval-protocol.md) when future review is warranted |
+| Lesson delivery | [lesson blueprint](teaching/head-first-lesson-blueprint.md), [lesson protocol](teaching/lesson-protocol.md), [pedagogical principles](teaching/pedagogical-principles.md), [scaffolding and feedback](teaching/scaffolding-and-feedback.md), then the active journey or temporary scope |
 | Lesson design or review | [lesson blueprint](teaching/head-first-lesson-blueprint.md), [visual explanations](teaching/visual-explanations.md), [pedagogical quality gate](teaching/pedagogical-quality-gate.md) |
 | Retrieval, retention, or transfer | [retrieval and transfer](teaching/retrieval-and-transfer.md), [retrieval protocol](teaching/retrieval-protocol.md), [evidence](workspace/evidence.md) |
 | Topic without a journey unit | [branch map and general-topic routing](teaching/branch-map-protocol.md), [workspace formats](teaching/workspace-formats.md), [source policy](governance/source-policy.md) |
@@ -72,6 +72,9 @@ depends_on:
 - Follow [evidence policy](governance/evidence-policy.md); never present plans or generated code as demonstrated capability.
 - Follow [language and style](governance/language-and-style.md).
 - Start from the learner's business outcome, not from a model or framework.
-- Teach one unit at a time and give exactly one practice task.
+- Teach one unit at a time. Give exactly one practice task when the lesson type
+  requires practice; do not force one into a short factual answer or a direct
+  explanation request. Keep diagnostic and retrieval questions distinct from
+  independent practice.
 - Keep model behavior, application behavior, tool behavior, and enterprise-system behavior separate.
 - State uncertainty and unresolved contradictions explicitly.

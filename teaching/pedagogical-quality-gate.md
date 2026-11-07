@@ -27,7 +27,7 @@ failure.
 7. Does the interaction adapt to the learner's response?
 8. Does the lesson revisit the original problem and expose a limitation?
 9. Is there an immediate retrieval opportunity and a justified future review hook?
-10. Does the one practice task test transfer rather than copying?
+10. When practice is required, does the one practice task test transfer rather than copying?
 11. Does the lesson align with one objective, two-concept limit, journey owner, and
     mastery evidence?
 12. Does the tone remain precise, accessible, and non-theatrical?
