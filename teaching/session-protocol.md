@@ -63,6 +63,12 @@ for syncing chat-mode progress into the repository.
 
     Session export — <date>
     Learning record: <what was demonstrated, evidence, next target>    (P§1 format)
+    Retrieval target: <concept, skill, capability, or existing unit ID>
+    Retrieval reason: <difficulty | repeated misconception | failed transfer | high importance | weak unaided recall | demonstrated uncertainty>
+    Next eligible review: <next session | later session | when related concept appears | when another difficulty triggers review>
+    Evidence level: <exposure | guided understanding | familiar independent application | changed-context transfer>
+    Supporting evidence: <observable response, task, record, or artifact>
+    Review outcome: <pending | successful recall | recall with hint | misconception persisted | independent application succeeded | transfer remains unproven>
     Glossary terms earned: <term — one-line definition>                (P§1 format)
     EVIDENCE changes: <Supported by evidence | Needs learning | Must not be claimed — claim, then the file, commit, record, or demo that proves it>
     RESOURCES changes: <S-ID — status change, or a new lead with its URL and what it would support>
@@ -73,3 +79,7 @@ this order: `learning-records/` file first, then `GLOSSARY.md`, then the three
 `../workspace/evidence.md` lists, then `../workspace/resources.md` (opening the artifact before changing a
 status), then the journey ledger. Never apply an export that contradicts the
 repository without asking the user which is current.
+
+The retrieval line is optional when no future review is warranted. When present, it
+updates the matching stable target rather than creating a duplicate. Older exports
+without the line remain valid and are interpreted as having no retrieval metadata.

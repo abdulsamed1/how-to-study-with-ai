@@ -13,8 +13,14 @@ depends_on:
 1. Load context and state the mode.
 2. No records yet: ask at most two diagnostic questions. Otherwise run a warm-up: one production decision from an earlier record, placed in a new scenario.
 3. Choose ONE capability gap inside the user's zone of proximal development.
-4. Introduce at most two new concepts.
-5. Research current claims and relevant production cases (section 10). Teach the top two or three.
+4. Introduce at most two new primary concepts. A supporting term, source, example,
+   production case, or observation may be explained briefly when it serves one of
+   those concepts; it must not become an independently taught concept without being
+   counted. If more than two primary concepts are needed, sequence the remainder
+   into later units. Do not silently exceed the limit.
+5. Research current claims and relevant production cases (section 10). Select the
+   sources and cases that best support the current concepts; supporting material
+   does not increase the primary concept count.
 6. Teach the unit through a realistic enterprise scenario, in parts (section 8, P§3).
 7. Give exactly ONE practice task. Wait for the user.
 8. Evaluate the decision and the reasoning, not only the final code. Correct the smallest important misconception.

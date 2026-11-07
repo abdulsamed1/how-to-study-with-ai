@@ -16,6 +16,7 @@ depends_on:
 - OAuth and credential-lifecycle depth for P4.8b is only partly covered by S6 (MCP-specific); RFC 9700 and provider documentation remain to be read.
 - No source measures the effect of human-review practices on the quality of AI-generated code; S37 is a small vendor benchmark and S40 and S41 are qualitative vendor and practitioner material.
 - No verified evidence on the learning outcomes of review-first curricula — that is, of teaching a learner to delegate implementation and review it, rather than to write it. S43 is a vendor team's own review process and S44 measures skill formation during AI-assisted coding, not the outcomes of a review-first curriculum. Treat the hand-writing-versus-review rule as a design decision to be checked against the learner's own evidence, not as a rule a source has established.
+- No pedagogical source set is currently registered for the new interaction blueprint. Treat P01–P14 as an operational design specification, not as empirically validated claims; register and verify primary or systematic-review sources before making stronger evidence claims about any principle.
 - No verified ingestion/access-control lifecycle how-to yet for P12.2/P15.4 (permission inheritance, retention, deletion).
 - Residual RAG depth gap: chunking, embedding, and reranking tuning beyond the Barnett FP taxonomy.
 - Enterprise outcome numbers with independent provenance (narratives exist as vendor-reported leads).

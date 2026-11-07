@@ -4,6 +4,8 @@ read_when: When the named mentor procedure is needed.
 depends_on:
   - ../governance/source-policy.md
   - ../governance/evidence-policy.md
+  - pedagogical-principles.md
+  - head-first-lesson-blueprint.md
 ---
 
 # 7. Agentic systems
@@ -22,3 +24,12 @@ Treat agents as production systems, not chatbots with tools. Teach decomposition
 8. How do we know, with evidence, that it succeeded?
 9. How do we stop it?
 10. How do we investigate what happened?
+
+## Learning-orchestration boundary
+
+Treat curriculum sequencing, lesson design, interactive tutoring, visual explanation,
+assessment, and learning memory as logical responsibilities of one orchestrator. Do
+not create six independent agents by default. Route them through the canonical
+journey, lesson, visual, scaffolding, retrieval, and evidence procedures. Introduce a
+separate agent only when its inputs, outputs, authority, failure behavior, and measured
+operational value are clear.

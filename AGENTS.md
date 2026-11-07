@@ -11,6 +11,7 @@ depends_on:
   - teaching/mentor-contract.md
   - teaching/session-protocol.md
   - teaching/lesson-protocol.md
+  - teaching/pedagogical-principles.md
   - journeys/fde/journey-overview.md
   - journeys/performance/study-overview.md
 ---
@@ -31,7 +32,11 @@ depends_on:
 | Any learning response | [mentor contract](teaching/mentor-contract.md), [language and style](governance/language-and-style.md) |
 | Source selection or citation | [source policy](governance/source-policy.md), [resources](workspace/resources.md) |
 | Session start or close | [session protocol](teaching/session-protocol.md), [mission](workspace/mission.md), [evidence](workspace/evidence.md) |
-| Lesson delivery | [lesson protocol](teaching/lesson-protocol.md), then the active journey file |
+| Lesson delivery | [lesson protocol](teaching/lesson-protocol.md), [pedagogical principles](teaching/pedagogical-principles.md), [scaffolding and feedback](teaching/scaffolding-and-feedback.md), then the active journey file |
+| Lesson design or review | [lesson blueprint](teaching/head-first-lesson-blueprint.md), [visual explanations](teaching/visual-explanations.md), [pedagogical quality gate](teaching/pedagogical-quality-gate.md) |
+| Retrieval, retention, or transfer | [retrieval and transfer](teaching/retrieval-and-transfer.md), [retrieval protocol](teaching/retrieval-protocol.md), [evidence](workspace/evidence.md) |
+| Topic without a journey unit | [branch map and general-topic routing](teaching/branch-map-protocol.md), [workspace formats](teaching/workspace-formats.md), [source policy](governance/source-policy.md) |
+| Behavioral acceptance | [behavioral acceptance fixture](teaching/behavioral-acceptance-fixture.md), [pedagogical quality gate](teaching/pedagogical-quality-gate.md) |
 | Incident or case research | [research protocol](teaching/research-protocol.md), then the relevant journey file |
 | FDE curriculum | [FDE overview](journeys/fde/journey-overview.md), then one phase or support file |
 | Performance curriculum | [performance overview](journeys/performance/study-overview.md), then one level or support file |
@@ -54,6 +59,9 @@ depends_on:
 [senior-interview-framework](journeys/performance/senior-interview-framework.md) · [study-order-inside-each-level](journeys/performance/study-order-inside-each-level.md) · [study-overview](journeys/performance/study-overview.md) · [the-learning-architecture](journeys/performance/the-learning-architecture.md) · [what-not-to-memorize](journeys/performance/what-not-to-memorize.md)
 [agentic-systems](teaching/agentic-systems.md) · [assessment](teaching/assessment.md) · [branch-map-protocol](teaching/branch-map-protocol.md) · [context-loading](teaching/context-loading.md) · [delivery-loop](teaching/delivery-loop.md)
 [external-resources](teaching/external-resources.md) · [lesson-protocol](teaching/lesson-protocol.md) · [maintenance-protocol](teaching/maintenance-protocol.md) · [mentor-contract](teaching/mentor-contract.md) · [modes](teaching/modes.md)
+[head-first-lesson-blueprint](teaching/head-first-lesson-blueprint.md) · [pedagogical-principles](teaching/pedagogical-principles.md) · [pedagogical-quality-gate](teaching/pedagogical-quality-gate.md) · [retrieval-and-transfer](teaching/retrieval-and-transfer.md)
+[scaffolding-and-feedback](teaching/scaffolding-and-feedback.md) · [visual-explanations](teaching/visual-explanations.md) · [worked-example-webhook-replay](teaching/worked-example-webhook-replay.md)
+[behavioral-acceptance-fixture](teaching/behavioral-acceptance-fixture.md)
 [north-star](teaching/north-star.md) · [records](teaching/records.md) · [research-protocol](teaching/research-protocol.md) · [retrieval-protocol](teaching/retrieval-protocol.md) · [session-loop](teaching/session-loop.md)
 [session-protocol](teaching/session-protocol.md) · [study-pack-protocol](teaching/study-pack-protocol.md) · [workspace-formats](teaching/workspace-formats.md) · [evidence](workspace/evidence.md) · [mission](workspace/mission.md)
 [resources-coverage-gaps](workspace/resources-coverage-gaps.md) · [resources-designated-cross-phase-backend-coverage-reference-owner-decision-2026-10-24](workspace/resources-designated-cross-phase-backend-coverage-reference-owner-decision-2026-10-24.md) · [resources-designated-topic-scope-source-owner-decision-2026-10-21](workspace/resources-designated-topic-scope-source-owner-decision-2026-10-21.md) · [resources-f-series-foundational-sources-used-by-the-roadmap](workspace/resources-f-series-foundational-sources-used-by-the-roadmap.md) · [resources-how-to-use-this-file](workspace/resources-how-to-use-this-file.md)

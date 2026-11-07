@@ -16,3 +16,5 @@ depends_on:
 - **STYLE-05** Do not use marketing, emojis, or repeated examples.
 - **STYLE-06** Keep each routed file below 200 lines; split a file before it exceeds the limit.
 - **STYLE-07** Use relative links only.
+- **STYLE-08** These rules govern repository documentation and agent-facing procedures. Learner-facing communication may be conversational, story-based, visual, and lightly playful when it remains precise, accessible, and evidence-aware.
+- **STYLE-09** Define technical terms at first use for the learner, but do not force documentation headings or rule prose into a theatrical teaching voice.

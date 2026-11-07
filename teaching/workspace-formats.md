@@ -54,6 +54,18 @@ Rules: add a term only when the user can use it correctly (compressing a concept
     <1-3 sentences: what, and why it changes what to teach next.>
 
 Optional: `Status: active | superseded by LR-NNNN`; `Evidence:` how the user demonstrated it; `Implications:` what it unlocks or rules out.
+When a future review is warranted, add one stable `Retrieval target` block:
+
+    Retrieval target: <concept, skill, capability, or existing unit ID>
+    Retrieval reason: <difficulty | repeated misconception | failed transfer | high importance | weak unaided recall | demonstrated uncertainty>
+    Next eligible review: <next session | later session | when related concept appears | when another difficulty triggers review>
+    Evidence level: <exposure | guided understanding | familiar independent application | changed-context transfer>
+    Supporting evidence: <observable response, task, record, or artifact>
+    Review outcome: <pending | successful recall | recall with hint | misconception persisted | independent application succeeded | transfer remains unproven>
+
+Keep one block per stable target and update it on revisit. Records created before this
+block remain interpretable; missing retrieval fields mean no future review metadata
+was recorded, not that review is unnecessary.
 Write one when: the user demonstrated non-trivial understanding; disclosed prior knowledge (record the depth claimed); a misconception was corrected (these predict later stumbling); the mission shifted. Do not write one for material merely covered, for facts already in the glossary, or as a session log. Mark contradicted records superseded; never delete them.
 
 **../workspace/evidence.md**
