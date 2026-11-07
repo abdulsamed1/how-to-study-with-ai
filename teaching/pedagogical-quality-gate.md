@@ -28,9 +28,11 @@ failure.
 8. Does the lesson revisit the original problem and expose a limitation?
 9. Is there an immediate retrieval opportunity and a justified future review hook?
 10. When practice is required, does the one practice task test transfer rather than copying?
-11. Does the lesson align with one objective, two-concept limit, journey owner, and
+11. Does each required interaction checkpoint stop and wait for the learner's actual
+    response before the mentor continues?
+12. Does the lesson align with one objective, two-concept limit, journey owner, and
     mastery evidence?
-12. Does the tone remain precise, accessible, and non-theatrical?
+13. Does the tone remain precise, accessible, and non-theatrical?
 
 ## Acceptance procedure
 
@@ -51,6 +53,11 @@ A lesson fails this gate when it:
 - starts with a definition when the context requires problem-driven discovery;
 - asks for meaningful learner input but continues without waiting when that input
   determines the next move;
+- asks a diagnostic, prediction, or retrieval question and supplies its answer in
+  the same response;
+- attributes reasoning or understanding to the learner without an expressed answer;
+- reveals a retrieval answer before the learner's attempt or repeats the answered
+  prompt in the same response;
 - uses a misleading or technically inaccurate analogy or visual;
 - claims a four-part lesson while omitting an applicable part boundary;
 - gives more than one practice task when exactly one is required;
@@ -76,6 +83,9 @@ presentation cannot compensate for inaccurate teaching.
   evidence record.
 - **Rigid discovery barrier:** answer directly when requested or when scaffolding no
   longer produces useful reasoning.
+- **Checkpoint violation:** remove the unrevealed answer and end at the question;
+  continue only after the learner responds, unless the direct-answer exception
+  applies.
 
 ## Two quality dimensions
 

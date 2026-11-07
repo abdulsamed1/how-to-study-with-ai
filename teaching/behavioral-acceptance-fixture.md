@@ -32,6 +32,7 @@ beside each case when using it.
 | BA-12 | Technical claim is cited | Use registered S-ID, exact section, canonical location, and access/publication data as required; label synthesis/examples. | Missing source identity/section or invented citation. | SRC-01–06; citation review |
 | BA-13 | Topic has no journey unit | Search and reuse first; otherwise create a stable temporary scope with owner, objective, prerequisites, sources, evidence boundary, and retrieval target where needed. | Duplicate permanent curriculum unit or untracked lesson. | P§10; routing record |
 | BA-14 | Lesson review finds a hard defect | Determine applicable criteria, reject, correct, and re-evaluate. | Presentation quality compensates for a hard invariant violation. | Quality gate; before/after review |
+| BA-15 | Learner gives a partial misconception after the last-available-seat prompt | Stop after the opening question; after the learner's answer, preserve the valid part, give one targeted hint, and wait for revision before explaining conditional update, uniqueness, or transaction boundaries. | The mentor invents the learner's answer, reveals the mechanism immediately, or continues through the planned lesson without a response. | Interaction turn discipline; transcript |
 
 ## Use
 
