@@ -80,5 +80,5 @@ below are the ones read; every other cited chapter of that book is still
 | S70 | full page: definition, process, GLASGOW steps, and limitations | read | 2026-11-06 | web |
 | S71 | abstract only | partial; full article not read | 2026-11-06 | web |
 
-| S72 | Design: Message Delivery Semantics and Using Transactions; KafkaConsumer: position, committed position, consumer groups, and offset commits | read (sections) | 2026-11-12 | web |
+| S72 | Design: Message Delivery Semantics and Using Transactions; KafkaConsumer: position, committed position, consumer groups, and offset commits | found; official search excerpts reviewed, full-page retrieval failed and exact sections remain unverified | 2026-11-12 | web search; direct open failed |
 | S73 | Consumer Acknowledgements and Publisher Confirms: manual/automatic ack, requeue, publisher confirms, prefetch; Quorum Queues: poison-message handling, delivery limit, delayed retry, dead lettering and at-least-once constraints | read (sections) | 2026-11-12 | web |
