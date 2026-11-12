@@ -155,7 +155,7 @@ A model provider is an external service with a contract, a failure surface, a la
 | 5 | Validated provider output must become persisted business state | P5.3 and P5.6 own constraints, integrity, and parameterized access | No model semantics enter the schema |
 | 6 | A repeated or overlapping request risks a duplicate business effect | P6.5 owns duplicate and stale event transitions; P8.2 owns operation keys and retention | P6 does not build a queue or a delivery guarantee |
 | 7 | A green suite passes while a meaningful behavioral defect survives | P7.2–P7.3 own independent regression tests and honest test doubles | A mock passing is not evidence about the provider |
-| 8 | Rate limiting, transient failure, repeated delivery, or partial completion | P8.3 owns bounded retries and backoff; P8.4 webhook contracts; P8.5 durable workers | P8 does not re-teach the HTTP categories from P4.5 |
+| 8 | Partial failure, duplicate effects, transient retries, repeated webhooks, worker failure, or state drift | P8.1 models boundary-specific delivery semantics; P8.2 idempotency; P8.3 bounded retries; P8.4 webhook contracts; P8.5 workers/DLQ; P8.6 outbox/saga; P8.7 replay/reconciliation | P4.5 still owns individual provider HTTP outcome classification; P9 owns production operations and capacity diagnosis |
 | 9 | Provider latency, request volume, or cost rises while the system degrades | P9.3 tracing, P9.4 SLI, P9.6 capacity diagnosis | Cost stays an estimate until a real provider bill or measured usage exists |
 
 **Ownership rules.**
