@@ -50,17 +50,17 @@ LEVEL 0 — Reproducible foundation [Phases 2–3 | G1]
 ├─ P2: runnable service, seeded provider fault, data contracts, async contract, adapters, test seams
 └─ P3: types and runtime, process lifecycle, non-blocking I/O, cancellation, cleanup, logs/config/secrets
 
-LEVEL 1 — API contracts and relational data [Phases 4–5 | contributes to G2]
+LEVEL 1 — API contracts and data engineering [Phases 4–5 | contributes to G2]
 ├─ P4: HTTP, API/auth contracts, schema evolution, fault-injection harness, provider contract and credentials
-└─ P5: relational model, SQL, constraints, indexes, migrations, application data access, backup/restore
+└─ P5: relational modeling, SQL, integrity, indexes/query plans, data-model fit, storage engines/WAL, table partitioning, migrations, backup/restore
 
-LEVEL 2 — Correct state, tests, and architecture [Phases 6–7 | G2]
-├─ P6: transactions, isolation, concurrency, invariants, ordering, duplicate events
-└─ P7: test strategy, honest test doubles, refactoring/review, architecture trade-offs, ADRs and fitness checks
+LEVEL 2 — Correct state and software architecture [Phases 6–7 | G2]
+├─ P6: transactions, isolation, concurrency, invariants, ordering, duplicate events, serializable conflict control
+└─ P7: test strategy, honest test doubles, refactoring/review, architecture characteristics/styles, ADRs/fitness functions, domain modeling, decomposition, data ownership
 
-LEVEL 3 — Distributed integration and operations [Phases 8–9 | G3–G4]
-├─ P8: ambiguous outcomes, idempotency, bounded retries, webhooks, queues, outbox/saga, reconciliation
-└─ P9: containers/CI/CD, logs-metrics-traces, SLI/SLOs, incidents, capacity diagnosis, degradation and runbooks
+LEVEL 3 — Distributed systems and production resilience [Phases 8–9 | G3–G4]
+├─ P8: system models, failure detection, clocks/causality, replication/consistency, sharding, consensus, messaging, CQRS/CDC/streams (conditional), outbox/saga, replay/reconciliation
+└─ P9: containers/CI/CD, service discovery/load balancing, caching/read scaling, fault isolation, logs/metrics/traces, SLI/SLOs, incidents, capacity, recovery and runbooks
 
 LEVEL 4 — Discover and design the right solution [Phase 10 | G5]
 └─ Workflow discovery, deterministic-vs-AI choice, baseline/adoption plan, capacity and system design, failure review, go/adjust/stop
@@ -81,7 +81,7 @@ LEVEL 8 — Ship, adopt, measure, and hand over [Phases 16–17 | G9]
 └─ P17: narrow workflow selection, vertical slices, evidence pack, decision defense and limitations
 ```
 
-**How to read the levels.** They group related phases for orientation; they do not replace the actual dependency graph. Follow each unit's `Depends on` line and require its exit evidence before advancing. Gates G1–G9 are the progression contract; the gate table in §4 states the required proof. G9 needs a real workflow owner, real users, and measured outcome evidence; staging work alone does not close it.
+**Phase 5–10 coverage audit:** see [advanced-engineering-coverage-audit.md](advanced-engineering-coverage-audit.md) for the book-to-curriculum crosswalk, evidence labels, core/specialist boundary, and known source limitations. **How to read the levels.** They group related phases for orientation; they do not replace the actual dependency graph. Follow each unit's `Depends on` line and require its exit evidence before advancing. Gates G1–G9 are the progression contract; the gate table in §4 states the required proof. G9 needs a real workflow owner, real users, and measured outcome evidence; staging work alone does not close it.
 
 **AI execution order (S48).** The path is Phase 11 → Phase 12 → Phase 14 → Phase 13 → Phase 15. Phase IDs are stable identifiers, not a promise of numeric execution order. This uses the explicitly ordered 12-week sample plan in the designated AI Roadmap 2026 (S48), which puts Evaluation before Agents; its descriptive layer pages list Layer 3 before Layer 4, so the selected execution order and source caveat are recorded in `../../workspace/resources.md`. The first P14.1 case set starts in M2 before the first live model call; the full evaluation slice follows RAG and precedes agents.
 
@@ -155,7 +155,7 @@ A model provider is an external service with a contract, a failure surface, a la
 | 5 | Validated provider output must become persisted business state | P5.3 and P5.6 own constraints, integrity, and parameterized access | No model semantics enter the schema |
 | 6 | A repeated or overlapping request risks a duplicate business effect | P6.5 owns duplicate and stale event transitions; P8.2 owns operation keys and retention | P6 does not build a queue or a delivery guarantee |
 | 7 | A green suite passes while a meaningful behavioral defect survives | P7.2–P7.3 own independent regression tests and honest test doubles | A mock passing is not evidence about the provider |
-| 8 | Partial failure, duplicate effects, transient retries, repeated webhooks, worker failure, or state drift | P8.1 models boundary-specific delivery semantics; P8.2 idempotency; P8.3 bounded retries; P8.4 webhook contracts; P8.5 workers/DLQ; P8.6 outbox/saga; P8.7 replay/reconciliation | P4.5 still owns individual provider HTTP outcome classification; P9 owns production operations and capacity diagnosis |
+| 8 | Network/partial failure, distributed time and consistency, duplicate effects, transient retries, repeated webhooks, worker failure, or state drift | P8.0a–P8.0e own system models, failure detection, clocks/causality, replication/consistency, partitioning and coordination; P8.1–P8.7 own delivery, idempotency, retries, webhooks, workers/DLQ, outbox/saga and reconciliation | P4.5 still owns individual provider HTTP outcome classification; P9 owns production operations and capacity diagnosis |
 | 9 | Provider latency, request volume, or cost rises while the system degrades | P9.3 tracing, P9.4 SLI, P9.6 capacity diagnosis | Cost stays an estimate until a real provider bill or measured usage exists |
 
 **Ownership rules.**

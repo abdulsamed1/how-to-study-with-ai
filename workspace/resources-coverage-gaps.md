@@ -22,3 +22,6 @@ depends_on:
 - Enterprise outcome numbers with independent provenance (narratives exist as vendor-reported leads).
 
 Lessons must name these as gaps rather than cite them as evidence. Scope guard: nothing in these gaps authorizes ML training, model-building, or researcher topics — fill them only with GenAI-application engineering sources (journey rule 9).
+
+- Kafka 4.4 official documentation remains a verification gate for P8.1/P8.5/P8.7: S72 search excerpts were found, but direct full-page retrieval failed on 2026-11-12. Re-open the exact Kafka design and consumer API pages and verify the selected client/version before teaching configuration or API details.
+- Deep distributed-systems and architecture topics are now assigned to core or conditional units in Phases 5–10. Do not treat TOC-only Foundations of Scalable Systems chapters or specialist topics (full consensus implementation, deep CRDTs, multi-region active-active, full streaming-platform operations, Data Mesh) as verified implementation guidance until the exact source sections and project need are confirmed.
