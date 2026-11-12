@@ -41,7 +41,8 @@ below are the ones read; every other cited chapter of that book is still
 | S28 | ch. 4 (an overview of concurrent systems) | read (sections) | 2026-10-19 | books/ epub (OpenCode) |
 | S29 | ch. 2 (important distributed system concepts), ch. 16 (common failure patterns) | read | 2026-10-19 | books/ epub (OpenCode) |
 | S29 | ch. 14 (monitoring and observability patterns) | read (sections) | 2026-10-19 | books/ epub (OpenCode) |
-| S38 | all cited chapters | [TOC] | — | — |
+| S38 | all cited chapters except the selected sections recorded below | [TOC] | — | — |
+| S38 | selected sections from ch. 2, 4, 6–7, and 9, 11–13 (coupling, decomposition, data ownership, distributed workflows, sagas, and contracts) | read (sections) | 2026-11-12 | books/epub (curriculum audit) |
 | S9 | full article | read | 2026-10-22 | web |
 | S10 | full article | read | 2026-10-22 | web |
 | S14 | full article | read | 2026-10-21 | web |
@@ -82,3 +83,12 @@ below are the ones read; every other cited chapter of that book is still
 
 | S72 | Design: Message Delivery Semantics and Using Transactions; KafkaConsumer: position, committed position, consumer groups, and offset commits | found; official search excerpts reviewed, full-page retrieval failed and exact sections remain unverified | 2026-11-12 | web search; direct open failed |
 | S73 | Consumer Acknowledgements and Publisher Confirms: manual/automatic ack, requeue, publisher confirms, prefetch; Quorum Queues: poison-message handling, delivery limit, delayed retry, dead lettering and at-least-once constraints | read (sections) | 2026-11-12 | web |
+
+| S19 | selected passages from ch. 3–5 and ch. 9–12 (data models, storage, dataflow, partial failures/time, batch and streams/CDC) | read (sections) | 2026-11-12 | books/epub (curriculum audit) |
+| S20 | selected passages from ch. 8–9, 11, and 14–20 (components, partitioning, service granularity, events/messages, caching, orchestration, bounded contexts, CQRS/hexagonal architecture) | read (sections) | 2026-11-12 | books/epub (curriculum audit) |
+| S26 | selected passages from ch. 5–6 and 12–13 (service discovery, gateways/mesh, sagas, resilience, scaling/caching) | read (sections) | 2026-11-12 | books/epub (curriculum audit) |
+| S27 | selected passages from ch. 2–11 and ch. 22–23, 26 (flow/congestion control, discovery, system models, failures, clocks, election, replication, coordination, messaging, fault isolation) | read (sections) | 2026-11-12 | books/epub (curriculum audit) |
+| S29 | selected passages from ch. 6–8, 10–13, and 16 (replicated services, hashing/shards, scatter-gather, coordination, queues, messaging, batch coordination, thundering herd) | read (sections) | 2026-11-12 | books/epub (curriculum audit) |
+| S74 | publisher bibliography/product details | bibliographic details verified; content not read in this audit | 2026-11-12 | web |
+| S75 | Event Time and Watermarks: event time versus processing time, watermarks, parallel inputs, lateness, and windows | read (sections) | 2026-11-12 | web |
+| S76 | PostgreSQL 18: ch. 11 indexes (contents and index trade-off overview); §5.12 table partitioning; ch. 28 WAL contents; ch. 26 replication/failover and sync/async overview | read (sections) | 2026-11-12 | web |
