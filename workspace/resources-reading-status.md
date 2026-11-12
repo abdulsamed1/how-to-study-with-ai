@@ -87,7 +87,7 @@ below are the ones read; every other cited chapter of that book is still
 | S19 | selected passages from ch. 3–5 and ch. 9–12 (data models, storage, dataflow, partial failures/time, batch and streams/CDC) | read (sections) | 2026-11-12 | books/epub (curriculum audit) |
 | S20 | selected passages from ch. 8–9, 11, and 14–20 (components, partitioning, service granularity, events/messages, caching, orchestration, bounded contexts, CQRS/hexagonal architecture) | read (sections) | 2026-11-12 | books/epub (curriculum audit) |
 | S26 | selected passages from ch. 5–6 and 12–13 (service discovery, gateways/mesh, sagas, resilience, scaling/caching) | read (sections) | 2026-11-12 | books/epub (curriculum audit) |
-| S27 | selected passages from ch. 2–11 and ch. 22–23, 26 (flow/congestion control, discovery, system models, failures, clocks, election, replication, coordination, messaging, fault isolation) | read (sections) | 2026-11-12 | books/epub (curriculum audit) |
+| S27 | selected passages from ch. 2, 4, 6–11 and ch. 22–23, 26 (flow/congestion control, discovery, system models, failures, clocks, election, replication, coordination, messaging, fault isolation) | read (sections) | 2026-11-12 | books/epub (curriculum audit) |
 | S29 | selected passages from ch. 6–8, 10–13, and 16 (replicated services, hashing/shards, scatter-gather, coordination, queues, messaging, batch coordination, thundering herd) | read (sections) | 2026-11-12 | books/epub (curriculum audit) |
 | S74 | publisher bibliography/product details | bibliographic details verified; content not read in this audit | 2026-11-12 | web |
 | S75 | Event Time and Watermarks: event time versus processing time, watermarks, parallel inputs, lateness, and windows | read (sections) | 2026-11-12 | web |
