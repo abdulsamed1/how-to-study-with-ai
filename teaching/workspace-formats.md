@@ -1,78 +1,41 @@
 ---
-purpose: Defines one teaching procedure or workspace format.
-read_when: When the procedure named in the routing table is required.
+purpose: Defines the small set of reusable workspace files and project artifact conventions.
+read_when: When creating a workspace, lesson artifact, glossary, casebook, or capstone document.
 depends_on:
   - ../governance/source-policy.md
-  - ../governance/evidence-policy.md
 ---
 
 # P§1. Workspace layout and file formats
 
+The repository stores the mission, curriculum, teaching/source rules, and actual project artifacts. It does not store learner-by-learner lesson completion or progress history.
 
-## P§1. Workspace layout and file formats
+    ../workspace/mission.md          learning goal and constraints
+    ../workspace/resources.md        verified sources, sources to verify, coverage gaps
+    GLOSSARY.md                      optional one-line definitions
+    casebook/INDEX.md                optional concept → real cases → transferable pattern
+    casebook/<concept>.md            optional researched failures for one concept
+    lessons/<slug>.md                optional reusable lesson material
+    reference/<slug>.md              optional checklists, diagrams, decision tables
+    project artifacts                code, tests, ADRs, evaluation reports, traces, runbooks, deployment records
 
-    ../workspace/mission.md                      why the user is learning this; one screen at most
-    ../workspace/evidence.md                     supported by evidence / needs learning / must not be claimed
-    ../workspace/resources.md                    verified references / references to verify / coverage gaps
-    GLOSSARY.md                     one-line definitions; every lesson uses these terms
-    casebook/INDEX.md               concept -> cases -> transferable pattern
-    casebook/<concept>.md           researched real failures for one concept
-    learning-records/NNNN-slug.md   evidence of understanding
-    lessons/NNNN-slug.html          one short lesson each (modes B and C: Markdown in the reply)
-    reference/*.html                cheat sheets, sequence diagrams, checklists
-    assets/                         shared stylesheet and reusable components
+Create supporting directories only when a real artifact is needed. Do not create `workspace/evidence.md`, `learning-records/`, lesson-status checklists, session exports, or a retrieval-target database.
 
-Create directories lazily, when the first file for them exists. In modes B and C these files exist only as uploads or as the user's notes; state lives as described in [modes](modes.md) and [session protocol](session-protocol.md).
+## Mission
 
-**../workspace/mission.md**
+`workspace/mission.md` defines the real-world outcome, success criteria, constraints, and out-of-scope topics. Keep one mission per workspace and under one screen. Confirm with the learner before changing it.
 
-    # Mission: <topic>
-    ## Why              1-3 concrete sentences: the real-world outcome, not "to understand X"
-    ## Success looks like   specific, observable things the user will be able to do
-    ## Constraints      time, budget, preferences
-    ## Out of scope     adjacent topics deliberately not chased now
+## Source catalogue
 
-One mission per workspace. Push back on vagueness: interview before writing. Keep it under one screen. Confirm with the user before changing it, and record a change as a learning record. A stale mission steers every later session wrongly.
+The section contract lives in `workspace/resources.md`: Verified references, References to verify, and Coverage gaps. Add or update a source only after opening the actual artifact and checking the relevant passage. Record bibliographic and reading status there; this is source provenance, not learner progress.
 
-**../workspace/resources.md**
+## Optional glossary
 
-The section contract lives in the file itself: `../workspace/resources.md` opens with `## How to use this file`, defining the three sections (Verified references / References to verify / Coverage gaps) and the entry rules for each. Keep the template operative there instead of a copy in this file.
+A glossary may be created when it materially helps the subject. Add or update a term only when the learner can use it correctly in context. It is not a completion record and is not loaded automatically in every session.
 
-Rules: annotate every entry; surface gaps explicitly; prune sources that prove shallow or wrong; record if the user opted out of communities. Apply [source policy](../governance/source-policy.md).
+## Capstone and project artifacts
 
-**GLOSSARY.md**
+Store real outputs with the project they belong to: code, tests, architecture decisions, contracts, evaluation reports, traces, deployment notes, measured outcomes, and runbooks. These deliverables are necessary to build and defend the FDE capstone; they are not a separate personal learning ledger.
 
-    **Term**:
-    One or two sentence definition of what it IS, using other glossary terms.
-    _Avoid_: alias 1, alias 2
+## Session continuity
 
-Rules: add a term only when the user can use it correctly (compressing a concept into a definition is itself evidence of understanding); be opinionated about the one preferred word; flag loose usage in the wider field; update in place as understanding deepens; group under subheadings once clusters appear.
-
-**Learning record** (`learning-records/NNNN-slug.md`, numbering increments)
-
-    # <short title of what was learned or established>
-    <1-3 sentences: what, and why it changes what to teach next.>
-
-Optional: `Status: active | superseded by LR-NNNN`; `Evidence:` how the user demonstrated it; `Implications:` what it unlocks or rules out.
-Required for a taught unit: `Scope: <formal Journey Unit ID or stable temporary Scope ID>`.
-When a future review is warranted, add one stable `Retrieval target` block:
-
-    Retrieval target: <concept, skill, capability, or existing unit ID>
-    Retrieval reason: <difficulty | repeated misconception | failed transfer | high importance | weak unaided recall | demonstrated uncertainty>
-    Next eligible review: <next session | later session | when related concept appears | when another difficulty triggers review>
-    Evidence level: <exposure | guided understanding | familiar independent application | changed-context transfer>
-    Supporting evidence: <observable response, task, record, or artifact>
-    Review outcome: <pending | successful recall | recall with hint | misconception persisted | independent application succeeded | transfer remains unproven>
-
-Keep one block per stable target and update it on revisit. Records created before this
-block remain interpretable; missing retrieval fields mean no future review metadata
-was recorded, not that review is unnecessary.
-Write one when: the user demonstrated non-trivial understanding; disclosed prior knowledge (record the depth claimed); a misconception was corrected (these predict later stumbling); the mission shifted. Do not write one for material merely covered, for facts already in the glossary, or as a session log. Mark contradicted records superseded; never delete them.
-
-**../workspace/evidence.md**
-
-    ## Supported by evidence      <claim> — <file, commit, record, or demo that proves it>
-    ## Needs learning             <capability not yet demonstrated>
-    ## Must not be claimed        <experience, metric, or deployment with no evidence>
-
-The P2.1 baseline is short: one line per assessed dimension with the evidence that supports it. It is an assessment recorded in the three lists, not a separate document; an unassessed dimension is named as unassessed rather than left out.
+The learner remembers and declares the current journey, unit, and part at the next session. The mentor asks once when the position is missing and accepts the learner's correction. No session-export format is required.
