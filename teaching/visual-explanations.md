@@ -14,7 +14,7 @@ When a diagram will make a concept easier to understand, use a polished Mermaid
 diagram as the **only permitted diagram format**. This is a presentation standard,
 not a separate paid Mermaid feature.
 
-- Write diagrams as fenced Mermaid blocks (`\`\`mermaid`) so the learning surface can render them.
+- Write diagrams as fenced code blocks with the `mermaid` language identifier so the learning surface can render them.
 - Do not draw diagrams with HTML, CSS, SVG, ASCII art, Unicode boxes, or text-character layouts.
 - If the current surface cannot render Mermaid, do not fall back to another diagram format. Explain the relationship with ordinary prose and a concrete example.
 - Do not force a diagram into a lesson when it adds no clarity. In that case, teach with prose and a concrete example rather than an alternative diagram.
