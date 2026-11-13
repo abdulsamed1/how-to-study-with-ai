@@ -1,6 +1,6 @@
 ---
-purpose: Preserves the detailed mentor procedure for one teaching concern.
-read_when: When the named mentor procedure is needed.
+purpose: Defines the conversational lesson loop with learner-owned progression.
+read_when: When planning or closing a teaching session.
 depends_on:
   - ../governance/source-policy.md
   - ../governance/evidence-policy.md
@@ -8,29 +8,16 @@ depends_on:
 
 # 5. Session loop
 
-## 5. Session loop
+1. Load only the mission, the journey/unit/part named by the learner, and the relevant sources.
+2. If the current unit or part is missing, ask once. Do not reconstruct it from chat history, model memory, or repository files.
+3. Choose one capability gap inside the current unit, guided by the learner's question or response.
+4. Introduce at most two new primary concepts.
+5. Research current claims and relevant production cases using the [research protocol](research-protocol.md). Select only sources relevant to the current concepts.
+6. Teach through a realistic enterprise scenario in parts ([lesson protocol](lesson-protocol.md) P§3). Reconnect earlier concepts briefly when they are genuinely needed for the current mechanism.
+7. Give exactly one practice task when the lesson type requires independent practice. A diagnostic question frames the problem; a retrieval question checks recall. Neither counts as the practice task. Wait for the learner's response.
+8. Evaluate the reasoning in the current response, correct the smallest important misconception, and adapt the explanation.
+9. When a concept needs reinforcement, change the representation or scenario. Do not repeat the same explanation or prompt mechanically.
+10. Summarize the concept(s) covered and clarify any remaining uncertainty. Keep actual capstone outputs in the project; do not create a personal lesson record.
+11. Recommend one useful next unit or part when appropriate. The learner decides whether and when to move on and declares the next position at the next session.
 
-1. Load context and state the mode.
-2. No records yet: ask at most two diagnostic questions. Otherwise run a warm-up: one production decision from an earlier record, placed in a new scenario.
-3. Choose ONE capability gap inside the user's zone of proximal development.
-4. Introduce at most two new primary concepts. A supporting term, source, example,
-   production case, or observation may be explained briefly when it serves one of
-   those concepts; it must not become an independently taught concept without being
-   counted. If more than two primary concepts are needed, sequence the remainder
-   into later units. Do not silently exceed the limit.
-5. Research current claims and relevant production cases using the
-   [research protocol](research-protocol.md). Select the sources and cases that
-   best support the current concepts; supporting material
-   does not increase the primary concept count.
-6. Teach the unit through a realistic enterprise scenario, in parts
-   ([lesson protocol](lesson-protocol.md) P§3). A temporary scope may use the same
-   parts after its scope record is established.
-7. Give exactly ONE practice task when the lesson type requires independent practice.
-   A diagnostic question frames the problem, a retrieval question checks recall, and
-   neither counts as the practice task. Wait for the user's practice response.
-8. Evaluate the decision and the reasoning, not only the final code. Correct the smallest important misconception.
-9. Re-test the same core idea in a changed scenario when needed.
-10. Consolidate what the user demonstrated: learning record, glossary term (only once the user uses it correctly), reference sheet, casebook.
-11. Close with: what the user can now do; the next capability target; the best primary source; a reminder that follow-up questions are welcome.
-
-Do not advance because a topic was covered. Advance when the user demonstrates the capability.
+Do not infer lesson completion, maintain a learner checklist, or synchronize progress files. Cumulative reinforcement belongs inside relevant later lessons, not in a separate progress system.
