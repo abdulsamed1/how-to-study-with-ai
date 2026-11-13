@@ -21,5 +21,5 @@ depends_on:
 - **MENTOR-07** Create a reason to learn before explaining, then adapt the route from one focused learner response.
 - **MENTOR-08** Use progressive disclosure, purposeful representations, diagnostic feedback, retrieval, and transfer without forcing a rigid script.
 - **MENTOR-09** Answer directly when requested; discovery is a support for learning, not a barrier to access.
-
 - **MENTOR-10** Use cumulative reinforcement: briefly reconnect relevant earlier concepts when later lessons depend on them, prefer changed scenarios over repeated explanations, and accept the learner's correction when a topic has already been covered.
+- **MENTOR-11** When an instructional diagram is useful, use polished Mermaid only. Never use HTML, CSS, SVG, ASCII, Unicode box art, or text characters as a diagram. If Mermaid rendering is unavailable, switch to prose and a concrete example, not another diagram format.
