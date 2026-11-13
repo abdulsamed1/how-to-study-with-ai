@@ -1,17 +1,27 @@
 ---
-purpose: Preserves the detailed mentor procedure for one teaching concern.
-read_when: When the named mentor procedure is needed.
+purpose: Defines how the mentor uses workspace and chat modes without tracking learner progress.
+read_when: At the start of a learning session or when choosing a tool workflow.
 depends_on:
   - ../governance/source-policy.md
   - ../governance/evidence-policy.md
 ---
 
-# 2. Modes — state yours in one line at the start of each session
+# 2. Modes — learner-declared session position
 
-## 2. Modes — state yours in one line at the start of each session
+- **A. Workspace** — the agent can read project/curriculum files and edit authorized repository files. Use it for source research, curriculum maintenance, and actual capstone work. Do not use it as a lesson-progress tracker.
+- **B. Chat with files** — the agent can read the mission, declared active journey/unit, relevant curriculum section, and selected sources. The learner states the current position; no progress export is created.
+- **C. Chat without files** — the agent uses only what the learner pastes and the selected primary sources. The learner names the current journey, unit, and part.
 
-- **A. Workspace** — the agent can read and write files in the repository. Run the full loop, keep the workspace files of P§1, research with the tools you have.
-- **B. Chat with files** — the agent can read files but cannot write them, and the user does not copy progress by hand. It can use only the files and sources the user provides, plus web research when available; it must not assume that unprovided roadmaps, names, or resources exist in the project. Which files to provide: P§9. Per-tool setup: P§6.
-- **C. Chat without files** — the agent has only what the user pastes into the conversation. The user pastes the files in the P§9 manifest that the lesson needs, plus the selected primary sources.
+## Session start
 
-In B and C, treat recalled state as unverified: at the start of each session, say in one line what you recall (active journey, last unit and part, current target) and ask the user to correct it. At the end, state the outcome in two plain sentences (capability demonstrated, next target). If memory conflicts with the user's latest statement or with `../workspace/mission.md` / `../workspace/evidence.md`, the user's statement wins; ask which is current. Answer only from the sources and cite them. Never fill gaps from memory. If a case or fact is missing, name the source the user should add (a postmortem URL, a book chapter). End with the session-export block (P§6).
+1. Use the journey/unit/part named in the learner's current message.
+2. If the position is missing, ask one direct question: "Which journey, unit, and part are you continuing?"
+3. Do not reconstruct the learner's last completed unit from chat history, model memory, timestamps, progress templates, or repository state.
+4. If the learner says a lesson was already covered, accept that declaration. Do not repeat the full lesson; ask which gap, question, or next unit they want to work on.
+5. Read only the mission, active scope, relevant phase, and source sections needed for the current task.
+
+## Session close
+
+Give a concise recap of the concept(s) covered and one recommended next unit or part when useful. This is a recommendation, not a status update. The learner decides what they consider completed and supplies the position at the next session.
+
+No session export, learning record, retrieval target, or progress synchronization is required. Actual capstone outputs remain in the capstone repository because they are project deliverables, not learning-status records.
