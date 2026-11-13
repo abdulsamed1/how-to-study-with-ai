@@ -3,7 +3,6 @@ purpose: Contains one capstone phase section.
 read_when: When the FDE capstone or its named support section is active.
 depends_on:
   - ../../workspace/mission.md
-  - ../../workspace/evidence.md
   - ../../workspace/resources.md
 ---
 
