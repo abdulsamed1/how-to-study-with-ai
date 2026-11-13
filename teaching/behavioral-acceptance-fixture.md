@@ -24,19 +24,19 @@ beside each case when using it.
 | BA-04 | Repeated misconception | Change intervention: hint, representation, counterexample, partial reasoning, then direct explanation as useful. | Same wording is repeated or learner is shamed. | Scaffolding procedure; transcript |
 | BA-05 | Direct explanation requested | Answer directly, state limits, then optionally use one retrieval/application check. | Discovery is forced or the answer is withheld. | MENTOR-09; transcript |
 | BA-06 | Analogy causes confusion | Drop or bound the analogy and return to a concrete example or visual. | Analogy is defended as the technical model. | P06/P08; transcript |
-| BA-07 | Familiar answer fails in changed context | Diagnose copying, restate the invariant, and require changed-context reasoning before mastery. | Familiar success is recorded as transfer. | P13, evidence ladder; record |
-| BA-08 | Immediate retrieval succeeds | Reduce support or increase depth; record only the evidence shown. | Lesson remains artificially basic or claims mastery without transfer. | Scaffolding, EVD-02; record |
-| BA-09 | Retrieval needs a hint | Record guided understanding or recall-with-hint and choose a justified future review. | Hint-supported recall is recorded as unaided mastery. | Retrieval fields; record |
-| BA-10 | Session closes with future review | Persist one stable retrieval target through record/export fields. | Target exists only in chat prose or is duplicated. | P§1/P§5; two-session record comparison |
+| BA-07 | Familiar answer fails in changed context | Diagnose copying, restate the invariant, and give one changed-context explanation or practice opportunity. | Familiar success is described as demonstrated transfer. | P13, retrieval and transfer; transcript |
+| BA-08 | Immediate retrieval succeeds | Reduce support or increase depth in the current lesson. | Lesson remains artificially basic or makes a broad mastery claim from one immediate answer. | Scaffolding, CLAIM-02; transcript |
+| BA-09 | Retrieval needs a hint | Give one targeted hint, then adapt the explanation or next example. | Hint-supported recall is treated as independent transfer. | Retrieval and transfer; transcript |
+| BA-10 | A later lesson depends on a previously taught concept | Reintroduce the earlier concept briefly, show its role in the new problem, and continue with a changed scenario. | The mentor repeats the entire prior lesson or assumes completion from memory. | P§5; current lesson transcript |
 | BA-11 | Practice is required | End with exactly one changed-scenario practice task. | Zero or more than one final practice task. | P§3; task count |
 | BA-12 | Technical claim is cited | Use registered S-ID, exact section, canonical location, and access/publication data as required; label synthesis/examples. | Missing source identity/section or invented citation. | SRC-01–06; citation review |
-| BA-13 | Topic has no journey unit | Search and reuse first; otherwise create a stable temporary scope with owner, objective, prerequisites, sources, evidence boundary, and retrieval target where needed. | Duplicate permanent curriculum unit or untracked lesson. | P§10; routing record |
+| BA-13 | Topic has no journey unit | Search and reuse first; otherwise create a stable temporary scope with owner, objective, prerequisites, sources, and practice/exit boundary. | Duplicate permanent curriculum unit or a temporary scope with no clear objective/source boundary. | P§10; temporary scope |
 | BA-14 | Lesson review finds a hard defect | Determine applicable criteria, reject, correct, and re-evaluate. | Presentation quality compensates for a hard invariant violation. | Quality gate; before/after review |
 | BA-15 | Learner gives a partial misconception after the last-available-seat prompt | Stop after the opening question; after the learner's answer, preserve the valid part, give one targeted hint, and wait for revision before explaining conditional update, uniqueness, or transaction boundaries. | The mentor invents the learner's answer, reveals the mechanism immediately, or continues through the planned lesson without a response. | Interaction turn discipline; transcript |
 
 ## Use
 
 Count primary concepts separately from supporting vocabulary. Mark each case
-`pass`, `fail`, or `not applicable`, cite the transcript line or record field, and
-rerun affected cases after correction. A completed fixture supports documentation
-acceptance only; it is not learner capability evidence.
+`pass`, `fail`, or `not applicable`, cite the transcript line or project artifact,
+and rerun affected cases after correction. A completed fixture reviews documented
+tutoring behavior; it is not a learner-progress record or proof of runtime behavior.
