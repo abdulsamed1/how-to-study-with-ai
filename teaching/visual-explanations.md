@@ -40,7 +40,7 @@ not a separate paid Mermaid feature.
 | Legal transitions, lifecycle, or recovery states | State diagram |
 | Stable entities and their relationships | Class or entity-relationship diagram |
 | Dependencies, ownership boundaries, or component interaction | Flowchart with clear subgroups |
-| Delays, ordering, concurrency, or before/after events | Sequence diagram or timeline |
+| Delays, ordering, concurrency, or before/after events | Sequence diagram or flowchart with explicit time labels |
 | Competing designs or changed constraints | Two clearly labelled Mermaid subgraphs or diagrams |
 | Symptom, mechanism, intervention, and consequence | Causal flowchart |
 
