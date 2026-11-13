@@ -5,15 +5,15 @@ depends_on:
   - ../AGENTS.md
 ---
 
-# Learn with intent. Practice with proof.
+# Learn with intent. Let the learner own the path.
 
-A portable, evidence-based system for learning **any subject with AI**.
+A portable, learner-led system for learning **any subject with AI**.
 
-Turn an ambitious goal into a structured learning journey. Give your AI mentor a clear role, work from trusted sources, practise what you learn, and track progress through evidence instead of generated confidence.
+Turn an ambitious goal into a structured learning journey. Give your AI mentor a clear role, work from trusted sources, practise what you learn, and declare your own current learning position.
 
 This repository is a reusable learning-system blueprint. It is not tied to one subject, one curriculum, or one AI provider. Use it for software engineering, mathematics, languages, university courses, professional certifications, career changes, research topics, or a personal project.
 
-> **The idea:** Your goal defines the destination. Your plan defines the path. Your sources ground the learning. AI helps you think and practise. Your evidence shows what you can actually do.
+ > **The idea:** Your goal defines the destination. Your plan defines the path. Your sources ground the learning. AI helps you think and practise. You decide where you are in the plan; project artifacts show what the system actually does.
 
 ---
 
@@ -43,15 +43,15 @@ A good learning workflow is more than a prompt that asks an AI to “teach me”
              +-------------+-------------+
                            |
                            v
-                    workspace/evidence.md
-              What can I demonstrate?
-              What still needs work?
+                  CURRENT LESSON / PRACTICE
+             Learner declares the unit and part
                            |
                            v
-                    NEXT LEARNING GAP
+                 ACTUAL PROJECT ARTIFACTS
+                code, tests, ADRs, reports, runs
 ~~~
 
-The files are plain Markdown. That makes the system portable: your learning state can live in Git instead of being trapped in one assistant's chat history.
+The files are plain Markdown. The repository stores the mission, curriculum, source rules, and real project artifacts. The learner's current unit is declared by the learner; it is not reconstructed from chat history or stored in a Git progress ledger.
 
 ## What makes it different?
 
@@ -65,13 +65,7 @@ The files are plain Markdown. That makes the system portable: your learning stat
 | Trust AI-generated code or summaries as proof | Review, verify, explain, and apply the result yourself |
 | Start every session from zero | Reuse durable project files across tools and sessions |
 
-The system separates three things:
-
-- **Knowledge:** what you have read, studied, or can explain.
-- **Skill:** what you can apply to a task.
-- **Evidence:** what you have demonstrated in a checkable way.
-
-Reading a chapter is useful. It is not proof that you can use the concept. Getting a correct answer immediately after a lesson is useful. It is not proof that you will remember or apply it later.
+The learning process separates exposure from application. Reading a chapter or giving an immediate correct answer is useful, but the learner owns decisions about what has been studied and when to move on. Real system claims must still be grounded in actual code, tests, reports, traces, deployments, or other project artifacts.
 
 ---
 
@@ -85,7 +79,6 @@ You do not need to create every file on day one. Start with the core documents a
 | **AGENTS.md** | The mentor contract | How the AI should teach, research, challenge, assess, and behave |
 | **Your plan / journey map** | The learning path | Topics, units, priorities, prerequisites, sources, practice, and exit criteria |
 | **workspace/resources.md** | The source catalogue | Verified sources, sources to verify, and known coverage gaps |
-| **workspace/evidence.md** | The progress ledger | Demonstrated capabilities, current learning gaps, and claims that must not be made |
 | **teaching/session-protocol.md** | The operating procedures | Repeatable formats, tool setup, session workflow, and progress synchronization |
 
 Supporting files can be added gradually:
@@ -93,7 +86,6 @@ Supporting files can be added gradually:
 | File or folder | Responsibility |
 |---|---|
 | **GLOSSARY.md** | Short definitions for terms you have learned to use correctly |
-| **learning-records/** | Durable records of meaningful demonstrations, corrections, and changes in what to teach next |
 | **casebook/** | Verified real-world failures and the engineering lessons that can be transferred from them |
 | **lessons/** | Reusable lesson material, when it is useful to keep a lesson outside the chat |
 | **reference/** | Checklists, diagrams, decision tables, and concise reference sheets |
@@ -120,14 +112,14 @@ This is the behaviour contract, not the curriculum. It should explain how the me
 
 Useful rules include:
 
-- Read the current mission, plan, evidence, and relevant resources before choosing what to teach.
+- Read the current mission, the unit named by the learner, and the relevant sources before teaching.
 - Identify the next eligible topic from the plan. Respect prerequisites.
 - Teach before testing. Do not turn every session into an unexplained quiz.
 - Introduce a small number of concepts at a time.
 - Explain the source of important claims and identify what could not be verified.
 - Separate source-backed facts, recommendations, hypotheses, and practice scenarios.
 - Evaluate reasoning and application, not just the final answer.
-- Do not mark a capability as mastered because a lesson was read or AI produced an answer.
+- Do not infer lesson completion or mastery from reading, AI output, memory, or chat history.
 - Ask the learner to review and explain work produced by an AI coding agent.
 
 **Your plan / journey map — Turn the goal into a path**
@@ -154,15 +146,11 @@ Organize sources by their status:
 
 Record the title, author or publisher, link, relevant chapter or section, and verification status when available. Prefer primary sources such as official documentation, specifications, standards, original papers, and first-party engineering reports. Use secondary explanations to help you understand, not to silently replace the source that establishes a technical fact.
 
-**workspace/evidence.md — Make progress honest and visible**
+**Learner-owned progress — No progress ledger**
 
-Use three lists:
+The learner states the current journey, unit, and part at the start of each session. The mentor does not maintain a completion checklist or infer progress from chat history. It may give a next-unit recommendation, but the learner decides whether to move on.
 
-- **Supported by evidence:** a capability and the artifact or demonstration that supports it.
-- **Needs learning:** a capability or concept that has not yet been demonstrated.
-- **Must not be claimed:** experience, results, ownership, or mastery for which evidence does not exist.
-
-This is the system's most important safeguard against confusing familiarity with ability. Keep the evidence specific: a tested implementation, an independently solved task, a written analysis, a presentation, a recorded experiment, or another artifact that fits the goal.
+Keep actual capstone artifacts in the project they belong to. Tests, implementation code, ADRs, evaluation reports, traces, deployment evidence, and measured outcomes support claims about the system; they are not a personal progress diary.
 
 ---
 

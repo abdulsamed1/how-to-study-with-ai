@@ -23,14 +23,14 @@ Phases 0-1 were merged into Phase 2; the old-to-new mapping is in §8.
 ## 1. Rules for this journey
 
 1. **Follow dependencies, not enthusiasm.** Each lesson lists its prerequisite lesson IDs. A lesson is ready only when its prerequisite's exit evidence exists.
-2. **Teach one lesson unit at a time.** Progression is competency-based and self-paced: a unit is complete when its proof artifact meets the exit criteria, not when a clock expires. Standard units cover one focused capability; implementation units span larger multi-part builds.
+2. **Teach one lesson unit at a time.** Every unit has a clear objective and practical exit criteria. The learner decides when the topic is sufficiently covered and names the next unit; the mentor does not maintain completion status. Standard units cover one focused capability; implementation units span larger multi-part builds.
 3. **Teaching mechanics live in the routed teaching procedures.** The lesson loop,
-   evidence and synthesis separation, retrieval, records, and honest capability
+   source/synthesis separation, retrieval, cumulative reinforcement, and honest capability
    claims follow [lesson protocol](../../teaching/lesson-protocol.md),
    [retrieval and transfer](../../teaching/retrieval-and-transfer.md),
    [workspace formats](../../teaching/workspace-formats.md), and
    [evidence policy](../../governance/evidence-policy.md).
-4. **No progress by attendance.** Mark a lesson complete only when its proof artifact or practical performance meets the exit criteria.
+4. **No mastery by attendance.** Reading or watching alone does not establish independent capability. Use the unit's practical task and changed-scenario discussion to give useful feedback, while leaving cross-session progression to the learner.
 5. **Respect established experience.** The user already has C++, OOP, and DSA experience. Do not teach beginner programming, object-oriented programming, or generic algorithm lessons. Use diagnostics to identify only the language, runtime, API, data, or AI-engineering gaps needed for the capstone.
 6. **One evolving capstone.** Build a small, deterministic business workflow first; add persistence and integrations; introduce AI only when the use case justifies it; then evaluate, secure, deploy, pilot, and document it. Keep scope narrow.
 7. **Source discipline.** `../../workspace/resources.md` remains the canonical project source register. Existing `S#` tags refer to it. The `F#` references below are official starting points checked on 2026-10-09; re-open the relevant page and record the exact section/version before teaching. Current API/model/security behavior must be verified at lesson time. A chapter tagged `[TOC]` was identified from a book's table of contents only and has not been read; keep the tag until the exact passage is read in an available tool and recorded in the `../../workspace/resources.md` reading-status table. A read that covered only the supporting sections is tagged `(read: <sections>)`; a chapter read in full is tagged `(read)`.
@@ -43,7 +43,7 @@ missing experience using [evidence policy](../../governance/evidence-policy.md).
 
 ## 2. Roadmap at a glance
 
-Use the levels below to scan the journey quickly. The detailed phase sections that follow remain the source of truth for each unit's priority, hard dependencies, coupled units, sources, and exit evidence. This index adds no lesson IDs or prerequisites and does not mark progress as complete. Use `../../workspace/evidence.md` for demonstrated capability and `../../workspace/resources.md` for source status. Retired IDs are retained as tombstones for traceability, not as active lessons.
+Use the levels below to scan the journey quickly. The detailed phase sections that follow remain the source of truth for each unit's priority, hard dependencies, coupled units, sources, and exit evidence. This index adds no lesson IDs or prerequisites and does not track learner completion. The learner declares the current unit; `../../workspace/resources.md` remains the source-status catalogue. Retired IDs are retained as tombstones for traceability, not as active lessons.
 
 ```text
 LEVEL 0 — Reproducible foundation [Phases 2–3 | G1]
@@ -105,7 +105,7 @@ Every lesson follows this record shape:
 - **Lesson:** scenario → concept → mechanism → failure modes → production implications.
 - **Practice:** one tangible task, preferably on the evolving capstone or a deliberately small lab.
 - **Exit evidence:** one primary proof artifact (checkable sub-items inside it are allowed).
-- **Retrieval:** defined once in the Retrieval table below — a named later unit whose scenario re-tests this one. No per-unit Retrieval field.
+- **Later connections:** defined in the Retrieval table below as curriculum cross-links. They guide brief reinforcement when a later lesson needs an earlier concept; they do not track learner completion.
 - **Unit type:** standard lesson units (focused capability and proof) vs **implementation unit (multi-session)** (larger architectural build, multi-part design, or lab).
 
 ### Depth scale
@@ -125,7 +125,7 @@ Every lesson follows this record shape:
 
 Each unit carries one of three priorities, keeping the priority vocabulary of the pre-rewrite journey map so the readiness check in [context loading](../../teaching/context-loading.md) has the metadata it names:
 
-- **must-have** — the unit sits on the capstone's critical path: it is a dependency hub (seven or more units depend on it), it closes a gap listed in `../../workspace/evidence.md`, it produces the G1 Problem Card/short baseline, the provider contract sheet, the regression gate, or the threat model, or it is a Phase 17 capstone unit (selection, build, evidence pack, or defense).
+- **must-have** — the unit sits on the capstone's critical path: it is a dependency hub (seven or more units depend on it), it is required by the mission/capstone gate, it produces the G1 Problem Card and service baseline artifacts, the provider contract sheet, the regression gate, or the threat model, or it is a Phase 17 capstone unit (selection, build, evidence pack, or defense).
 - **important** — expected on the standard path: later units build on it or it grounds a phase gate.
 - **useful** — valuable depth: compress or defer when diagnostics, the capstone, or a supporting branch show the capability is already present or not yet needed.
 
@@ -141,7 +141,7 @@ Used wherever a proof names an *agent review record* (rule 10). It is a short Ma
 4. **Observed evidence:** logs, traces, measurements, or failure-injection results that were actually seen.
 5. **Decision:** accept, reject, or redirect, with the evidence that justifies it.
 
-A passing generated test suite is an input to this record, never the verdict. The record is practice evidence only; it is not production experience (rule 10) and does not enter `../../workspace/evidence.md` as an achievement until the artifact exists.
+A passing generated test suite is an input to this project review, never the verdict. Keep the review note with the relevant code change or project artifact. It supports review of that change but is not production experience.
 
 ### AI-provider dependency thread (Phases 2–9)
 
@@ -161,7 +161,7 @@ A model provider is an external service with a contract, a failure surface, a la
 **Ownership rules.**
 
 1. The bridge changes how a unit is practised, not what it proves. The unit's own proof artifact and exit criteria stand.
-2. A bridge never marks a later unit complete, and no later unit may depend on a bridge.
+2. A bridge is a practice variation inside its owning unit, not a substitute for a later unit; no later unit depends on a bridge.
 3. A later unit may re-use the bridge's fixture, but it must re-derive its own contract, measurement, or test from its own source.
 4. The early model-exposure checkpoint (§10) is the only live-provider step before Phase 11; every other bridge is stub-based and labelled simulated.
 

@@ -5,123 +5,70 @@ depends_on:
   - AGENTS.md
 ---
 
----
-purpose: Explains the repository for human readers.
-read_when: When a human needs the repository overview.
-depends_on:
-  - AGENTS.md
----
-
 # How to study with AI
 
-This repository is a portable learning system for building durable technical
-capability with AI support. It combines:
+This repository is a portable, learner-led system for building durable technical capability with AI support. It contains:
 
-- a learner mission and explicit scope;
-- prerequisite-aware journeys;
-- source and evidence governance;
-- adaptive, problem-first lessons;
-- retrieval, transfer, and persistent learning records;
-- honest progression from exposure to demonstrated capability.
+- a clear learning mission;
+- prerequisite-aware journeys and lesson units;
+- verified source catalogues and research gaps;
+- problem-first lessons with retrieval, reinforcement, and transfer;
+- actual capstone artifacts such as code, tests, ADRs, evaluations, traces, deployment records, and runbooks.
 
-The goal is not to consume explanations. It is to solve meaningful problems, explain
-the reasoning, apply it in changed situations, and collect evidence that the
-capability is real.
+**The learner owns progress.** The repository does not maintain a lesson-completion ledger, learning-record files, retrieval-target database, or session exports. At the start of a session, the learner names the journey, unit, and part. The mentor uses that declared position and never guesses completion from chat history or memory.
 
 ## Start here
 
-1. Read [AGENTS.md](AGENTS.md). It routes every learning task to the canonical rules.
+1. Read [AGENTS.md](AGENTS.md).
 2. Read the active [mission](workspace/mission.md).
-3. Check [evidence](workspace/evidence.md) before claiming progress.
-4. Choose the appropriate journey:
+3. Choose the journey:
    - [FDE journey](journeys/fde/journey-overview.md)
    - [Performance journey](journeys/performance/study-overview.md)
-5. For a lesson, follow the routed [lesson protocol](teaching/lesson-protocol.md).
+4. At each session, state the current journey, unit, and part.
+5. Follow the routed [lesson protocol](teaching/lesson-protocol.md).
 
-Humans can use this README as the overview. Agents must treat `AGENTS.md` and its
-routed files as the operational source of truth.
+Agents must treat `AGENTS.md` and its routed files as the operational source of truth.
 
 ## How learning works
 
-The mentor preserves the existing problem-based, four-part lesson architecture:
+The mentor uses a problem-first, four-part lesson:
 
 1. **Curiosity and framing** — encounter a relevant problem and predict or frame it.
 2. **Discovery and formation** — teach the smallest useful gaps, progressively.
-3. **Exploration and boundaries** — inspect representations, misconceptions, failures,
-   and trade-offs.
-4. **Return and transfer** — solve the original problem and complete one changed-context
-   practice task when the lesson requires it.
+3. **Exploration and boundaries** — inspect representations, misconceptions, failures, and trade-offs.
+4. **Return and transfer** — resolve the original problem and complete one changed-context practice task when the lesson requires it.
 
-Lessons adapt to the learner's observable response. They may simplify, change
-representation, increase depth, provide progressive hints, or answer directly when
-requested. A lesson introduces no more than two new primary concepts; supporting
-terms and examples do not silently become additional concepts.
+The mentor introduces no more than two new primary concepts at a time. Important earlier concepts recur naturally in later lessons when they are needed. Reinforcement uses concise reminders, contrasts, and changed scenarios — not repeated full lectures or a separate review database.
 
-Read the canonical [pedagogical principles](teaching/pedagogical-principles.md),
-[adaptive lesson blueprint](teaching/head-first-lesson-blueprint.md), and
-[scaffolding and feedback procedure](teaching/scaffolding-and-feedback.md) for the
-design rules.
+When the learner says a lesson has already been covered, the mentor accepts that correction and moves to the requested gap or next unit.
 
-## Evidence and retention
+## Project artifacts are not progress files
 
-The repository distinguishes:
+The capstone still needs real engineering outputs: code, tests, contracts, ADRs, evaluation reports, traces, deployment notes, runbooks, and measured outcomes. They prove properties of the system being built and support honest portfolio claims. They are not a personal checklist of lessons completed.
 
-| State | Meaning |
-|---|---|
-| Exposure | The learner encountered an explanation |
-| Guided understanding | The learner succeeded with substantial support |
-| Familiar independent application | The learner solved a known case unaided |
-| Changed-context transfer | The learner applied the idea in a new scenario |
-
-Reading, a correct immediate answer, or generated code is not sufficient evidence of
-mastery. Future review opportunities are persisted through existing learning records
-and session exports with a retrieval target, reason, eligible review opportunity,
-evidence level, supporting observation, and review outcome. The system does not create
-a second scheduling mechanism.
-
-See [retrieval and transfer](teaching/retrieval-and-transfer.md),
-[workspace formats](teaching/workspace-formats.md), and
-[evidence policy](governance/evidence-policy.md).
+Do not confuse these project deliverables with a learner-progress ledger. The latter is deliberately not used.
 
 ## Repository map
 
 | Area | Purpose |
 |---|---|
 | `workspace/mission.md` | Learning outcome, constraints, and scope |
-| `workspace/evidence.md` | Supported capabilities, learning gaps, and prohibited claims |
-| `workspace/resources*.md` | Registered, verified sources and coverage gaps |
-| `journeys/` | Ordered learning units, prerequisites, and proof criteria |
-| `teaching/` | Lesson delivery, assessment, retrieval, visual, and routing procedures |
-| `learning-records/` | Demonstrated capability and next teaching target, when created |
-| `casebook/` | Researched failures and transferable engineering patterns, when created |
-| `reference/` and `lessons/` | Reusable lesson artifacts, when created |
+| `workspace/resources*.md` | Registered sources, verification status, and coverage gaps |
+| `journeys/` | Ordered learning units, prerequisites, sources, and practice/exit criteria |
+| `teaching/` | Lesson delivery, retrieval, reinforcement, visual, and routing procedures |
+| `governance/` | Source rules and truthful capability/production claims |
+| `casebook/` | Optional researched failures and transferable engineering patterns |
+| `reference/` and `lessons/` | Optional reusable lesson artifacts |
+| Capstone repository | Actual software, tests, architecture, evaluation, deployment, and operational artifacts |
 
 ## Governance
 
-- **Source governance:** use registered, qualifying sources; cite exact sections and
-  distinguish sourced facts from mentor synthesis and synthetic examples.
-- **Evidence governance:** do not claim production experience, ownership, deployment,
-  metrics, or mastery without supporting records.
-- **Journey ownership:** reuse an existing unit before creating curriculum. A topic
-  without an owner can use a traceable temporary learning scope through the
-  [general-topic routing procedure](teaching/branch-map-protocol.md).
-- **Quality:** technical correctness and pedagogical effectiveness are separate
-  review dimensions. The [pedagogical quality gate](teaching/pedagogical-quality-gate.md)
-  rejects applicable hard instructional violations before considering presentation
-  improvements.
-- **Agent boundaries:** curriculum, lesson design, tutoring, visual explanation,
-  assessment, and learning memory are logical responsibilities of one orchestrated
-  system; independent agents are not created for appearance.
+- **Source governance:** use qualifying sources; cite exact sections and distinguish source-backed facts from mentor synthesis and synthetic examples.
+- **Capability claims:** do not claim production experience, ownership, deployment, metrics, business results, or mastery beyond what the actual work supports.
+- **Journey ownership:** reuse an existing unit before creating curriculum. A topic without an owner can use a focused temporary scope through the [general-topic routing procedure](teaching/branch-map-protocol.md).
+- **Learner ownership:** the learner decides what has been studied and what to study next. The mentor does not maintain progress status.
+- **Quality:** technical correctness and lesson quality are reviewed separately with the [pedagogical quality gate](teaching/pedagogical-quality-gate.md).
 
 ## Validation
 
-Future lesson simulations can use the repository-native
-[behavioral acceptance fixture](teaching/behavioral-acceptance-fixture.md). It checks
-definition-first openings, concept limits, misconception handling, direct-answer
-requests, analogy failures, transfer, retrieval persistence, citation compliance,
-general-topic routing, and quality-gate rejection.
-
-The fixture is a documentation-driven review aid, not proof of runtime tutor
-behavior. This repository currently records and governs the learning system; it does
-not claim that the documented methodology has been empirically validated or that a
-deployed agent has demonstrated these behaviors.
+The [behavioral acceptance fixture](teaching/behavioral-acceptance-fixture.md) is a documentation-driven review aid. It checks explanation, concept limits, misconception handling, direct-answer requests, transfer, cumulative reinforcement, citation compliance, and general-topic routing. It is not proof of runtime tutor behavior or an empirically validated learning outcome.

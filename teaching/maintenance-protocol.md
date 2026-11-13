@@ -18,4 +18,4 @@ Review `../AGENTS.md` after every 10 sessions: delete rules the mentor never nee
 
 `../workspace/mission.md` is the user's file:
 - `../workspace/mission.md` points to the capability standard in [AGENTS.md](../AGENTS.md) and the hiring standard in `../workspace/resources.md` S1.
-- Progress tracking is tool-neutral: the repository is the source of truth, recorded in `../workspace/evidence.md` and learning records, with chat modes synchronizing via the session-export block (P§6).
+- Learning progress is learner-owned: the learner declares the current unit and part. The repository stores the curriculum and actual project artifacts, not a completion ledger or session exports.

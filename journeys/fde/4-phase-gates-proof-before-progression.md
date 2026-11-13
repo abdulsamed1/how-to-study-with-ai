@@ -13,7 +13,7 @@ depends_on:
 
 | Gate | Required proof | Lessons generally involved |
 |---|---|---|
-| **G1 — Can build and debug** | Five-line Problem Card with labelled hypotheses and a short evidence-based baseline in `../../workspace/evidence.md`; reproducible repo that starts from the README and a lockfile; stub-provider call with one seeded provider failure and a regression test that fails before the fix and passes after; validated external data at trust boundaries; async contract plus runtime evidence for blocking I/O, cleanup, and configuration (closes after Phase 3) | Phases 2–3 |
+| **G1 — Can build and debug** | Five-line Problem Card with labelled hypotheses and an initial success signal; reproducible repo that starts from the README and a lockfile; stub-provider call with one seeded provider failure and a regression test that fails before the fix and passes after; validated external data at trust boundaries; async contract plus runtime evidence for blocking I/O, cleanup, and configuration (closes after Phase 3) | Phases 2–3 |
 | **G2 — Can build a correct service** | HTTP contract with error model, validation, database schema, migration, provider contract sheet, integration tests, agent review record for one diff, quality-attribute table, architecture ADR with fitness check | Phases 4–7 |
 | **G3 — Understands failure and concurrency** | Idempotency, concurrency test, bounded retries, durable processing, outbox crash test, reconciliation replay | Phases 6–9 |
 | **G4 — Can reason about production** | CI/CD with rollback rehearsal, logs/metrics/traces, SLI computed from fault runs, incident analysis with stakeholder update, executed fault matrix and runbook | Phase 9 |

@@ -1,69 +1,37 @@
 ---
-purpose: Integrates retrieval, retention, interleaving, transfer, and mastery evidence.
-read_when: When planning assessment, a lesson close, or a future review.
+purpose: Defines in-lesson retrieval, retention, interleaving, and transfer without maintaining learner-progress state.
+read_when: When planning a lesson, a retrieval question, a cumulative review, or a changed-scenario practice.
 depends_on:
   - pedagogical-principles.md
   - retrieval-protocol.md
-  - ../workspace/evidence.md
   - records.md
 ---
 
 # Retrieval, retention, and transfer
 
-Use the existing records and journey retrieval fields. This procedure adds no second
-calendar or scoring system.
+Use the curriculum's prerequisite and cross-unit relationships to bring important ideas back naturally. Do not create a second memory system or persist learner-specific review metadata.
 
-## Evidence ladder
+## Learning moves
 
-| State | What it shows |
+| Move | How to use it |
 |---|---|
-| Read an explanation | Exposure only |
-| Followed a guided example | Supported recognition or procedure |
-| Solved a familiar problem unaided | Initial capability in a known context |
-| Applied the idea in a changed scenario | Transfer evidence |
-| Repeated transfer with the journey proof artifact | Stronger capability evidence |
+| Immediate retrieval | After explaining a concept, ask one brief question that makes the learner recall the mechanism, contrast, or reason. |
+| Cumulative reinforcement | When a later lesson needs an earlier idea, briefly reconnect it to the current problem before using it. |
+| Spaced re-encounter | Let important concepts recur across later units and examples rather than scheduling detached review sessions. |
+| Interleaving | Once related concepts are initially understood, contrast them inside a realistic decision so the learner distinguishes when each applies. |
+| Transfer | Change the constraint, input, failure point, workload, stakeholder, or business consequence and ask the learner to adapt the reasoning. |
 
-## Persisted retrieval record
+## Practical rules
 
-For every future review opportunity that should survive the session, update the
-existing learning record or its session export with one stable target entry:
+- Teach the new concept first; do not quiz the learner on material that has not yet been introduced.
+- Revisit only concepts that help explain the current problem. Avoid irrelevant recaps.
+- Use a concise reminder, diagram, example, or contrast; do not repeat an entire prior lesson unless the learner asks.
+- Never assume which lessons the learner has completed. The learner declares the current position.
+- When the learner flags a repeated lesson, acknowledge it and move to the specific gap or next requested section.
+- Keep retrieval questions distinct from independent practice. A retrieval question is not the final practice task.
 
-| Field | Required content |
-|---|---|
-| Retrieval target | Concept, skill, or capability to recall later; use the existing unit ID when one exists |
-| Retrieval reason | Difficulty, repeated misconception, failed transfer, high importance, weak unaided recall, or demonstrated uncertainty |
-| Next eligible review | Next session, a later session, when a related concept appears, or when another difficulty triggers review |
-| Evidence level | Exposure, guided understanding, familiar independent application, or changed-context transfer |
-| Supporting evidence | The observed response, task, record, or artifact that justifies the entry |
-| Review outcome | Successful recall, recall with hint, misconception persisted, independent application succeeded, or transfer remains unproven |
+## Assessment inside the current lesson
 
-Use one entry per stable target and update its outcome rather than creating duplicate
-entries. A review outcome is optional until the target is revisited. Older records
-without these fields remain valid: interpret them as having no persisted retrieval
-metadata and add the fields at the next relevant session. Scheduling remains owned by
-[P§5](retrieval-protocol.md); these fields do not create a second scheduler.
+The mentor may evaluate the learner's current explanation or practice response and give corrective feedback. This is immediate teaching feedback, not a persisted profile, completion status, or career claim. Actual code/tests/ADRs/reports produced for the capstone remain project artifacts.
 
-## Retrieval moves
-
-- **Immediate:** after the concept, ask for a brief explanation, contrast, or mechanism
-  without showing the answer. Use one question, not an interrogation.
-- **Delayed:** place important or difficult ideas in the existing later-session
-  retrieval record and revisit them in a changed scenario.
-- **Interleaving:** mix related concepts only after initial acquisition, to make the
-  learner distinguish mechanisms or decisions rather than repeat a pattern.
-- **Transfer:** change the constraint, input, failure point, stakeholder, or business
-  consequence. Ask for reasoning and evidence, not only a label.
-
-## Adaptive review
-
-Choose future review from importance, difficulty, previous performance, misconception
-risk, and available session state. State the rationale. Do not invent universal
-intervals or claim a review schedule is evidence-based without a registered source.
-
-## Close and record
-
-End the lesson with exactly one practice task when [P§3](lesson-protocol.md) requires
-independent practice. Diagnostic and retrieval questions do not count as practice.
-Record what the learner independently demonstrated, what remained supported, the
-misconception corrected, and the next retrieval target. Do not advance because content
-was covered.
+The learner decides when to move to another unit and names that unit at the next session. No learning records, evidence ledger, review schedule, or session export is maintained.
