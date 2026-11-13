@@ -161,7 +161,7 @@ A model provider is an external service with a contract, a failure surface, a la
 **Ownership rules.**
 
 1. The bridge changes how a unit is practised, not what it proves. The unit's own proof artifact and exit criteria stand.
-2. A bridge never marks a later unit complete, and no later unit may depend on a bridge.
+2. A bridge is a practice variation inside its owning unit, not a substitute for a later unit; no later unit depends on a bridge.
 3. A later unit may re-use the bridge's fixture, but it must re-derive its own contract, measurement, or test from its own source.
 4. The early model-exposure checkpoint (§10) is the only live-provider step before Phase 11; every other bridge is stub-based and labelled simulated.
 
