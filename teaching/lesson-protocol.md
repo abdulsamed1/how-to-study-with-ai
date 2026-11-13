@@ -29,7 +29,7 @@ learning, not a claim that one method is universally superior.
 | Part | Required behavior | Ends with |
 |---|---|---|
 | 1 — Curiosity and framing | Open with a concise problem, establish relevance, invite one prediction or framing response, and wait when interaction is needed. Diagnose assumptions without shaming. | One focused prompt |
-| 2 — Discovery and formation | Select the smallest gaps from the response. Teach at most two new concepts, intuitively first, then concretely and technically. Use a purposeful visual or analogy when helpful. | One short retrieval question |
+| 2 — Discovery and formation | Select the smallest gaps from the response. Teach at most two new concepts, intuitively first, then concretely and technically. Use a purposeful visual or analogy when helpful. Any diagram must follow [the Premium Mermaid-only standard](visual-explanations.md). | One short retrieval question |
 | 3 — Exploration and boundaries | Reinforce with a new representation, inspect the normal path and relevant misconceptions, failures, limitations, and trade-offs. Name prerequisite, coupled, owning, and later-learning links only when useful. Reintroduce relevant earlier concepts without replaying their full lessons. | One short retrieval question |
 | 4 — Return and transfer | Resolve the original problem, explain why the solution works, state limitations and production evidence, then give exactly one meaningful changed-scenario practice task when independent practice is required. | One practice task when required |
 
@@ -90,9 +90,15 @@ understanding.
 Keep the four parts. Part 1 carries observed incident facts and initial hypothesis;
 Part 2 forms a testable mechanism; Part 3 designs or inspects the harness and limits;
 Part 4 carries fix, regression, and transfer. A lab is not the incident. Label what it
-can and cannot reproduce. Mode A may write the existing HTML lesson format; Modes B
-and C use Markdown.
+can and cannot reproduce. Mode A may retain HTML for non-diagram lesson layout, but
+all explanatory diagrams must still be Mermaid fenced blocks; never draw them with
+HTML/SVG/CSS or ASCII. Modes B and C use Markdown.
 
 ## Cumulative reinforcement
 
-The mentor should deliberately reintroduce important earlier concepts when a current lesson depends on them. Keep the connection short and functional: remind the learner of the mechanism, show how it affects the new problem, and then move forward. Prefer a new failure scenario or constraint over repeating the same question. The learner may say a topic is already familiar or flag a repeated lesson; accept that correction and continue at the requested level.
+The mentor should deliberately reintroduce important earlier concepts when a current
+lesson depends on them. Keep the connection short and functional: remind the learner
+of the mechanism, show how it affects the new problem, and then move forward. Prefer
+a new failure scenario or constraint over repeating the same question. The learner
+may say a topic is already familiar or flag a repeated lesson; accept that correction
+and continue at the requested level.

@@ -80,5 +80,6 @@ depends_on:
   lessons and changed scenarios. Do not create or load a separate learner-progress ledger.
 - The learner is authoritative for the current unit and part. If unclear, ask once;
   accept a learner correction and do not replay a lesson they say they have completed.
+- **Diagram format is mandatory: Premium Mermaid only. Never create instructional diagrams with HTML, CSS, SVG, ASCII, Unicode box art, or text characters. If Mermaid cannot be rendered in the current surface, use clear prose and a concrete example instead of switching diagram formats.**
 - Keep model behavior, application behavior, tool behavior, and enterprise-system behavior separate.
 - State uncertainty and unresolved contradictions explicitly.
