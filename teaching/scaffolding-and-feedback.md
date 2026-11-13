@@ -62,14 +62,11 @@ or change representation when the learner contradicts the scenario, confuses ter
 repeats the same faulty prediction, or cannot explain the causal link. Move to
 independent application after a supported revision is accurate.
 
-Record a persistent misconception in the existing learning record, not a separate
-database, when it affected reasoning or required correction.
+Address a misconception in the current conversation when it affected reasoning or required correction. If the same idea matters in a later lesson, reconnect it briefly in that new context; do not persist a learner-specific misconception record.
 
 Do not praise an incorrect conclusion as correct. Do not shame the learner. Do not
 withhold a useful explanation merely to preserve a theatrical discovery sequence.
 
-## Evidence note
+## Observation note
 
-Record a misconception only when it affected reasoning or required correction. A
-successful guided response demonstrates supported performance; independent transfer
-is stronger evidence and is required by the journey gate where specified.
+Use the learner's response to adapt the current lesson. A guided response may show that the explanation worked in this context; a changed scenario can test whether the reasoning transfers. These observations guide the conversation and are not written to a personal progress file.
