@@ -40,9 +40,9 @@ depends_on:
 | Behavioral acceptance | [behavioral acceptance fixture](teaching/behavioral-acceptance-fixture.md), [pedagogical quality gate](teaching/pedagogical-quality-gate.md) |
 | Incident or case research | [research protocol](teaching/research-protocol.md), then the relevant journey file |
 | FDE curriculum | [FDE overview](journeys/fde/journey-overview.md), then one phase or support file |
-| Performance curriculum | [performance overview](journeys/performance/study-overview.md), then one level or support file |
-| Capability or production claim | [capability and claims policy](governance/evidence-policy.md), then the actual project artifact or source |
-| Workspace format or synchronization | [workspace formats](teaching/workspace-formats.md), [session protocol](teaching/session-protocol.md) |
+| Performance curriculum | [Performance overview](journeys/performance/study-overview.md), then one level or support file |
+| Capability or production claim | [Capability and claims policy](governance/evidence-policy.md), then the actual project artifact or source |
+| Workspace format or synchronization | [Workspace formats](teaching/workspace-formats.md), [session protocol](teaching/session-protocol.md) |
 
 ## Document inventory
 
@@ -63,8 +63,6 @@ depends_on:
 [behavioral-acceptance-fixture](teaching/behavioral-acceptance-fixture.md)
 [north-star](teaching/north-star.md) · [records](teaching/records.md) · [research-protocol](teaching/research-protocol.md) · [retrieval-protocol](teaching/retrieval-protocol.md) · [session-loop](teaching/session-loop.md)
 [session-protocol](teaching/session-protocol.md) · [study-pack-protocol](teaching/study-pack-protocol.md) · [workspace-formats](teaching/workspace-formats.md) · [mission](workspace/mission.md)
-[resources-coverage-gaps](workspace/resources-coverage-gaps.md) · [resources-designated-cross-phase-backend-coverage-reference-owner-decision-2026-10-24](workspace/resources-designated-cross-phase-backend-coverage-reference-owner-decision-2026-10-24.md) · [resources-designated-topic-scope-source-owner-decision-2026-10-21](workspace/resources-designated-topic-scope-source-owner-decision-2026-10-21.md) · [resources-f-series-foundational-sources-used-by-the-roadmap](workspace/resources-f-series-foundational-sources-used-by-the-roadmap.md) · [resources-how-to-use-this-file](workspace/resources-how-to-use-this-file.md)
-[resources-reading-status](workspace/resources-reading-status.md) · [resources-references-to-verify](workspace/resources-references-to-verify.md) · [resources-update-procedure](workspace/resources-update-procedure.md) · [resources-verified-references](workspace/resources-verified-references.md) · [resources](workspace/resources.md)
 
 ## Always-on rules
 
@@ -80,5 +78,6 @@ depends_on:
   lessons and changed scenarios. Do not create or load a separate learner-progress ledger.
 - The learner is authoritative for the current unit and part. If unclear, ask once;
   accept a learner correction and do not replay a lesson they say they have completed.
+- **Diagrams have one permitted format: polished Mermaid. Never create instructional diagrams with HTML, CSS, SVG, ASCII, Unicode box art, or text characters. If Mermaid cannot be rendered in the current surface, use clear prose and a concrete example instead of switching diagram formats.**
 - Keep model behavior, application behavior, tool behavior, and enterprise-system behavior separate.
 - State uncertainty and unresolved contradictions explicitly.
