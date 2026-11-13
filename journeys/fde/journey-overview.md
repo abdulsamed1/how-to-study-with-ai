@@ -25,7 +25,7 @@ Phases 0-1 were merged into Phase 2; the old-to-new mapping is in §8.
 1. **Follow dependencies, not enthusiasm.** Each lesson lists its prerequisite lesson IDs. A lesson is ready only when its prerequisite's exit evidence exists.
 2. **Teach one lesson unit at a time.** Progression is competency-based and self-paced: a unit is complete when its proof artifact meets the exit criteria, not when a clock expires. Standard units cover one focused capability; implementation units span larger multi-part builds.
 3. **Teaching mechanics live in the routed teaching procedures.** The lesson loop,
-   evidence and synthesis separation, retrieval, records, and honest capability
+   source/synthesis separation, retrieval, cumulative reinforcement, and honest capability
    claims follow [lesson protocol](../../teaching/lesson-protocol.md),
    [retrieval and transfer](../../teaching/retrieval-and-transfer.md),
    [workspace formats](../../teaching/workspace-formats.md), and
@@ -43,7 +43,7 @@ missing experience using [evidence policy](../../governance/evidence-policy.md).
 
 ## 2. Roadmap at a glance
 
-Use the levels below to scan the journey quickly. The detailed phase sections that follow remain the source of truth for each unit's priority, hard dependencies, coupled units, sources, and exit evidence. This index adds no lesson IDs or prerequisites and does not mark progress as complete. Use `../../workspace/evidence.md` for demonstrated capability and `../../workspace/resources.md` for source status. Retired IDs are retained as tombstones for traceability, not as active lessons.
+Use the levels below to scan the journey quickly. The detailed phase sections that follow remain the source of truth for each unit's priority, hard dependencies, coupled units, sources, and exit evidence. This index adds no lesson IDs or prerequisites and does not track learner completion. The learner declares the current unit; `../../workspace/resources.md` remains the source-status catalogue. Retired IDs are retained as tombstones for traceability, not as active lessons.
 
 ```text
 LEVEL 0 — Reproducible foundation [Phases 2–3 | G1]
@@ -105,7 +105,7 @@ Every lesson follows this record shape:
 - **Lesson:** scenario → concept → mechanism → failure modes → production implications.
 - **Practice:** one tangible task, preferably on the evolving capstone or a deliberately small lab.
 - **Exit evidence:** one primary proof artifact (checkable sub-items inside it are allowed).
-- **Retrieval:** defined once in the Retrieval table below — a named later unit whose scenario re-tests this one. No per-unit Retrieval field.
+- **Later connections:** defined in the Retrieval table below as curriculum cross-links. They guide brief reinforcement when a later lesson needs an earlier concept; they do not track learner completion.
 - **Unit type:** standard lesson units (focused capability and proof) vs **implementation unit (multi-session)** (larger architectural build, multi-part design, or lab).
 
 ### Depth scale
@@ -125,7 +125,7 @@ Every lesson follows this record shape:
 
 Each unit carries one of three priorities, keeping the priority vocabulary of the pre-rewrite journey map so the readiness check in [context loading](../../teaching/context-loading.md) has the metadata it names:
 
-- **must-have** — the unit sits on the capstone's critical path: it is a dependency hub (seven or more units depend on it), it closes a gap listed in `../../workspace/evidence.md`, it produces the G1 Problem Card/short baseline, the provider contract sheet, the regression gate, or the threat model, or it is a Phase 17 capstone unit (selection, build, evidence pack, or defense).
+- **must-have** — the unit sits on the capstone's critical path: it is a dependency hub (seven or more units depend on it), it is required by the mission/capstone gate, it produces the G1 Problem Card and service baseline artifacts, the provider contract sheet, the regression gate, or the threat model, or it is a Phase 17 capstone unit (selection, build, evidence pack, or defense).
 - **important** — expected on the standard path: later units build on it or it grounds a phase gate.
 - **useful** — valuable depth: compress or defer when diagnostics, the capstone, or a supporting branch show the capability is already present or not yet needed.
 
