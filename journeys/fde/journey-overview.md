@@ -23,14 +23,14 @@ Phases 0-1 were merged into Phase 2; the old-to-new mapping is in §8.
 ## 1. Rules for this journey
 
 1. **Follow dependencies, not enthusiasm.** Each lesson lists its prerequisite lesson IDs. A lesson is ready only when its prerequisite's exit evidence exists.
-2. **Teach one lesson unit at a time.** Progression is competency-based and self-paced: a unit is complete when its proof artifact meets the exit criteria, not when a clock expires. Standard units cover one focused capability; implementation units span larger multi-part builds.
+2. **Teach one lesson unit at a time.** Every unit has a clear objective and practical exit criteria. The learner decides when the topic is sufficiently covered and names the next unit; the mentor does not maintain completion status. Standard units cover one focused capability; implementation units span larger multi-part builds.
 3. **Teaching mechanics live in the routed teaching procedures.** The lesson loop,
    source/synthesis separation, retrieval, cumulative reinforcement, and honest capability
    claims follow [lesson protocol](../../teaching/lesson-protocol.md),
    [retrieval and transfer](../../teaching/retrieval-and-transfer.md),
    [workspace formats](../../teaching/workspace-formats.md), and
    [evidence policy](../../governance/evidence-policy.md).
-4. **No progress by attendance.** Mark a lesson complete only when its proof artifact or practical performance meets the exit criteria.
+4. **No mastery by attendance.** Reading or watching alone does not establish independent capability. Use the unit's practical task and changed-scenario discussion to give useful feedback, while leaving cross-session progression to the learner.
 5. **Respect established experience.** The user already has C++, OOP, and DSA experience. Do not teach beginner programming, object-oriented programming, or generic algorithm lessons. Use diagnostics to identify only the language, runtime, API, data, or AI-engineering gaps needed for the capstone.
 6. **One evolving capstone.** Build a small, deterministic business workflow first; add persistence and integrations; introduce AI only when the use case justifies it; then evaluate, secure, deploy, pilot, and document it. Keep scope narrow.
 7. **Source discipline.** `../../workspace/resources.md` remains the canonical project source register. Existing `S#` tags refer to it. The `F#` references below are official starting points checked on 2026-10-09; re-open the relevant page and record the exact section/version before teaching. Current API/model/security behavior must be verified at lesson time. A chapter tagged `[TOC]` was identified from a book's table of contents only and has not been read; keep the tag until the exact passage is read in an available tool and recorded in the `../../workspace/resources.md` reading-status table. A read that covered only the supporting sections is tagged `(read: <sections>)`; a chapter read in full is tagged `(read)`.
@@ -141,7 +141,7 @@ Used wherever a proof names an *agent review record* (rule 10). It is a short Ma
 4. **Observed evidence:** logs, traces, measurements, or failure-injection results that were actually seen.
 5. **Decision:** accept, reject, or redirect, with the evidence that justifies it.
 
-A passing generated test suite is an input to this record, never the verdict. The record is practice evidence only; it is not production experience (rule 10) and does not enter `../../workspace/evidence.md` as an achievement until the artifact exists.
+A passing generated test suite is an input to this project review, never the verdict. Keep the review note with the relevant code change or project artifact. It supports review of that change but is not production experience.
 
 ### AI-provider dependency thread (Phases 2–9)
 
