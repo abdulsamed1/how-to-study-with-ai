@@ -92,3 +92,8 @@ below are the ones read; every other cited chapter of that book is still
 | S74 | publisher bibliography/product details | bibliographic details verified; content not read in this audit | 2026-11-12 | web |
 | S75 | Event Time and Watermarks: event time versus processing time, watermarks, parallel inputs, lateness, and windows | read (sections) | 2026-11-12 | web |
 | S76 | PostgreSQL 18: ch. 11 indexes (contents and index trade-off overview); §5.12 table partitioning; ch. 28 WAL contents; ch. 26 replication/failover and sync/async overview | read (sections) | 2026-11-12 | web |
+
+| S27 | ch. 20 (caching: cache purpose, hit ratio, side/inline cache, TTL, invalidation, local/external cache, thundering herd) | read (selected sections) | 2026-11-20 | uploaded EPUB (direct inspection) |
+| S28 | ch. 2 section “Scaling the Database with Caching” | read (selected section) | 2026-11-20 | uploaded EPUB (direct inspection) |
+| S77 | Eviction and Efficiency pages: size/time eviction; Window TinyLFU; workload caveats | read (sections) | 2026-11-20 | official project wiki |
+| S78 | Key eviction: maxmemory, maxmemory-policy, LRU/LFU options | partial; search result reviewed, direct page rendering unreadable; reopen before implementation | 2026-11-20 | official documentation search; direct open failed |
