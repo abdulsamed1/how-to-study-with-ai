@@ -7,7 +7,7 @@ depends_on:
 
 # Project sources
 
-These indexes are lightweight discovery aids. They are not exhaustive, ranked, verified/unverified lists, or mandatory reading paths.
+These indexes are lightweight, non-exhaustive discovery aids. They are not approval lists, rankings, or mandatory reading paths.
 
 - [Project source index](source-index.md) — stable IDs, source names, and URLs.
 - [Foundational documentation and references](resources-f-series-foundational-sources-used-by-the-roadmap.md) — stable IDs, names, and URLs.
