@@ -10,7 +10,7 @@ depends_on:
 
 **Goal:** Prevent data corruption when operations overlap, fail halfway, or observe state that has changed elsewhere.
 
-**Handbook reading path (S69):** Ch. 15 §§15.1–15.14 (ACID, anomalies, PostgreSQL isolation/MVCC, locks and deadlocks, optimistic versus pessimistic control, queue tables, idempotency, serialization retries, long transactions); Ch. 12 §12.14 (state machines) and Ch. 13 §13.8 (atomic write/upsert patterns). Ch. 15 §15.15 (outbox/sagas) remains in Phase 8 so transaction-local correctness is distinguished from cross-system coordination.
+**Optional source suggestion:** S69, *The Backend Developer Interview Handbook*. This is only one possible source. Search all Project Sources for better or deeper material; no chapters are prescribed.
 
 - **P6.1 — Atomicity and transaction boundaries** — **Priority:** must-have. Depends on: P5.2–P5.6. Group state changes that must succeed or fail together. **Proof:** transactionally persist one business operation and test rollback. Sources: F6, S19.
 - **P6.2 — Isolation and anomalies** — **Priority:** important. Depends on: P6.1. Lost updates, non-repeatable/phantom reads, check-then-act races, and PostgreSQL MVCC. Choose the isolation detail required by the reproduced failure rather than memorizing every anomaly. **Proof:** reproduce one race using two concurrent clients and identify the conflicting reads/writes from evidence. Sources: F6, S19.
