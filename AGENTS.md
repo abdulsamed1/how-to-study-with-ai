@@ -63,7 +63,7 @@ depends_on:
 [behavioral-acceptance-fixture](teaching/behavioral-acceptance-fixture.md)
 [north-star](teaching/north-star.md) · [records](teaching/records.md) · [research-protocol](teaching/research-protocol.md) · [retrieval-protocol](teaching/retrieval-protocol.md) · [session-loop](teaching/session-loop.md)
 [session-protocol](teaching/session-protocol.md) · [study-pack-protocol](teaching/study-pack-protocol.md) · [workspace-formats](teaching/workspace-formats.md) · [mission](workspace/mission.md)
-[resources-f-series-foundational-sources-used-by-the-roadmap](workspace/resources-f-series-foundational-sources-used-by-the-roadmap.md) · [resources-how-to-use-this-file](workspace/resources-how-to-use-this-file.md) · [resources-update-procedure](workspace/resources-update-procedure.md) · [resources-verified-references](workspace/resources-verified-references.md) · [resources](workspace/resources.md)
+[resources-f-series-foundational-sources-used-by-the-roadmap](workspace/resources-f-series-foundational-sources-used-by-the-roadmap.md) · [resources-how-to-use-this-file](workspace/resources-how-to-use-this-file.md) · [resources-update-procedure](workspace/resources-update-procedure.md) · [source-index](workspace/source-index.md) · [resources](workspace/resources.md)
 
 ## Always-on rules
 
