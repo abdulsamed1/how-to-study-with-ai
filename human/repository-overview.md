@@ -78,7 +78,7 @@ You do not need to create every file on day one. Start with the core documents a
 | **workspace/mission.md** | The destination | Why you are learning, observable outcomes, constraints, and out-of-scope topics |
 | **AGENTS.md** | The mentor contract | How the AI should teach, research, challenge, assess, and behave |
 | **Your plan / journey map** | The learning path | Topics, units, priorities, prerequisites, sources, practice, and exit criteria |
-| **workspace/resources.md** | The source catalogue | Verified sources, sources to verify, and known coverage gaps |
+| **workspace/resources.md** | The source index | Source names, stable IDs, and URLs; not an allowlist |
 | **teaching/session-protocol.md** | The operating procedures | Repeatable formats, tool setup, session workflow, and progress synchronization |
 
 Supporting files can be added gradually:
@@ -136,15 +136,11 @@ A useful learning unit should normally define:
 
 The plan is not a list of everything that exists in a field. It is a sequence of what you need next, based on your goal and current ability. Keep optional topics optional. Update the plan when evidence shows that a topic is already understood, a prerequisite is missing, or the goal has changed.
 
-**workspace/resources.md — Keep the learning connected to real material**
+**workspace/resources.md — Find useful learning material**
 
-Organize sources by their status:
+The source index keeps stable IDs, source names, and URLs. It is a navigation aid, not an approved-source list, ranking, or fixed reading path. The Project's uploaded books and documents are the wider learning library. Search across all relevant Project Sources, including sources not named by the active unit.
 
-- **Verified references:** opened and checked; suitable to support a claim.
-- **References to verify:** useful leads that have not yet been checked.
-- **Coverage gaps:** topics for which you do not yet have an adequate source.
-
-Record the title, author or publisher, link, relevant chapter or section, and verification status when available. Prefer primary sources such as official documentation, specifications, standards, original papers, and first-party engineering reports. Use secondary explanations to help you understand, not to silently replace the source that establishes a technical fact.
+Do not maintain verification categories, file-format metadata, source-access labels, chapter assignments, or records of which pages the AI has read. Do not restrict a lesson to a preselected chapter. Explore the relevant books and documents broadly, then teach the useful content directly. Keep explanations grounded in material that actually supports them; do not attribute details to text that was not accessible.
 
 **Learner-owned progress — No progress ledger**
 
