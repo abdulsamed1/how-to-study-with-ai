@@ -1,82 +1,68 @@
 ---
-purpose: Defines one teaching procedure or workspace format.
-read_when: When the procedure named in the routing table is required.
+purpose: Defines deep, source-first preparation for every learning response.
+read_when: Before preparing a source-dependent lesson or explanation.
 depends_on:
   - ../governance/source-policy.md
   - ../governance/evidence-policy.md
 ---
 
-# P§9. Source-grounded study-pack procedure
+# P§9. Deep source-first learning procedure
 
+## 1. Discover broadly
 
-## P§9. Source-grounded study-pack procedure
+1. Identify the question, concept, practical problem, and related concepts that may explain it.
+2. Search the full set of available ChatGPT Project Sources—not only the books or source IDs named by the active journey. Search books, PDFs, papers, notes, and other relevant documents.
+3. Search using the main term, synonyms, alternate terminology, mechanisms, neighboring concepts, and the problem the concept solves.
+4. Use the source index and journey tags only to discover useful starting points. They are not an allowlist, ranking, mandatory source set, or chapter-reading plan.
+5. Follow references inside promising sources. Compare relevant explanations across books instead of stopping at the first matching passage.
+6. Add strong external primary material when it supplies missing depth or current technical detail.
 
-### Source triage
+## 2. Explore the source material
 
-For each source needed by a lesson:
+For each relevant source that is available:
 
-1. Open the publisher's canonical page or the supplied book.
-2. Confirm title, publisher, relevance, currency, and URL.
-3. Record the date and exact section, chapter, or page in `../workspace/resources.md`.
-4. Mark it Verified only after those checks; move failed or obsolete entries to
-   References to verify or Coverage gaps; never silently retain a stale
-   or degraded entry as verified.
+- Read the substantive passage and enough surrounding context to understand the author's argument.
+- Explore related sections, examples, tables, diagrams, notes, and cross-references that clarify the topic.
+- Search the whole relevant book for the topic; do not assume one assigned chapter contains everything useful.
+- Identify definitions, motivation, assumptions, mechanisms, components, sequences, examples, variants, constraints, trade-offs, failure modes, limitations, and relationships to other concepts.
+- Look for details that qualify or contradict the initial explanation. Do not extract isolated sentences while ignoring the author's surrounding reasoning.
+- Do not stop after finding one definition or one short excerpt when the topic requires deeper treatment.
 
-### Lesson preparation
+Do not maintain a record of which pages or chapters the AI has read. Do not require a pre-existing reading-status entry, source verification label, file-format record, or chapter assignment.
 
-Use the Journey Unit or Temporary Learning Scope named by the learner. If the current unit is not named, ask one direct question before preparing the lesson. An unrelated temporary topic does not require loading or creating an FDE journey unit. Open only the selected scope's Verified source IDs
-and the specific sections needed for that scope; do not load the entire library into
-every lesson. Prepare one realistic problem, one learner-framing prompt, the causal
-problem chain, a compact concept-link map from scope metadata, the relevant edge
-cases, and retrieval questions for Parts 2–3. Prepare exactly one final practice
-task only when the lesson type requires independent practice. Label lesson text as
-Source-backed fact, Mentor synthesis, or Practice.
+## 3. Build the teaching explanation
 
-The scope handoff is explicit and stable:
+Organize the knowledge before answering:
 
-| Stage | Required handoff |
-|---|---|
-| Topic request and scope creation | Stable Journey Unit ID or `TMP:<topic-slug>:<version>` Scope ID, one owner, one objective, prerequisites, source tags, and proof boundary |
-| Source preparation and study pack | The same Scope ID, verified source sections, concept links, edge cases, and retrieval questions |
-| Lesson blueprint and delivery | The same Scope ID, one outcome, and the scope's prerequisite and evidence boundary |
-| Cumulative reinforcement | Relevant prerequisite concepts reappear briefly in later lessons and changed scenarios; no personal retrieval record is created |
+1. What problem is the author addressing, and why does it matter?
+2. What does the concept mean, and what does it not mean?
+3. How does it work? Explain the mechanism and the relationship between its parts.
+4. What conditions, assumptions, and design choices affect it?
+5. What examples, edge cases, failure modes, trade-offs, and limitations matter?
+6. How does it compare with related concepts or alternative approaches?
+7. How does it apply to the learner's current problem?
 
-Decide the unit's working mode before preparing the practice task, and record
-it with the lesson: (1) the learner writes and debugs the code; (2) the
-learner specifies the work and reviews agent-produced code; (3) delegated
-implementation combined with a learner-designed experiment and independent
-verification. Follow the active journey's rules on human-in-the-loop
-engineering and on hand-writing versus review; do not restate them here.
+Cover all source details that materially help answer the question. Prefer a complete, coherent explanation over brief definitions or superficial summaries. Follow the repository's teaching concept limits without omitting the important depth within the selected concepts.
 
-### Tool import and export
+## 4. Teach; do not send the learner away
 
-The file manifest — what each file is for, when it is loaded, who writes it,
-and which modes need it:
+- Explain the relevant knowledge directly in the response, in original wording.
+- Never replace an explanation with a book title, author name, chapter number, page pointer, or instruction to read a chapter.
+- Mention bibliographic information only as attribution after or beside the explanation.
+- Clearly separate what the source says from mentor synthesis, illustrative examples, and application to the learner's system.
+- If multiple authors differ, explain their distinct positions and the reason for the difference.
+- Paraphrase; do not reproduce extensive copyrighted passages.
 
-| File | Purpose | Loaded when | Written by | Modes |
-|---|---|---|---|---|
-| `../workspace/mission.md` | why the user is learning this | every session | the user; the mentor drafts it only with the user's confirmation | A, B, C |
-| `../AGENTS.md` | how to teach | every session | the user | A, B, C |
-| `session-protocol.md` | procedures and formats | when a session needs one | the user | A, B, C |
-| `active scope` | the selected Journey Unit or established Temporary Learning Scope | every lesson: scope metadata, prerequisites, source tags, and proof boundary | the user; the mentor records temporary scopes through [branch-map and general-topic routing](branch-map-protocol.md) | A, B, C |
-| `../journeys/performance/study-overview.md` | the performance branch | when the journey opens it | the user | A, B, C |
-| `../workspace/resources.md` | canonical source catalog | before teaching: relevant rows and status, and on every source claim | the user | A, B, C |
-| `GLOSSARY.md` | earned terms | when a term is earned | the user | A, B, C |
-| `casebook/` | real failures per concept | when a case is researched | the user | A, B, C |
+## 5. Access and attribution
 
-The repository files listed above plus the selected active scope and relevant catalogue
-rows are the minimum set for a lesson. For a journey or temporary scope and catalog,
-"minimum set" means their rules and current scope metadata, not every phase or row of
-a catalog ([context loading](context-loading.md)). `GLOSSARY.md` and `casebook/` are optional and are created only when useful (P§1). No learner-progress folder is created.
+The source index does not prove that a source is present in the current Project or that any particular claim appears in it. Do not perform administrative checks or maintain reading-status metadata. Retrieve the actual material needed for the current response when source access is available.
 
-In a chat tool, use these files as project sources and keep instructions
-short: follow [AGENTS.md](../AGENTS.md), use `session-protocol.md` when referenced, and
-cite the uploaded sources. Add the selected primary sources for the current
-unit as well. Generated quizzes, summaries, and audio are practice artifacts, not sources or learner-progress records.
+Never pretend to have inspected inaccessible text or attribute a claim to a source based only on its title, URL, table of contents, memory, or another AI's summary. When a source cannot be accessed, use other accessible material and state the limitation if it materially affects the answer.
 
-### Synchronization
+Use current official documentation for changing API, model, product, security, and version-specific behavior. Books remain valuable for underlying concepts and engineering reasoning.
 
-Re-check API, product, model, and security sources before teaching current
-claims. When a source changes, update its registry row first, then compare
-the affected journey tags and lesson citations. Never
-silently replace a source or turn a candidate into evidence.
+## 6. Lesson handoff
+
+Use the Journey Unit or Temporary Learning Scope declared by the learner. If the current unit is missing, follow the session-position rule in AGENTS.md.
+
+Prepare the problem, the source-derived explanation, relevant concept links, failure cases, and any retrieval/practice prompts required by the lesson protocol. Do not create source-read records, source coverage gates, learner-progress records, or session exports.
