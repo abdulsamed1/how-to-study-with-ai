@@ -2,8 +2,8 @@
 purpose: Contains one part of the performance and traffic-spike study map.
 read_when: When diagnosing or practising the named performance concern.
 depends_on:
-  - ../../workspace/mission.md
-  - ../../workspace/resources.md
+ -../../workspace/mission.md
+ -../../workspace/resources.md
 ---
 
 # L6 — Capacity and Scaling Decisions
@@ -31,13 +31,13 @@ A classic production sequence:
 
 ```text
 Application capacity is exhausted
-           ↓
+ ↓
 Add application replicas
-           ↓
+ ↓
 Application bottleneck improves
-           ↓
+ ↓
 Database receives more concurrent work
-           ↓
+ ↓
 Database becomes the bottleneck
 ```
 
@@ -67,9 +67,9 @@ Learn the relationship:
 
 ```text
 Observed load / resource pressure
-             ↓
+ ↓
 Capacity policy
-             ↓
+ ↓
 Add/remove replicas
 ```
 
@@ -109,8 +109,8 @@ I can justify scaling from evidence and can predict at least one downstream bott
 
 ## Source path
 
-- *Foundations of Scalable Systems* (S28), Ch. 1 (read), Ch. 2 [TOC] — replication, optimization, scale-up/scale-out, service/database bottlenecks, caching, queueing.
-- *Understanding Distributed Systems* (S27), Ch. 1.3 [TOC] — capacity and scaling; Ch. 18 [TOC] — Network Load Balancing.
-- *Designing Distributed Systems* (S29), Ch. 6 [TOC] — Replicated Load-Balanced Services.
+- *Foundations of Scalable Systems* (S28), Ch. 1, Ch. 2 — replication, optimization, scale-up/scale-out, service/database bottlenecks, caching, queueing.
+- *Understanding Distributed Systems* (S27), Ch. 1.3 — capacity and scaling; Ch. 18 — Network Load Balancing.
+- *Designing Distributed Systems* (S29), Ch. 6 — Replicated Load-Balanced Services.
 
 ---
