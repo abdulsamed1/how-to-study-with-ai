@@ -2,8 +2,8 @@
 purpose: Contains one part of the performance and traffic-spike study map.
 read_when: When diagnosing or practising the named performance concern.
 depends_on:
-  - ../../workspace/mission.md
-  - ../../workspace/resources.md
+ -../../workspace/mission.md
+ -../../workspace/resources.md
 ---
 
 # L2 — Resource and Execution Bottlenecks
@@ -48,15 +48,15 @@ Understand the request-processing path:
 
 ```text
 Incoming request
-      ↓
+ ↓
 accept / socket queue
-      ↓
+ ↓
 request worker / thread pool
-      ↓
+ ↓
 blocking operation or dependency
-      ↓
+ ↓
 resource pool
-      ↓
+ ↓
 response
 ```
 
@@ -92,7 +92,7 @@ I know what profiling or runtime telemetry I need before changing instance size.
 
 ## Source path
 
-- *Foundations of Scalable Systems* (S28), Ch. 5 [TOC] — application service execution, thread pools, request queues, database connection pools, utilization, latency.
-- *Foundations of Scalable Systems* (S28), Part I [TOC] — concurrency fundamentals only to the depth required to reason about contention and performance.
+- *Foundations of Scalable Systems* (S28), Ch. 5 — application service execution, thread pools, request queues, database connection pools, utilization, latency.
+- *Foundations of Scalable Systems* (S28), Part I — concurrency fundamentals only to the depth required to reason about contention and performance.
 
 ---
