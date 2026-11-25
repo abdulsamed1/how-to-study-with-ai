@@ -10,7 +10,7 @@ depends_on:
 
 **Goal:** Model business facts correctly, choose storage structures that fit the workload, and understand the database mechanisms that affect durability, query behavior, and growth.
 
-**Handbook reading path (S69):** Ch. 12–16 as mapped below. These are navigation pointers only until the exact passages are read and recorded. Use PostgreSQL 18 documentation for PostgreSQL-specific behavior; do not generalize it to every database engine.
+**Optional source suggestion:** S69, *The Backend Developer Interview Handbook*. This is only one possible source. Search all Project Sources for better or deeper material; no chapters are prescribed.
 
 - **P5.1 — Relational modeling and data invariants** — **Priority:** important. Depends on: P2.3, P4.3. Entities, relationships, keys, cardinality, nullability, and invariants. **Proof:** schema sketch for users, requests, events, and processing state. Source: F6.
 - **P5.2 — SQL reads/writes, joins, and aggregation** — **Priority:** must-have. Depends on: P5.1. CRUD, filtering, NULL semantics, joins, grouping, ordering, and transaction boundaries. Add CTEs, window functions, and RETURNING/UPSERT when a business question requires them. **Proof:** answer representative business questions with SQL rather than application loops, including one ranked/top-per-group query and one safe write whose result is checked. Sources: F6; S69.
