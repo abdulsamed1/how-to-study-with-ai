@@ -10,7 +10,7 @@ depends_on:
 The repository stores the mission, curriculum, teaching/source rules, and actual project artifacts. It does not store learner-by-learner lesson completion or progress history.
 
     ../workspace/mission.md          learning goal and constraints
-    ../workspace/resources.md        verified sources, sources to verify, coverage gaps
+    ../workspace/resources.md        simple source names, IDs, and URLs
     GLOSSARY.md                      optional one-line definitions
     casebook/INDEX.md                optional concept → real cases → transferable pattern
     casebook/<concept>.md            optional researched failures for one concept
@@ -26,7 +26,7 @@ Create supporting directories only when a real artifact is needed. Do not create
 
 ## Source catalogue
 
-The section contract lives in `workspace/resources.md`: Verified references, References to verify, and Coverage gaps. Add or update a source only after opening the actual artifact and checking the relevant passage. Record bibliographic and reading status there; this is source provenance, not learner progress.
+The source index lives in `workspace/resources.md` and contains source IDs, names, and URLs only. It is a discovery aid, not an allowlist or reading plan. Do not maintain verification categories, access-format metadata, chapter mappings, or reading-status records. Search all Project Sources for each topic.
 
 ## Optional glossary
 
