@@ -10,7 +10,7 @@ depends_on:
 
 **Goal:** Design systems around real business responsibilities and quality constraints. Keep components understandable, changes verifiable, and architecture decisions explicit before implementation.
 
-**Handbook reading path (S69):** Ch. 21–23 and 28 as mapped below. Use *Fundamentals of Software Architecture*, *Software Architecture: The Hard Parts*, and *Building Microservices* for architecture fundamentals; current framework behavior remains subject to current official docs.
+**Optional source suggestion:** S69, *The Backend Developer Interview Handbook*. This is only one possible source. Search all Project Sources for better or deeper material; no chapters are prescribed.
 
 - **P7.1 — Boundaries, responsibilities, and dependency direction** — **Priority:** important. Depends on: P2.5, P3.1–P3.2, P3.4–P3.7, P4.7a. Separate transport, application use cases, domain rules, and persistence where useful. Introduce ports/adapters and dependency inversion as boundary tools, not mandatory folder templates. **Proof:** draw a module diagram, justify boundaries, and add an automated check that fails on a deliberate dependency-direction violation. Sources: S20 and 20; S26.
 - **P7.2 — Unit, integration, contract, and end-to-end tests** — **Priority:** must-have. Depends on: P2.2, P4.7a, P5.6. Choose the test level that proves a claim; avoid testing implementation details unnecessarily. **Proof:** test one important invariant at multiple appropriate layers, with one requirement-first test shown to fail under a seeded defect. Sources: F8, S20, S40, S41.
