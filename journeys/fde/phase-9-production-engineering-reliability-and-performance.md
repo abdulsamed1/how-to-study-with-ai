@@ -10,7 +10,7 @@ depends_on:
 
 **Goal:** Diagnose and operate production behavior from evidence. Design service infrastructure and fault boundaries that keep a local failure from becoming a system-wide incident.
 
-**Handbook reading path (S69):** Ch. 24–27 and 36 as mapped below. Provider-specific cloud, container, and orchestration behavior must be checked against current official documentation when selected.
+**Optional source suggestion:** S69, *The Backend Developer Interview Handbook*. This is only one possible source. Search all Project Sources for better or deeper material; no chapters are prescribed.
 
 - **P9.1 — Runtime configuration, containers, and environments** — **Priority:** important. Depends on: P3.4, P3.7, P5.6, P7.2. Build a reproducible container and separate local/test/production configuration. **Proof:** clean startup following written instructions. Sources: F7, S26.
 - **P9.2 — CI/CD and safe release workflow** — **Priority:** must-have. Depends on: P2.1, P5.5, P7.2, P9.1. Automated checks, build artifacts, deployment steps, migrations, rollout, and rollback limits. **Proof:** CI builds/tests the service and a rollback rehearsal records what could and could not be reversed. Review agent-written pipeline changes for secrets, permissions, and mutable references. Sources: F7, S25, S34, S36.
