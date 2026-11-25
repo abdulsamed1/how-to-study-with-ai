@@ -32,14 +32,14 @@ OpenCode supports project instructions through AGENTS.md and can load additional
 You are helping me use a source-grounded learning workspace. The learner owns their current lesson position.
 
 Before making changes:
-1. Read workspace/mission.md, AGENTS.md, the learner-declared active unit, and the relevant rows in workspace/resources.md.
+1. Read workspace/mission.md, AGENTS.md, the learner-declared active unit, and the source names and URLs in workspace/resources.md.
 2. Explain the current structure and identify missing or conflicting information.
 3. Do not infer completed lessons from chat history, memory, or repository files. Ask the learner for the current unit if it is not stated.
 
 When editing:
 - Keep the learning goal and curriculum separate from teaching rules.
 - Preserve stable unit IDs and prerequisite relationships.
-- Add sources only with their actual URLs and verification status.
+- Keep source indexes minimal: stable ID when needed, source name, and URL. Do not track verification or reading status.
 - Do not create a learner-progress ledger, learning records, or session exports.
 - Never invent achievements, test results, or measurements.
 
@@ -63,9 +63,9 @@ Suggested Project instruction:
 ~~~text
 Use the project files as the source of truth for my learning journey.
 
-Before each learning session, inspect the mission, the unit I name, and the relevant source catalogue. Follow AGENTS.md. I own my learning position and will tell you which unit/part to continue.
+Before each learning session, inspect the mission, the unit I name, and the source index and the full set of Project Sources. Follow AGENTS.md. I own my learning position and will tell you which unit/part to continue.
 
-Do not infer progress from chat history or repository files. Do not create a progress ledger, learning records, or session exports. Teach one part at a time, respect prerequisites, ground factual claims in named sources, and briefly reinforce relevant earlier concepts. Accept my correction if a lesson has already been covered.
+Do not infer progress from chat history or repository files. Do not create a progress ledger, learning records, or session exports. Teach one part at a time, respect prerequisites, search Project Sources broadly and teach from relevant source content; do not limit research to named chapters or source IDs, and briefly reinforce relevant earlier concepts. Accept my correction if a lesson has already been covered.
 
 Never invent repository state or claim that you updated files unless
 the change was actually made.
