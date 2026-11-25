@@ -2,8 +2,8 @@
 purpose: Contains one part of the performance and traffic-spike study map.
 read_when: When diagnosing or practising the named performance concern.
 depends_on:
-  - ../../workspace/mission.md
-  - ../../workspace/resources.md
+ -../../workspace/mission.md
+ -../../workspace/resources.md
 ---
 
 # L5 — Overload Control: Rate Limiting, Load Shedding, Load Leveling
@@ -24,11 +24,11 @@ Vitillo's model:
 
 ```text
 Current local work
-       ↓
+ ↓
 Is the service over its safe capacity?
-       ↓
+ ↓
 Reject excess work early
-       ↓
+ ↓
 Protect work already in progress
 ```
 
@@ -57,11 +57,11 @@ When the client does not need immediate completion, asynchronous work can decoup
 
 ```text
 Producer
-   ↓
+ ↓
 Queue
-   ↓
+ ↓
 Workers
-   ↓
+ ↓
 Database / external service
 ```
 
@@ -105,8 +105,8 @@ I can distinguish the three controls and choose among them based on **work seman
 
 ## Source path
 
-- *Understanding Distributed Systems* (S27), Ch. 28 (read) — Upstream Resiliency: 28.1 Load Shedding; 28.2 Load Leveling; 28.3 Rate Limiting; 28.4 Constant Work.
-- *Foundations of Scalable Systems* (S28), Ch. 2 [TOC] — increasing responsiveness with asynchronous queueing.
-- *Designing Distributed Systems* (S29), Ch. 11 [TOC] — Work Queue Systems; Ch. 12 [TOC] — Event-Driven Batch Processing.
+- *Understanding Distributed Systems* (S27), Ch. 28 — Upstream Resiliency: 28.1 Load Shedding; 28.2 Load Leveling; 28.3 Rate Limiting; 28.4 Constant Work.
+- *Foundations of Scalable Systems* (S28), Ch. 2 — increasing responsiveness with asynchronous queueing.
+- *Designing Distributed Systems* (S29), Ch. 11 — Work Queue Systems; Ch. 12 — Event-Driven Batch Processing.
 
 ---
