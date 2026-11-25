@@ -10,7 +10,7 @@ depends_on:
 
 **Goal:** Choose the right solution before building it. Apply the database, correctness, software architecture, distributed-systems, and production knowledge already acquired; do not re-teach those mechanisms inside system-design exercises.
 
-**Handbook reading path (S69):** Ch. 28–30 as mapped below. Read only the case studies matching the selected workflow; sample numbers are not measured facts about the capstone.
+**Optional source suggestion:** S69, *The Backend Developer Interview Handbook*. This is only one possible source. Search all Project Sources for better or deeper material; no chapters are prescribed.
 
 - **P10.1 — Workflow observation and stakeholder questions** — **Priority:** important. Depends on: P2.1, P7.1. Map inputs, decisions, handoffs, exceptions, and existing tools. **Proof:** current-state workflow map, stakeholder questions, exception paths, baseline metrics, constraints, and initial AI justification; simulated discovery must be labelled. Sources: delivery loop; current discovery-practice source gap remains open in resources.
 - **P10.2 — Deterministic code vs workflow vs agent** — **Priority:** important. Depends on: P10.1, P7.5b, P8.1. Choose the least complex design that meets the need; identify where autonomy is useful and dangerous. This is a provisional complexity floor revisited in P11.6 with model evidence. **Proof:** option comparison including a non-AI option. Sources: S3, S12.
