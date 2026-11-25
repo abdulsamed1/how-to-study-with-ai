@@ -11,7 +11,7 @@ This repository is a portable, learner-led system for building durable technical
 
 - a clear learning mission;
 - prerequisite-aware journeys and lesson units;
-- verified source catalogues and research gaps;
+- lightweight source indexes with names and URLs;
 - problem-first lessons with retrieval, reinforcement, and transfer;
 - actual capstone artifacts such as code, tests, ADRs, evaluations, traces, deployment records, and runbooks.
 
@@ -53,7 +53,7 @@ Do not confuse these project deliverables with a learner-progress ledger. The la
 | Area | Purpose |
 |---|---|
 | `workspace/mission.md` | Learning outcome, constraints, and scope |
-| `workspace/resources*.md` | Registered sources, verification status, and coverage gaps |
+| `workspace/resources*.md` | Source names, stable IDs, and URLs; discovery is open-ended |
 | `journeys/` | Ordered learning units, prerequisites, sources, and practice/exit criteria |
 | `teaching/` | Lesson delivery, retrieval, reinforcement, visual, and routing procedures |
 | `governance/` | Source rules and truthful capability/production claims |
@@ -63,7 +63,7 @@ Do not confuse these project deliverables with a learner-progress ledger. The la
 
 ## Governance
 
-- **Source governance:** use qualifying sources; cite exact sections and distinguish source-backed facts from mentor synthesis and synthetic examples.
+- **Source governance:** search relevant Project Sources broadly; source IDs and links are discovery hints, not an allowlist or fixed reading path. Teach source-derived substance and distinguish it from mentor synthesis and examples.
 - **Capability claims:** do not claim production experience, ownership, deployment, metrics, business results, or mastery beyond what the actual work supports.
 - **Journey ownership:** reuse an existing unit before creating curriculum. A topic without an owner can use a focused temporary scope through the [general-topic routing procedure](teaching/branch-map-protocol.md).
 - **Learner ownership:** the learner decides what has been studied and what to study next. The mentor does not maintain progress status.
