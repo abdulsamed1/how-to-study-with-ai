@@ -2,8 +2,8 @@
 purpose: Contains one part of the performance and traffic-spike study map.
 read_when: When diagnosing or practising the named performance concern.
 depends_on:
-  - ../../workspace/mission.md
-  - ../../workspace/resources.md
+ -../../workspace/mission.md
+ -../../workspace/resources.md
 ---
 
 # L0 — Diagnostic Mindset: Stop Treating Symptoms as Solutions
@@ -87,7 +87,7 @@ I can state what evidence would make scaling appropriate and what evidence would
 
 ## Source path
 
-- *Foundations of Scalable Systems* (S28), Ch. 1 (read) — scalability, replication, optimization, performance, bottlenecks.
-- *Understanding Distributed Systems*, 2nd ed., Roberto Vitillo (S27), Ch. 1.3 [TOC] — performance, throughput, response time, capacity.
+- *Foundations of Scalable Systems* (S28), Ch. 1 — scalability, replication, optimization, performance, bottlenecks.
+- *Understanding Distributed Systems*, 2nd ed., Roberto Vitillo (S27), Ch. 1.3 — performance, throughput, response time, capacity.
 
 ---
