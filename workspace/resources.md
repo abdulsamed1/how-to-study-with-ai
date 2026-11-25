@@ -9,7 +9,7 @@ depends_on:
 
 These indexes are lightweight discovery aids. They are not exhaustive, ranked, verified/unverified lists, or mandatory reading paths.
 
-- [Project source index](resources-verified-references.md) — stable IDs, source names, and URLs.
+- [Project source index](source-index.md) — stable IDs, source names, and URLs.
 - [Foundational documentation and references](resources-f-series-foundational-sources-used-by-the-roadmap.md) — stable IDs, names, and URLs.
 
 ## How to use the index
