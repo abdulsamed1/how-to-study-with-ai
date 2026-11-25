@@ -2,8 +2,8 @@
 purpose: Contains one part of the performance and traffic-spike study map.
 read_when: When diagnosing or practising the named performance concern.
 depends_on:
-  - ../../workspace/mission.md
-  - ../../workspace/resources.md
+ -../../workspace/mission.md
+ -../../workspace/resources.md
 ---
 
 # L3 — Database and Query-Path Bottlenecks
@@ -33,11 +33,11 @@ Use this concrete mechanism from the supplied article material:
 
 ```text
 Get N orders
-   ↓
+ ↓
 Loop through orders
-   ↓
+ ↓
 Query customer for each order
-   ↓
+ ↓
 N additional round trips
 ```
 
@@ -63,12 +63,12 @@ Understand:
 
 ```text
 Application concurrency
-        ↓
+ ↓
 Connection pool
-   ┌────┴────┐
-available  waiting
-              ↓
-           timeout
+ ┌────┴────┐
+available waiting
+ ↓
+ timeout
 ```
 
 A database can become the bottleneck even after the application tier is scaled out.
@@ -116,7 +116,7 @@ before suggesting database scaling.
 ## Source path
 
 - Supplied article material — N+1 query and performance-engineering examples.
-- *Foundations of Scalable Systems* (S28), Ch. 1 (read), Ch. 2 [TOC] — optimization, database bottlenecks, caching, and service/database interaction.
-- *Understanding Distributed Systems* (S27), Ch. 19 [TOC] — Data Storage; Ch. 20 [TOC] — Caching.
+- *Foundations of Scalable Systems* (S28), Ch. 1, Ch. 2 — optimization, database bottlenecks, caching, and service/database interaction.
+- *Understanding Distributed Systems* (S27), Ch. 19 — Data Storage; Ch. 20 — Caching.
 
 ---
