@@ -12,7 +12,7 @@ depends_on:
 
 **Goal:** Bound what the system, model, and tools can access or change, even when the model is wrong or manipulated.
 
-**Handbook reading path (S69):** Ch. 9 §§9.1–9.14 (identity and credentials), Ch. 10 §§10.1–10.13 (authorization, tenant isolation, BOLA/IDOR, action auditing and tests), Ch. 11 §§11.1, 11.3–11.9, 11.11–11.25 (threat modeling, API risks, injection, SSRF, deserialization, mass assignment, secrets, privacy, supply chain, DoS, LLM security, security testing/review), and Ch. 32 §32.11 (LLM risks). The handbook's OWASP references are older; current taxonomy and governance must remain grounded in S16–S17 and S24, plus current provider guidance.
+**Optional source suggestion:** S69, *The Backend Developer Interview Handbook*. This is only one possible source. Search all Project Sources for better or deeper material; no chapters are prescribed.
 
 **Source pins for every lesson below:** OWASP LLM Top 10 2026 (published 2026-08-04) and OWASP Top 10 for Agentic Applications 2026 (December 2025, ASI01–ASI10) — always cite the edition; NIST AI RMF 1.0 (January 2023) plus the GenAI Profile NIST AI 600-1 (July 2024, twelve GAI risks with Govern/Map/Measure/Manage actions) — cite the profile, not just the framework homepage.
 
