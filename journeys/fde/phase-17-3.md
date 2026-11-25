@@ -2,8 +2,8 @@
 purpose: Contains one capstone phase section.
 read_when: When the FDE capstone or its named support section is active.
 depends_on:
-  - ../../workspace/mission.md
-  - ../../workspace/resources.md
+ -../../workspace/mission.md
+ -../../workspace/resources.md
 ---
 
 # 6. Supporting branches — not required all at once
@@ -25,5 +25,5 @@ Division of labor (read-only cross-reference; neither file re-teaches the other)
 | P10.4a Stage 3 (capacity estimates) vs P9.6/P17.2 | L7 | P10.4a prepares *estimated* numbers; L7 owns *measured* curves (profiling, load testing, knee/capacity boundary). Estimates are validated by L7-style load tests, not by more estimation. |
 
 - **AI Security specialization:** deepen OWASP/NIST, red teaming, secure SDLC, and security labs after Phase 15 or when the capstone risk requires it.
-- **Distributed systems depth:** use *Designing Data-Intensive Applications*, 2nd ed.; *Understanding Distributed Systems*, 2nd ed.; *Building Microservices*, 2nd ed.; *Designing Distributed Systems*, 2nd ed.; *Software Architecture: The Hard Parts*; and *Foundations of Scalable Systems* as chapter-level sources only when the lesson needs them. Their bibliographic and read status is recorded in `../../workspace/resources.md`; chapters tagged `[TOC]` come from a table of contents only.
+- **Distributed systems depth:** use *Designing Data-Intensive Applications*, 2nd ed.; *Understanding Distributed Systems*, 2nd ed.; *Building Microservices*, 2nd ed.; *Designing Distributed Systems*, 2nd ed.; *Software Architecture: The Hard Parts*; and *Foundations of Scalable Systems* as chapter-level sources only when the lesson needs them. Their bibliographic and read status is recorded in `../../workspace/resources.md`; chapters tagged `` come from a table of contents only.
 - **Framework specialization:** Avoid framework-first tutorials disconnected from the capstone.
