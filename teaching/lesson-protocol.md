@@ -70,11 +70,8 @@ understanding.
   Do not count the first two as practice tasks.
 - During retrieval, never reveal the answer before the learner attempts it, and do
   not repeat the same prompt after revealing its answer in the same response.
-- Use this compact source label without inventing fields:
-  `Source-backed fact — [S-ID], <registered title>, <exact chapter/section>,`
-  `<canonical URL>, accessed <YYYY-MM-DD>.`
-  Label mentor synthesis, hypothesis, and synthetic examples separately. The source
-  catalogue remains authoritative for the actual identity and status of `<S-ID>`.
+- Attribute source-backed claims by naming the book or document; add its author/publisher or URL when useful. A specific chapter, section, or page is optional navigation, never a required field or a substitute for teaching.
+  Label mentor synthesis, hypotheses, and synthetic examples separately. Source IDs are optional links into the source index, not proof of access or a limit on source selection.
 
 ## Adaptive controls
 
