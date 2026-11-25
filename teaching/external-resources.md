@@ -11,8 +11,4 @@ depends_on:
 
 ## P§8. External resources and candidate roadmaps
 
-Do not add a static source list to this procedure file. External resources,
-candidate sources, and candidate roadmaps belong in `../workspace/resources.md` or the
-active journey file. Treat those files as inputs to source triage, not as
-automatic evidence. Open and verify only the sources needed for the current
-lesson, then record their status and the exact section used in `../workspace/resources.md`.
+Use external sources when they improve coverage, depth, or currency. Search official documentation, standards, original papers, first-party engineering articles, and incident reports as relevant. The project source index is not an allowlist. Do not record source verification status, reading status, or exact sections in a registry. Attribute claims to material that actually supports them.
