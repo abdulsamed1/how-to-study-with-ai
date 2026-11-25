@@ -1,22 +1,19 @@
 ---
-purpose: Indexes source catalogue sections.
-read_when: When selecting the relevant source catalogue section.
+purpose: Points to the lightweight source indexes.
+read_when: When discovering project learning material.
 depends_on:
   - ../governance/source-policy.md
 ---
 
-# Resources
+# Project sources
 
+These indexes are lightweight discovery aids. They are not exhaustive, ranked, verified/unverified lists, or mandatory reading paths.
 
+- [Project source index](resources-verified-references.md) — stable IDs, source names, and URLs.
+- [Foundational documentation and references](resources-f-series-foundational-sources-used-by-the-roadmap.md) — stable IDs, names, and URLs.
 
-The source policy is [governance/source-policy.md](../governance/source-policy.md). Read only the catalogue section needed:
+## How to use the index
 
-- [How to use](resources-how-to-use-this-file.md)
-- [Verified references](resources-verified-references.md)
-- [Designated scope](resources-designated-topic-scope-source-owner-decision-2026-10-21.md)
-- [Backend coverage](resources-designated-cross-phase-backend-coverage-reference-owner-decision-2026-10-24.md)
-- [Foundational sources](resources-f-series-foundational-sources-used-by-the-roadmap.md)
-- [Reading status](resources-reading-status.md)
-- [References to verify](resources-references-to-verify.md)
-- [Coverage gaps](resources-coverage-gaps.md)
-- [Update procedure](resources-update-procedure.md)
+Search all relevant Project Sources, not only entries listed here. The learner may add books, papers, PDFs, or other material at any time. A source ID or curriculum citation is a navigation hint only; it never limits source discovery, depth, or the choice of the strongest relevant material.
+
+Do not maintain source verification status, access-format metadata, reading-status records, chapter/page completion markers, or coverage-gap gates. Explore the source content needed for the current topic when it is available, then teach its relevant substance directly.
