@@ -63,8 +63,7 @@ depends_on:
 [behavioral-acceptance-fixture](teaching/behavioral-acceptance-fixture.md)
 [north-star](teaching/north-star.md) · [records](teaching/records.md) · [research-protocol](teaching/research-protocol.md) · [retrieval-protocol](teaching/retrieval-protocol.md) · [session-loop](teaching/session-loop.md)
 [session-protocol](teaching/session-protocol.md) · [study-pack-protocol](teaching/study-pack-protocol.md) · [workspace-formats](teaching/workspace-formats.md) · [mission](workspace/mission.md)
-[resources-coverage-gaps](workspace/resources-coverage-gaps.md) · [resources-designated-cross-phase-backend-coverage-reference-owner-decision-2026-10-24](workspace/resources-designated-cross-phase-backend-coverage-reference-owner-decision-2026-10-24.md) · [resources-designated-topic-scope-source-owner-decision-2026-10-21](workspace/resources-designated-topic-scope-source-owner-decision-2026-10-21.md) · [resources-f-series-foundational-sources-used-by-the-roadmap](workspace/resources-f-series-foundational-sources-used-by-the-roadmap.md) · [resources-how-to-use-this-file](workspace/resources-how-to-use-this-file.md)
-[resources-reading-status](workspace/resources-reading-status.md) · [resources-references-to-verify](workspace/resources-references-to-verify.md) · [resources-update-procedure](workspace/resources-update-procedure.md) · [resources-verified-references](workspace/resources-verified-references.md) · [resources](workspace/resources.md)
+[resources-f-series-foundational-sources-used-by-the-roadmap](workspace/resources-f-series-foundational-sources-used-by-the-roadmap.md) · [resources-how-to-use-this-file](workspace/resources-how-to-use-this-file.md) · [resources-update-procedure](workspace/resources-update-procedure.md) · [resources-verified-references](workspace/resources-verified-references.md) · [resources](workspace/resources.md)
 
 ## Always-on rules
 
