@@ -2,8 +2,8 @@
 purpose: Contains one part of the performance and traffic-spike study map.
 read_when: When diagnosing or practising the named performance concern.
 depends_on:
-  - ../../workspace/mission.md
-  - ../../workspace/resources.md
+ -../../workspace/mission.md
+ -../../workspace/resources.md
 ---
 
 # L7 — Controlled Validation: Profiling, Load Testing, Capacity Curves
@@ -53,12 +53,12 @@ Think in curves, not single numbers:
 
 ```text
 Load ↑
-  │        response time
-  │          /
-  │         /
-  │________/________
-           ↑
-     capacity boundary
+ │ response time
+ │ /
+ │ /
+ │________/________
+ ↑
+ capacity boundary
 ```
 
 Vitillo describes the point where a resource becomes exhausted and performance plateaus or worsens. Gorton likewise connects scalability to maintaining performance as load grows.
@@ -92,8 +92,8 @@ I can design a controlled experiment that separates:
 
 ## Source path
 
-- *Foundations of Scalable Systems* (S28), Ch. 1 (read), Ch. 2 [TOC] — performance/scalability experiments and bottleneck-focused scaling.
-- *Understanding Distributed Systems* (S27), Ch. 29 [TOC] — Testing; Ch. 31–32 [TOC] — monitoring/observability.
-- *Designing Distributed Systems* (S29), Ch. 14 (read: monitoring and observability patterns) — Monitoring and Observability Patterns.
+- *Foundations of Scalable Systems* (S28), Ch. 1, Ch. 2 — performance/scalability experiments and bottleneck-focused scaling.
+- *Understanding Distributed Systems* (S27), Ch. 29 — Testing; Ch. 31–32 — monitoring/observability.
+- *Designing Distributed Systems* (S29), Ch. 14 — Monitoring and Observability Patterns.
 
 ---
