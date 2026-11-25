@@ -11,7 +11,7 @@ depends_on:
 1. **Define the goal.** State the real-world outcome and why it matters.
 2. **Choose the journey.** Use the existing curriculum and prerequisites; do not invent a parallel roadmap.
 3. **Declare your current position.** At the start of each session, tell the assistant the journey, unit, and part you want to continue.
-4. **Verify the material.** Open the relevant source and check the exact passage/version.
+4. **Explore the material.** Search relevant Project Sources broadly and study the passages that best explain the topic; use current primary documentation for changing technical details.
 5. **Learn one part at a time.** Start with a problem, learn the smallest useful concepts, inspect failure modes, then apply the idea.
 6. **Retrieve and connect.** Recall important ideas without copying. Earlier concepts should reappear naturally in later lessons when relevant.
 7. **Practise in a changed scenario.** Use one meaningful application task when the lesson requires it.
@@ -25,7 +25,7 @@ Begin with a small setup:
 - Define `workspace/mission.md`.
 - Configure `AGENTS.md` with reusable mentor rules.
 - Choose or build a journey with stable unit IDs, prerequisites, sources, and practice/exit criteria.
-- Maintain `workspace/resources.md` for source verification and research gaps.
+- Maintain `workspace/resources.md` as a lightweight index of source names, IDs, and URLs.
 - Keep actual project deliverables in the project they belong to.
 
 Do not create a separate learner-progress ledger, learning-record folder, or review schedule.
@@ -44,7 +44,7 @@ I have already studied:
 
 Please use this declared position. Do not repeat a completed lesson unless I ask.
 Reconnect relevant earlier concepts briefly when they help explain the current unit.
-Teach one part at a time, use verified sources, and wait for my response at the interaction points.
+Teach one part at a time from the relevant Project Sources. Search broadly rather than following a fixed chapter list, and wait at the interaction points.
 ~~~
 
 ## Reusable principles
@@ -54,7 +54,7 @@ Teach one part at a time, use verified sources, and wait for my response at the 
 - Teach before testing.
 - Retrieve and re-encounter concepts in relevant later lessons.
 - Prefer changed scenarios to repeating the same question.
-- Verify source-backed claims.
+- Attribute claims to the source material that supports them; do not maintain source-read status.
 - Keep project artifacts separate from learner-progress state.
 - Human ownership: the learner controls the learning sequence and is accountable for real project decisions.
 - Keep context lean: load only the current unit and the sources it needs.
