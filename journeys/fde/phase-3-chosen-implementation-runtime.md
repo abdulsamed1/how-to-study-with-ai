@@ -12,7 +12,7 @@ depends_on:
 
 **Goal:** Build production service code in Python. Python implementation claims for P3.1–P3.7 are grounded in verified sources F15–F18 and `../../teaching/session-protocol.md` P§6; language-specific reading of an existing repository is conditional on the linked owned-system task, not a runtime-learning prerequisite.
 
-**Handbook reading path (S69):** Ch. 37 §§37.2, 37.4–37.6, 37.10, 37.13–37.15 (Python/FastAPI, Pydantic models, response/error behavior, async endpoints, tests, project structure, and deployment). Use the Python concepts directly; skip the chapter's Node-comparison and NestJS comparison tracks.
+**Optional source suggestion:** S69, *The Backend Developer Interview Handbook*. This is only one possible source. Search all Project Sources for better or deeper material; no chapters are prescribed.
 
 - **P3.1 — Types and compiler/runtime feedback** — **Priority:** important. Depends on: P2.1–P2.5. Use the chosen language's type system, static checks, and diagnostics where available. **Proof:** turn the Phase 2 payload normalizer into typed, checked code. Sources: F15, F16.
 - **P3.2 — Valid and invalid data states** — **Priority:** important. Depends on: P3.1, P2.4, P2.2. Model optional data and event variants explicitly. **Proof:** process multiple event types without unsafe assumptions. Sources: F15, F16.
