@@ -17,7 +17,7 @@ learning, not a claim that one method is universally superior.
 
 1. Read the active journey unit or established temporary Scope ID, its prerequisites,
    owner, source tags, and practice/exit boundary. Do not look for a personal progress or retrieval record.
-2. Choose one verified case or a clearly labelled synthetic scenario.
+2. Choose a relevant real case supported by accessible material, or a clearly labelled synthetic scenario.
 3. Separate facts, assumptions, unknowns, constraints, and the eventual decision.
 4. Prepare a causal chain: symptom → mechanism → consequence → required property →
    boundary. Prepare only the curriculum links that help this unit. Select one earlier concept to reconnect when the current mechanism depends on it; keep the recap brief and functional.
@@ -37,7 +37,7 @@ The parts form one conversation, not four unrelated essays. Wait after Part 1 wh
 the learner's response determines the scaffolding or concept selection. Keep one
 objective and no more than two new primary concepts. If more are needed, sequence
 them into later units rather than silently expanding this lesson. Keep the scenario
-under 120 words. Cite the selected source and section for source-backed claims;
+under 120 words. Attribute source-backed claims to the selected book or document; include a section only when it helps the learner locate the point;
 preserve synthetic labels.
 
 ## Interaction pauses and citation
