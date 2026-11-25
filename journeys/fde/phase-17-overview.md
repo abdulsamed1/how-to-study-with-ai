@@ -2,8 +2,8 @@
 purpose: Contains one capstone phase section.
 read_when: When the FDE capstone or its named support section is active.
 depends_on:
-  - ../../workspace/mission.md
-  - ../../workspace/resources.md
+ -../../workspace/mission.md
+ -../../workspace/resources.md
 ---
 
 # Phase 17 — Capstone and evidence portfolio
@@ -13,14 +13,14 @@ depends_on:
 purpose: Contains one part of the FDE learning journey.
 read_when: When the FDE journey or the named phase is active.
 depends_on:
-  - ../../workspace/mission.md
-  - ../../workspace/resources.md
+ -../../workspace/mission.md
+ -../../workspace/resources.md
 ---
 
 
 **Goal:** Demonstrate end-to-end ownership. This phase is open-ended and should evolve from lessons and real constraints; it is not a fixed tutorial to copy.
 
-**Handbook reading path (S69 [TOC]):** Ch. 29 §§29.2–29.11 and Ch. 30 §§30.0–30.12 for design and case-study comparison; Ch. 21 §§21.1–21.3, 21.5, 21.7, 21.10–21.19, Ch. 22 §§22.10–22.11, and Ch. 24–27 for tests, review, deployment, releases, operations, and handover; Ch. 32–33 for the chosen AI slice. A handbook case study is an example to critique, never evidence that the learner shipped a system or achieved a business result.
+**Handbook reading path (S69):** Ch. 29 §§29.2–29.11 and Ch. 30 §§30.0–30.12 for design and case-study comparison; Ch. 21 §§21.1–21.3, 21.5, 21.7, 21.10–21.19, Ch. 22 §§22.10–22.11, and Ch. 24–27 for tests, review, deployment, releases, operations, and handover; Ch. 32–33 for the chosen AI slice. A handbook case study is an example to critique, never evidence that the learner shipped a system or achieved a business result.
 
 - **P17.1 — Select a narrow, high-value workflow** — **Priority:** must-have. Depends on: P10.1–P10.3, P10.4a–P10.4c, P16.1. Confirm access to data/users, a measurable baseline, bounded risks, and a reason AI is appropriate. **Artifact:** problem brief, baseline, stakeholder map, and explicit non-goals. Sources: [evidence policy](../../governance/evidence-policy.md); external scoping sources remain unverified — the real engagement is the evidence.
 - **P17.2 — Build in vertical slices** — **Priority:** must-have. Depends on: P4.7a–P4.7b, P5.6, P7.2, P8.2–P8.7, plus the AI units chosen in P17.1 from this list: P11.2–P11.4, P12.1–P12.6, P13.1–P13.5, P14.1–P14.4, P15.1–P15.4. Each slice must run and be tested before the next layer is added, starts from a written delegation brief, is small enough to review, and ends with an agent review record (§3). **Artifact:** repository with tests, migrations, integration contract, failure-path coverage, and an agent review record per slice. Sources: S40, S41.
