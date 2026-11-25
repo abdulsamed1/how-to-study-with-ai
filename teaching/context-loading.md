@@ -12,7 +12,7 @@ Load only what the current request needs:
 1. The mission when the goal or constraints are relevant.
 2. The journey map and exact unit named by the learner.
 3. The relevant prerequisites, ownership boundaries, and linked concepts for that unit.
-4. Only the registered source rows and exact book/document sections needed for the lesson.
+4. Search the full relevant Project Sources for the topic. Use journey source tags only as optional clues; do not limit retrieval to named books, chapters, or pages.
 5. Relevant capstone files only when the learner asks to work on the system or the lesson requires them.
 
 Do not load `workspace/evidence.md`, learning records, session exports, progress templates, or past chat summaries to reconstruct the learner's state. The project deliberately has no persistent lesson-progress ledger.
