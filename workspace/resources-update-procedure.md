@@ -1,17 +1,14 @@
 ---
-purpose: Contains one source catalogue section.
-read_when: When the named source catalogue section is needed.
+purpose: Defines the minimal source-index update rule.
+read_when: When adding or changing a source link.
 depends_on:
   - ../governance/source-policy.md
 ---
 
 # Update procedure
 
+Keep the index minimal: stable ID when needed, source name, and URL.
 
-## Update procedure
+Do not add file-format details, access classifications, verification dates, coverage summaries, chapter mappings, or reading-status records. Do not require a source to be pre-read or pre-verified before it can be added or considered.
 
-Entry maintenance follows the Source-triage steps in `../teaching/research-protocol.md`
-P§9: open the primary source, confirm title, publisher, relevance, and
-currency, record the date and the exact sections read, and move failed or
-stale entries out of the verified section. Never silently re-classify an
-entry.
+A source entry is a discovery link, not proof that its content supports a particular claim. The mentor explores the relevant source material when answering and attributes only what the material actually supports.
