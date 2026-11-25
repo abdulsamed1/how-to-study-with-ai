@@ -86,7 +86,7 @@ Supporting files can be added gradually:
 | File or folder | Responsibility |
 |---|---|
 | **GLOSSARY.md** | Short definitions for terms you have learned to use correctly |
-| **casebook/** | Verified real-world failures and the engineering lessons that can be transferred from them |
+| **casebook/** | Real-world failure cases and transferable engineering lessons |
 | **lessons/** | Reusable lesson material, when it is useful to keep a lesson outside the chat |
 | **reference/** | Checklists, diagrams, decision tables, and concise reference sheets |
 | **assets/** | Shared styles or components for saved learning materials |
@@ -116,7 +116,7 @@ Useful rules include:
 - Identify the next eligible topic from the plan. Respect prerequisites.
 - Teach before testing. Do not turn every session into an unexplained quiz.
 - Introduce a small number of concepts at a time.
-- Explain the source of important claims and identify what could not be verified.
+- Explain the source of important claims and distinguish source content from mentor synthesis.
 - Separate source-backed facts, recommendations, hypotheses, and practice scenarios.
 - Evaluate reasoning and application, not just the final answer.
 - Do not infer lesson completion or mastery from reading, AI output, memory, or chat history.
