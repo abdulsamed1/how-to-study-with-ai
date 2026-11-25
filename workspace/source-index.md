@@ -77,7 +77,7 @@ This list is a navigation aid, not an exhaustive inventory, ranking, approval li
 | S66 | [Timeouts, retries, and backoff with jitter](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/) |
 | S67 | [Best practices for using webhooks](https://docs.github.com/en/webhooks/using-webhooks/best-practices-for-using-webhooks) · [Validating webhook deliveries](https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries) |
 | S68 | [Receive Stripe events in your webhook endpoint](https://docs.stripe.com/webhooks) |
-| S69 | The Backend Developer Interview Handbook (Project Source; no public URL supplied) |
+| S69 | The Backend Developer Interview Handbook |
 | S70 | [Problem-Based Learning (PBL)](https://www.gla.ac.uk/myglasgow/learningandteaching/activelearning/guides/pbl/) |
 | S71 | [A taxonomy of problem-based learning methods](https://doi.org/10.1111/j.1365-2923.1986.tb01386.x) |
 | S72 | [Apache Kafka 4.4 — Design](https://kafka.apache.org/44/design/design/) · [KafkaConsumer API](https://kafka.apache.org/44/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html) |
