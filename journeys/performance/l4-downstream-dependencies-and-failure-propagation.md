@@ -2,8 +2,8 @@
 purpose: Contains one part of the performance and traffic-spike study map.
 read_when: When diagnosing or practising the named performance concern.
 depends_on:
-  - ../../workspace/mission.md
-  - ../../workspace/resources.md
+ -../../workspace/mission.md
+ -../../workspace/resources.md
 ---
 
 # L4 — Downstream Dependencies and Failure Propagation
@@ -22,17 +22,17 @@ A dependency does not have to return errors to damage the caller.
 
 ```text
 Client
-  ↓
+ ↓
 API
-  ↓
+ ↓
 Slow dependency
-  ↓
+ ↓
 Requests remain open
-  ↓
+ ↓
 Concurrency accumulates
-  ↓
+ ↓
 Pools / threads / sockets become scarce
-  ↓
+ ↓
 Caller degrades
 ```
 
@@ -89,7 +89,7 @@ I can reason about timeout, retry, and circuit-breaker trade-offs without treati
 
 ## Source path
 
-- *Understanding Distributed Systems* (S27), Ch. 24 [TOC] — Common Failure Causes.
-- *Understanding Distributed Systems* (S27), Ch. 27 [TOC] — Downstream Resiliency: 27.1 Timeout; 27.2 Retry; retry backoff, jitter, and amplification; 27.3 Circuit breaker.
+- *Understanding Distributed Systems* (S27), Ch. 24 — Common Failure Causes.
+- *Understanding Distributed Systems* (S27), Ch. 27 — Downstream Resiliency: 27.1 Timeout; 27.2 Retry; retry backoff, jitter, and amplification; 27.3 Circuit breaker.
 
 ---
