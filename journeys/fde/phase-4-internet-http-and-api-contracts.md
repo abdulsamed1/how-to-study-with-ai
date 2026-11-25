@@ -12,7 +12,7 @@ depends_on:
 
 **Goal:** Understand the contract across a network boundary before designing integrations.
 
-**Handbook reading path (S69):** Ch. 1 §§1.1, 1.5, 1.7–1.8, 1.10–1.16 (network paths and failure surfaces); Ch. 2 §§2.1–2.4, 2.9–2.10, 2.16–2.18 (HTTP contracts, caching, timeouts, HTTPS); Ch. 7 §§7.1–7.12 (API design, idempotency, concurrency control, evolution, pagination, rate limits, and API documentation); Ch. 9 §§9.1–9.14 and Ch. 10 §§10.1–10.13 (authentication, authorization, object-level access, tenancy, and tests). Provider-specific claims still come from that provider's current docs.
+**Optional source suggestion:** S69, *The Backend Developer Interview Handbook*. This is only one possible source. Search all Project Sources for better or deeper material; no chapters are prescribed.
 
 - **P4.1 — Network request mental model** — **Priority:** important. Depends on: P2.2, P3.4. Client/server, DNS at a conceptual level, connection, TLS purpose, and network failure boundaries. **Proof:** trace a request from client to server and name where failures may occur. Source: F4.
 - **P4.2 — HTTP request and response anatomy** — **Priority:** important. Depends on: P4.1. Methods, paths, headers, body, status codes, content types, and caching semantics. **Proof:** inspect several real requests/responses and explain their contracts. Source: F4.
