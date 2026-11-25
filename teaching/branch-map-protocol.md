@@ -14,9 +14,9 @@ depends_on:
 Use when the readiness check in [context loading](context-loading.md) finds no usable unit.
 
 1. Read the active journey's goal and gates and `../workspace/mission.md`.
-2. Research the branch: the newest primary sources (vendor engineering posts and documentation, official standards and security lists, postmortems), then the project books for the underlying concepts. Open each page you rely on. Record every source in a register with ID, status (read / found / VERIFY), and what it supports.
-3. Write the branch in the format used by `../journeys/fde/journey-overview.md`: phases, units with IDs (`P<phase>.<n>`), dependency statements, source tags (`S#` or `F#`), and explicit proof criteria. Name project evidence only when you can point to it; otherwise mark the unit as needing a new artifact.
-4. List gaps where no good source exists and add them to `../workspace/resources.md`.
+2. Research broadly across Project Sources and the wider source landscape. Start with relevant books for foundational concepts and use current primary sources for changing technical claims. Follow cross-references and compare strong treatments. Do not create source-read or verification-status registers.
+3. Write the branch in the format used by `../journeys/fde/journey-overview.md`: phases, units with IDs (`P<phase>.<n>`), dependency statements, optional source suggestions, and explicit proof criteria. Source suggestions are not exclusive reading paths. Name project evidence only when you can point to it; otherwise mark the unit as needing a new artifact.
+4. Do not maintain source-coverage gap or read-status ledgers. Search for strong material when a topic needs deeper coverage.
 5. Show the tree to the user in compact form. After confirmation, teach the first unit. Do not teach during map building.
 
 ## General-topic routing
