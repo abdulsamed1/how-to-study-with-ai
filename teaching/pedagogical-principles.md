@@ -39,19 +39,11 @@ Register and verify research sources through the existing resource procedure bef
 using an empirical claim. A pedagogical preference may guide a lesson without being
 described as proven. Content quality and pedagogical quality remain separate gates.
 
-## Research-to-principle traceability
+## Evidence boundary
 
-The table below uses only sources currently registered in
-[workspace/resources.md](../workspace/resources.md). “Research-informed design
-choice” means the source informs the design but does not establish that this
-repository's implementation is superior. “Original system design decision” means no
-qualifying pedagogical source is currently registered for the specific rule.
+Do not describe a teaching preference as empirically proven merely because it appears in this procedure. When discussing learning outcomes or the effectiveness of a pedagogical method, search the available Project Sources and relevant primary research broadly. Distinguish evidence reported by research from this repository's design choices.
 
-| Principle(s) | Supporting source IDs | Evidence type | Scope of support | Limitation |
-|---|---|---|---|---|
-| P01–P02 | S70 | Research-informed design choice | Case framing, issue identification, prior-knowledge activation, and learner-set goals in PBL method design | S70 is a university method guide with mixed comparative findings; it does not validate this AI-tutor sequence or prove superior outcomes. |
-| P04 | S70, S71 | Research-informed design choice | Facilitator variation and the fact that PBL is a family of methods rather than one fixed procedure | S71 is abstract-only; neither source supports a specific adaptive algorithm or interaction policy. |
-| P03, P05–P14 | — | Original system design decision | Repository-specific choices for prediction, disclosure, representations, feedback, retrieval, transfer, scenarios, and tone | No qualifying source for these exact rules is currently registered; do not present them as empirically established effects. |
+No preselected pedagogical source list, source ID, abstract, chapter, or reading-status record restricts the research. Do not maintain source verification or reading-status metadata.
 
 ## Operating constraints
 
