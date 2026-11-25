@@ -2,8 +2,8 @@
 purpose: Contains one part of the performance and traffic-spike study map.
 read_when: When diagnosing or practising the named performance concern.
 depends_on:
-  - ../../workspace/mission.md
-  - ../../workspace/resources.md
+ -../../workspace/mission.md
+ -../../workspace/resources.md
 ---
 
 # L9 — Frontier-AI Bridge: Performance and Reliability of LLM-Backed Systems
@@ -67,8 +67,8 @@ I do not change a model, context size, or retry policy without an evaluation che
 ## Source path
 
 - Current official provider documentation on rate limits, errors, streaming, and timeouts (verify and date it).
-- *Understanding Distributed Systems* (S27), Vitillo, Ch. 27 [TOC] — Downstream Resiliency.
-- *Foundations of Scalable Systems* (S28), Gorton, Ch. 5 [TOC] — pools, queues, utilization.
+- *Understanding Distributed Systems* (S27), Vitillo, Ch. 27 — Downstream Resiliency.
+- *Foundations of Scalable Systems* (S28), Gorton, Ch. 5 — pools, queues, utilization.
 - Anthropic Engineering, "A postmortem of three recent issues" (Sept 2025): why quality evals on production systems matter (re-open before teaching).
 
 ---
