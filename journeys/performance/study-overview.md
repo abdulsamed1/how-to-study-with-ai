@@ -26,7 +26,7 @@ depends_on:
 
 - **Branch IDs:** `PERF-L0` … `PERF-L9`, plus the branch letter where one exists (`PERF-L2-C`). Use them when stating a session outcome.
 - **Evidence rule:** tick a Mastery box only when a learning record, a lab result, or a project file proves it, and write its reference beside the box.
-- **Source markers:** every chapter citation names its `../../workspace/resources.md` ID and its read status, following journey rule 7: `(read)` = the chapter was read in full, `(read: …)` = only the named sections were read, `[TOC]` = the chapter was identified from the book's table of contents and has not been read yet. The read-status record is the `../../workspace/resources.md` reading-status table.
+- **Source discovery:** Source IDs and any book pointers are optional clues only. Search the full Project Sources for the current topic; do not follow fixed chapter lists or track reading status.
 
 | Level | Casebook concepts to research (`casebook/<slug>.md`) | Lab |
 |---|---|---|
