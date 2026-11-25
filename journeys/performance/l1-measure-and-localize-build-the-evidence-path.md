@@ -2,8 +2,8 @@
 purpose: Contains one part of the performance and traffic-spike study map.
 read_when: When diagnosing or practising the named performance concern.
 depends_on:
-  - ../../workspace/mission.md
-  - ../../workspace/resources.md
+ -../../workspace/mission.md
+ -../../workspace/resources.md
 ---
 
 # L1 — Measure and Localize: Build the Evidence Path
@@ -84,8 +84,8 @@ I can move from a dashboard symptom to a bounded hypothesis and name the telemet
 
 ## Source path
 
-- *Understanding Distributed Systems* (S27), Ch. 31 [TOC] — Monitoring; Ch. 32 [TOC] — Observability.
-- *Designing Distributed Systems*, 2nd ed., Brendan Burns (S29), Ch. 14 (read: monitoring and observability patterns) — metrics, request monitoring, alerting, tracing.
-- *Foundations of Scalable Systems* (S28), Ch. 5 [TOC] material on application-service metrics, queues, thread pools, database connection pools, and data-driven performance experiments.
+- *Understanding Distributed Systems* (S27), Ch. 31 — Monitoring; Ch. 32 — Observability.
+- *Designing Distributed Systems*, 2nd ed., Brendan Burns (S29), Ch. 14 — metrics, request monitoring, alerting, tracing.
+- *Foundations of Scalable Systems* (S28), Ch. 5 material on application-service metrics, queues, thread pools, database connection pools, and data-driven performance experiments.
 
 ---
